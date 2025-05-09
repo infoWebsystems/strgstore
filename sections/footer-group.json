@@ -1,0 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "075332fc-22c3-4d56-9cb5-95c07cf43430": {
+          "type": "utilities",
+          "disabled": true,
+          "settings": {
+            "newsletter": false,
+            "newsletter_content": "",
+            "country_selector": false
+          }
+        },
+        "b7f1dbf8-fb4b-4c72-ad35-cf47b087fc1f": {
+          "type": "menu",
+          "settings": {
+            "title": "МЕНЮ",
+            "title_url": "",
+            "menu": "footer"
+          }
+        },
+        "ba2e09f9-38b3-4ed6-93ae-c2cd3420c2c0": {
+          "type": "menu",
+          "settings": {
+            "title": "DOMAINE-17",
+            "title_url": "",
+            "menu": "domaine-17"
+          }
+        },
+        "menu_EbNdXp": {
+          "type": "menu",
+          "settings": {
+            "title": "STORAGE Store",
+            "title_url": "",
+            "menu": "storage-store"
+          }
+        },
+        "762130ce-c112-474e-ab41-0e908f95e578": {
+          "type": "socials",
+          "disabled": true,
+          "settings": {
+            "icons": true
+          }
+        }
+      },
+      "block_order": [
+        "075332fc-22c3-4d56-9cb5-95c07cf43430",
+        "b7f1dbf8-fb4b-4c72-ad35-cf47b087fc1f",
+        "ba2e09f9-38b3-4ed6-93ae-c2cd3420c2c0",
+        "menu_EbNdXp",
+        "762130ce-c112-474e-ab41-0e908f95e578"
+      ],
+      "settings": {
+        "first_accordion_show": true,
+        "social_links": true,
+        "social_links_in_new_tab": true,
+        "color_scheme_text": "color-text-inverse",
+        "color_scheme_background": "color-background-primary",
+        "layout": "footer--logo-large",
+        "logo": "shopify://shop_images/strgstore-logo.svg",
+        "logo_svg_code": "",
+        "logo_width": 160,
+        "logo_width_mobile": 130,
+        "footer_bottom_content_alignment": "row",
+        "enable_payment_icons": true,
+        "custom_payment_types": "",
+        "override_default_payment_icons": false,
+        "payment_icons_color": false,
+        "copyright": "<p>© [year] - All rights reserved</p>",
+        "enable_follow_on_shop": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
