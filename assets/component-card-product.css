@@ -222,6 +222,9 @@ input:disabled + .card-product__swatch {
   padding: .8rem;
   background-color: var(--color-popup-background);
   border-radius: var(--input-border-radius);
+
+  /* **** */
+  display: none;
 }
 
 .card-product__sizes-btn-toggle svg {
@@ -230,7 +233,8 @@ input:disabled + .card-product__swatch {
 }
 
 .card-product .card-product__sizes-content {
-  display: none;
+  /* **** */
+  /* display: none; */
 }
 
 .js-card-sizes-duplicate .card-product__sizes-content.is-visible {
