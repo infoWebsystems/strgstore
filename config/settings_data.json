@@ -45,7 +45,7 @@
     "color_menu_transparent_text": "#FFFFFF",
     "product_swatches_on_card": false,
     "product_swatches_show_always": "none",
-    "quick_add_to_cart": "no_button",
+    "quick_add_to_cart": "with_variant",
     "sizes_option": "Size",
     "card_product_layout": "card-product__layout--compact",
     "card_product_image_ratio": "136.54%",
