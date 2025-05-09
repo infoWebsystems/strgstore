@@ -79,7 +79,7 @@
             "button_url": "",
             "products": [],
             "collection": "sale",
-            "title": "Highlight an image banner",
+            "title": "Collection 1",
             "max_products": 8,
             "show_unavailable_products": false
           }
@@ -108,7 +108,7 @@
             "button_url": "",
             "products": [],
             "collection": "test-collection",
-            "title": "Highlight an image banner",
+            "title": "Collection 2",
             "max_products": 8,
             "show_unavailable_products": false
           }
@@ -137,7 +137,7 @@
             "button_url": "",
             "products": [],
             "collection": "sale",
-            "title": "Highlight an image banner",
+            "title": "Collection 3",
             "max_products": 8,
             "show_unavailable_products": false
           }
@@ -166,7 +166,7 @@
             "button_url": "",
             "products": [],
             "collection": "test-collection",
-            "title": "Highlight an image banner",
+            "title": "Collection 4",
             "max_products": 8,
             "show_unavailable_products": false
           }
