@@ -52,6 +52,64 @@
         "content_padding_right": 32
       }
     },
+    "hero_banner_with_products_gr63ax": {
+      "type": "hero-banner-with-products",
+      "blocks": {
+        "slide_TXKcY6": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme_text": "text-colors-inverse",
+            "color_scheme_background": "background-colors-accent-2",
+            "header_menu_text_color": "#ffffff",
+            "image": "shopify://shop_images/shoe-care-step-1.webp",
+            "video_external": "",
+            "enable_media_overlay_desktop": false,
+            "video_external_mobile": "",
+            "enable_media_overlay_mobile": false,
+            "content_position_horizontal": "align-center text-center",
+            "content_position_vertical": "justify-center",
+            "subtitle": "",
+            "subtitle_url": "",
+            "title": "Highlight an image banner",
+            "content": "<p>1</p>",
+            "enable_vertical_line": false,
+            "button_style": "button--filled",
+            "button_text": "",
+            "button_url": "",
+            "products": [],
+            "collection": "sale",
+            "title_collections": "",
+            "max_products": 8,
+            "show_unavailable_products": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_TXKcY6"
+      ],
+      "name": "Hero Banner With Products",
+      "settings": {
+        "enable_transparent_header": false,
+        "slider_height": 80,
+        "slider_autoplay": false,
+        "slider_autoplay_interval": 6,
+        "slider_arrows": true,
+        "slider_arrows_position": "hero__swiper-buttons--sides",
+        "slider_arrows_color": "text-colors-inverse",
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "layout": "layout-1",
+        "gap_between_desktop": 2,
+        "gap_between_mobile": 2,
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-accent-1",
+        "title": "Best sellers",
+        "button_text": "View all",
+        "button_url": "/",
+        "button_style": "button--outlined"
+      }
+    },
     "featured_collections_4Y79xc": {
       "type": "featured-collections",
       "blocks": {
@@ -1188,6 +1246,7 @@
   },
   "order": [
     "full_width_banner_JmjNVD",
+    "hero_banner_with_products_gr63ax",
     "featured_collections_4Y79xc",
     "main_list_collections_tBGqWK",
     "1658995208ad05f95f",
