@@ -1,5 +1,3 @@
-HERO WITH PRODUCTS
-
 {%- if section.blocks.size > 0 -%}
   {{- 'section-hero-banner.css' | asset_url | stylesheet_tag -}}
   <script src="{{- 'hero-slider.js' | asset_url -}}" defer="defer"></script>
@@ -91,7 +89,7 @@ HERO WITH PRODUCTS
           {%- comment -%}Desktop media{%- endcomment -%}
           {%- if block.settings.video_external != blank -%}
             <div class="media media--16-9 media--overlay hero__media hero__media--desktop{% if has_mobile_media %} small-hide{% endif %}">
-              {% render 'external-video', video: block.settings.video_external, title: block.settings.title, youtube_container: true %}
+              {% render 'external-video', video: block.settings.video_external, title: block.settings.block_title, youtube_container: true %}
             </div>
           {%- elsif block.settings.video != blank -%}
             <div class="media media--16-9 media--overlay hero__media hero__media--desktop{% if has_mobile_media %} small-hide{% endif %}">
@@ -101,7 +99,7 @@ HERO WITH PRODUCTS
             <div class="media media--16-9 media--overlay hero__media svg-color-inherit{% if has_mobile_media %} small-hide{% endif %}">
               {%- liquid
                 if block.settings.image != blank
-                  render 'image', image: block.settings.image, section_index: section.index, media_index: forloop.index, image_url_width: 2160, alt: image.alt | default: block.settings.title | escape
+                  render 'image', image: block.settings.image, section_index: section.index, media_index: forloop.index, image_url_width: 2160, alt: image.alt | default: block.settings.block_title | escape
                 else
                   echo 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg'
                 endif
@@ -113,7 +111,7 @@ HERO WITH PRODUCTS
           {%- if has_mobile_media -%}
             {%- if block.settings.video_external_mobile != blank -%}
               <div class="media media--16-9 hero__media small-up-hide">
-                {% render 'external-video', video: block.settings.video_external_mobile, title: block.settings.title, youtube_container: true %}
+                {% render 'external-video', video: block.settings.video_external_mobile, title: block.settings.block_title, youtube_container: true %}
               </div>
             {%- elsif block.settings.video_mobile != blank -%}
               <div class="media media--16-9 hero__media small-up-hide">
@@ -123,7 +121,7 @@ HERO WITH PRODUCTS
               <div class="media media--16-9 media--overlay hero__media small-up-hide svg-color-inherit">
                 {%- liquid
                   if block.settings.image_mobile != blank
-                    render 'image', image: block.settings.image_mobile, section_index: section.index, media_index: forloop.index, image_for_mobile: true, alt: block.settings.image_mobile.alt | default: block.settings.title | escape
+                    render 'image', image: block.settings.image_mobile, section_index: section.index, media_index: forloop.index, image_for_mobile: true, alt: block.settings.image_mobile.alt | default: block.settings.block_title | escape
                   else
                     echo 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg'
                   endif
@@ -134,7 +132,7 @@ HERO WITH PRODUCTS
 
         {% endcapture %}
 
-        {%- if block.settings.title != blank or block.settings.content != blank or block.settings.button_text != blank and block.settings.button_url != blank -%}
+        {%- if block.settings.block_title != blank or block.settings.content != blank or block.settings.button_text != blank and block.settings.button_url != blank -%}
           {% capture content_element %}
             <div class="hero__content {{ hero_inner_setting_classes | strip }}">
               {%- if block.settings.subtitle != blank -%}
@@ -149,9 +147,9 @@ HERO WITH PRODUCTS
                 </p>
               {%- endif -%}
 
-              {%- if block.settings.title != blank -%}
+              {%- if block.settings.block_title != blank -%}
                 <h3 class="hero__title">
-                  {{- block.settings.title | escape -}}
+                  {{- block.settings.block_title | escape -}}
                 </h3>
               {%- endif -%}
 
@@ -177,7 +175,7 @@ HERO WITH PRODUCTS
         {%- endif -%}
 
         {{ media_element }}
-        {%- if block.settings.title != blank or block.settings.content != blank or block.settings.button_text != blank and block.settings.button_url != blank -%}
+        {%- if block.settings.block_title != blank or block.settings.content != blank or block.settings.button_text != blank and block.settings.button_url != blank -%}
           {{ content_element }}
         {%- endif -%}
 
@@ -218,17 +216,7 @@ HERO WITH PRODUCTS
     {%- endif -%}
   </section>
 
-  Slide 1
-
-  {%- liquid
-    if section.blocks.size > 0
-      assign products_array = true
-    else
-      assign products_array = blank
-    endif
-
-    render 'products-feed', section: section, products_array: products_array, section_name: 'featured-products', section_blocks: section.blocks
-  -%}
+  {%- render 'products-feed', section: section, products_array: true, section_name: 'featured-products', section_blocks: section.blocks -%}
 {%- endif -%}
 
 {% schema %}
@@ -742,7 +730,7 @@ HERO WITH PRODUCTS
         },
         {
           "type": "text",
-          "id": "title",
+          "id": "block_title",
           "label": "t:sections.hero-banner.blocks.slide.settings.title.label",
           "default": "Highlight an image banner"
         },
@@ -818,7 +806,7 @@ HERO WITH PRODUCTS
         },
         {
           "type": "text",
-          "id": "title_collections",
+          "id": "title",
           "label": "t:sections.featured-products.blocks.collection.settings.title.label",
           "info": "t:sections.featured-products.blocks.collection.settings.title.info"
         },
