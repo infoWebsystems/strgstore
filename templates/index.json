@@ -107,7 +107,7 @@
             "button_text": "",
             "button_url": "",
             "products": [],
-            "collection": "sale",
+            "collection": "test-collection",
             "title_collections": "Collection 2",
             "max_products": 8,
             "show_unavailable_products": false
@@ -165,7 +165,7 @@
             "button_text": "",
             "button_url": "",
             "products": [],
-            "collection": "sale",
+            "collection": "test-collection",
             "title_collections": "Collection 4",
             "max_products": 8,
             "show_unavailable_products": false
