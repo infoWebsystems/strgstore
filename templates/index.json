@@ -29,6 +29,7 @@
       "block_order": [
         "buttons_Yhxbqb"
       ],
+      "disabled": true,
       "name": "t:sections.full-width-banner.name",
       "settings": {
         "enable_transparent_header": true,
@@ -180,15 +181,15 @@
       ],
       "name": "Hero Banner With Products",
       "settings": {
-        "enable_transparent_header": false,
+        "enable_transparent_header": true,
         "slider_height": 80,
         "slider_autoplay": false,
         "slider_autoplay_interval": 6,
         "slider_arrows": true,
         "slider_arrows_position": "hero__swiper-buttons--sides",
         "slider_arrows_color": "text-colors-inverse",
-        "padding_vertical_desktop": "",
-        "padding_vertical_mobile": "",
+        "padding_vertical_desktop": "pb-0-desktop",
+        "padding_vertical_mobile": "pb-0-mobile",
         "layout": "layout-1",
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
@@ -197,7 +198,13 @@
         "title": "",
         "button_text": "",
         "button_url": "",
-        "button_style": "button--outlined"
+        "button_style": "button--outlined",
+        "additional_button_text_1": "Чоловіки",
+        "additional_button_url_1": "shopify://collections",
+        "additional_button_style_1": "button--outlined",
+        "additional_button_text_2": "Жінки",
+        "additional_button_url_2": "shopify://collections",
+        "additional_button_style_2": "button--outlined"
       }
     },
     "featured_collections_4Y79xc": {
