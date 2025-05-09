@@ -1,3 +1,9 @@
+.hero-banner-with-products-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
 .hero-banner-with-products-buttons {
   display: flex;
   align-items: center;
