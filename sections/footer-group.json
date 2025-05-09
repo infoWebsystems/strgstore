@@ -14,61 +14,72 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "075332fc-22c3-4d56-9cb5-95c07cf43430": {
+          "type": "utilities",
+          "disabled": true,
+          "settings": {
+            "newsletter": false,
+            "newsletter_content": "",
+            "country_selector": false
+          }
+        },
         "b7f1dbf8-fb4b-4c72-ad35-cf47b087fc1f": {
           "type": "menu",
           "settings": {
-            "title": "Footer Menu",
+            "title": "МЕНЮ",
             "title_url": "",
-            "menu": "footer-1"
+            "menu": "footer"
           }
         },
         "ba2e09f9-38b3-4ed6-93ae-c2cd3420c2c0": {
           "type": "menu",
           "settings": {
-            "title": "Menu Column",
-            "title_url": "#",
-            "menu": "footer-1"
+            "title": "DOMAINE-17",
+            "title_url": "",
+            "menu": "domaine-17"
           }
         },
-        "0de49fd3-060f-40bc-baeb-cf0131bae43e": {
+        "menu_EbNdXp": {
           "type": "menu",
           "settings": {
-            "title": "Menu Column",
+            "title": "STORAGE Store",
             "title_url": "",
-            "menu": "footer-1"
+            "menu": "storage-store"
           }
         },
         "762130ce-c112-474e-ab41-0e908f95e578": {
           "type": "socials",
+          "disabled": true,
           "settings": {
             "icons": true
-          }
-        },
-        "075332fc-22c3-4d56-9cb5-95c07cf43430": {
-          "type": "utilities",
-          "settings": {
-            "newsletter": true,
-            "newsletter_content": "Add short newsletter content for \n your customers to encourage them to sign up for newsletter.",
-            "country_selector": true
           }
         }
       },
       "block_order": [
+        "075332fc-22c3-4d56-9cb5-95c07cf43430",
         "b7f1dbf8-fb4b-4c72-ad35-cf47b087fc1f",
         "ba2e09f9-38b3-4ed6-93ae-c2cd3420c2c0",
-        "0de49fd3-060f-40bc-baeb-cf0131bae43e",
-        "762130ce-c112-474e-ab41-0e908f95e578",
-        "075332fc-22c3-4d56-9cb5-95c07cf43430"
+        "menu_EbNdXp",
+        "762130ce-c112-474e-ab41-0e908f95e578"
       ],
       "settings": {
+        "first_accordion_show": true,
         "social_links": true,
-        "color_scheme_text": "color-text-primary",
-        "color_scheme_background": "color-background-inverse",
-        "layout": "footer--logo-none",
+        "social_links_in_new_tab": true,
+        "color_scheme_text": "color-text-inverse",
+        "color_scheme_background": "color-background-primary",
+        "layout": "footer--logo-large",
+        "logo": "shopify://shop_images/strgstore-logo.svg",
         "logo_svg_code": "",
         "logo_width": 160,
         "logo_width_mobile": 130,
-        "copyright": "<p>© [year] - All rights reserved. Powered by Shopify</p>"
+        "footer_bottom_content_alignment": "row",
+        "enable_payment_icons": true,
+        "custom_payment_types": "",
+        "override_default_payment_icons": false,
+        "payment_icons_color": false,
+        "copyright": "<p>© [year] - All rights reserved</p>",
+        "enable_follow_on_shop": true
       }
     }
   },

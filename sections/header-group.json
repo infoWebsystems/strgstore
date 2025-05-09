@@ -85,6 +85,7 @@
         "cee0c4f6-5546-43a3-bfc3-2f3afa36d9d5",
         "5e0cad2e-d931-416e-ac29-51a4a683ade2"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-accent-1",
@@ -93,54 +94,26 @@
     },
     "header": {
       "type": "header",
-      "blocks": {
-        "b24138db-2e60-43bf-a7d4-d853a4298828": {
-          "type": "image-link-text",
-          "settings": {
-            "menu_link_title": "",
-            "url": "",
-            "title": ""
-          }
-        },
-        "37cd2d1d-2b56-4ed5-93d6-934e97ab2ca2": {
-          "type": "image-link-text",
-          "settings": {
-            "menu_link_title": "",
-            "url": "",
-            "title": ""
-          }
-        },
-        "917863eb-72c8-40ed-8666-395f53855d53": {
-          "type": "image-link-text",
-          "settings": {
-            "menu_link_title": "",
-            "url": "",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "b24138db-2e60-43bf-a7d4-d853a4298828",
-        "37cd2d1d-2b56-4ed5-93d6-934e97ab2ca2",
-        "917863eb-72c8-40ed-8666-395f53855d53"
-      ],
       "settings": {
         "fullwidth": true,
-        "sticky": true,
+        "sticky": false,
         "color_scheme_background": "background-colors-default",
         "color_scheme_text": "text-colors-default",
-        "layout": "",
-        "transparent_header_bottom_border": true,
+        "layout": "header--nav-centered",
+        "transparent_header_on_scroll": true,
+        "transparent_header_bottom_border": false,
         "drawer_layer": true,
+        "logo": "shopify://shop_images/strgstore-logo.svg",
         "logo_svg_code": "",
-        "logo_width": 100,
-        "logo_width_mobile": 60,
+        "logo_width": 200,
+        "logo_width_mobile": 140,
         "logo_font_size": 1.5,
         "menu": "main-menu",
+        "menu_mobile": "",
         "submenu": "",
         "menu_column_count": 5,
-        "country_drawer_header": true,
-        "country_drawer_navigation_menu": true,
+        "country_drawer_header": false,
+        "country_drawer_navigation_menu": false,
         "first_additional_link_title": "",
         "first_additional_link_url": "",
         "second_additional_link_title": "",

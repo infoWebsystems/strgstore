@@ -18,12 +18,15 @@
         },
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
           "type": "price",
-          "settings": {}
+          "settings": {
+            "show_price_extra_info": true
+          }
         },
         "1e939cd6-0958-4135-a9e5-c50faef01437": {
           "type": "variant_picker",
           "settings": {
             "title": "Variant picker",
+            "back_in_stock": false,
             "variant_picker_type": "dropdowns",
             "variant_picker_layout": "product-selector--default",
             "size_guide_page": "size-guide"
@@ -76,7 +79,7 @@
           "type": "inventory_notice",
           "settings": {
             "inventory_threshold": 15,
-            "notice_just_text": false
+            "notice_just_text": true
           }
         },
         "b2dabe12-2158-4ba6-bc54-9baae453acf5": {
@@ -117,12 +120,15 @@
         "product_media_layout": "product__media-layout--partial",
         "slides_with_thumbs": "none",
         "product_media_object_fit": "cover",
+        "thumb_media_object_fit": "contain",
+        "media_aspect_ratio": "default",
         "adaptive_ratio_and_auto_height": "default",
         "slider_background_color_transparent": true,
         "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
         "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
         "breadcrumbs_color_scheme_text": "text-colors-default",
         "tags_color_scheme_text": "text-colors-inverse",
+        "arrows_color": "text-colors-default",
         "show_tags_on_mobile": true,
         "enable_actions_bar": true,
         "horizontal_alignment": "text-left"
@@ -135,7 +141,7 @@
           "type": "popup-drawer",
           "settings": {
             "button_text": "Description",
-            "button_type": "drawer",
+            "button_type": "collapsible",
             "button_url": "shopify://products/birdie-bottoms-nero",
             "drawer_richtext": "<p>[description]</p>",
             "drawer_page": ""
@@ -145,7 +151,7 @@
           "type": "popup-drawer",
           "settings": {
             "button_text": "Delivery & Returns",
-            "button_type": "drawer",
+            "button_type": "collapsible",
             "button_url": "",
             "drawer_richtext": "<p>Shipping and returns can be inserted here.</p>",
             "drawer_page": ""
@@ -155,19 +161,9 @@
           "type": "popup-drawer",
           "settings": {
             "button_text": "Stylist tip",
-            "button_type": "drawer",
+            "button_type": "collapsible",
             "button_url": "",
             "drawer_richtext": "<p>Stylist tips can be entered here.</p>",
-            "drawer_page": ""
-          }
-        },
-        "94d964a1-0d79-4544-8288-24863da87e2d": {
-          "type": "popup-drawer",
-          "settings": {
-            "button_text": "Model Measurments",
-            "button_type": "link",
-            "button_url": "",
-            "drawer_richtext": "<p>Model measurements can be inserted here.</p>",
             "drawer_page": ""
           }
         },
@@ -186,7 +182,6 @@
         "fec25a48-cc42-4f7d-bbf5-215567a945e9",
         "4f41f466-653b-4675-91c2-051a7830a3cc",
         "f9d768f7-b69b-4425-b3d7-33216740b2dd",
-        "94d964a1-0d79-4544-8288-24863da87e2d",
         "ab4932da-0d31-4117-a170-3d12f59976ca"
       ],
       "settings": {
@@ -196,6 +191,7 @@
         "color_scheme_background": "background-colors-default",
         "title": "Complete the set",
         "content_type": "products",
+        "default_product": "",
         "flip_desktop": false,
         "flip_mobile": true
       }
@@ -210,7 +206,8 @@
         "gap_between_mobile": 2,
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-accent-1",
-        "title": "You may also like",
+        "title": "Вам може сподобатися",
+        "products": [],
         "max_products": 8,
         "show_unavailable_products": false
       }

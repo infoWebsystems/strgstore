@@ -93,7 +93,8 @@
 
       <div class="section-dual-tiles__tile block-{{ block.id }} {{ tile_additional_classes | strip }} {% if section.settings.adopt_to_content %} adapt-to-content{% endif %}">
         {%- if block.settings.video_desktop_external != blank -%}
-          <div class="media media--overlay section-dual-tiles__media{% if has_mobile_media %} small-hide{% endif %}">
+          <!-- <div class="media media--overlay section-dual-tiles__media{% if has_mobile_media %} small-hide{% endif %}"> -->
+          <div class="media section-dual-tiles__media{% if has_mobile_media %} small-hide{% endif %}">
             {% render 'external-video', video: block.settings.video_desktop_external, title: block.settings.title %}
           </div>
         {%- elsif block.settings.video_desktop != blank -%}
@@ -101,7 +102,8 @@
             {{- block.settings.video_desktop | video_tag: image_size: '1440x', loop: true, autoplay: true, muted: true, controls: false -}}
           </div>
         {%- elsif block.settings.image_desktop != blank-%}
-          <div class="media media--overlay section-dual-tiles__media{% if has_mobile_media %} small-hide{% endif %}">
+          <!-- <div class="media media--overlay section-dual-tiles__media{% if has_mobile_media %} small-hide{% endif %}"> -->
+          <div class="media section-dual-tiles__media{% if has_mobile_media %} small-hide{% endif %}">
             {%- render 'image', image: block.settings.image_desktop, section_index: section.index, image_per_view: 2, alt: block.settings.image_desktop.alt | escape -%}
           </div>
         {%- elsif block.settings.placeholder_svg_code != blank -%}
@@ -120,7 +122,8 @@
               {{- block.settings.video_mobile | video_tag: image_size: '720x', loop: true, autoplay: true, muted: true, controls: false -}}
             </div>
           {%- elsif block.settings.image_mobile != blank -%}
-            <div class="media media--overlay section-dual-tiles__media small-up-hide">
+            <!-- <div class="media media--overlay section-dual-tiles__media small-up-hide"> -->
+            <div class="media section-dual-tiles__media small-up-hide">
               {%- render 'image', image: block.settings.image_mobile, section_index: section.index, image_for_mobile: true, alt: block.settings.image_mobile.alt | escape -%}
             </div>
           {%- endif -%}

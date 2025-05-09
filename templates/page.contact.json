@@ -13,15 +13,17 @@
       "type": "main-page",
       "settings": {
         "show_page_title": true,
+        "title_alignment": "start",
         "breadcrumbs": true,
-        "info_title": "Opening hours",
-        "info_content": "<p>Monday to Friday 9am to 9pm (GMT)<br/>Saturday 10am to 6pm<br/>Sunday 10am to 4pm</p>",
+        "info_title": "",
+        "info_content": "<p>Адреса офісу:<br/>вулиця Шота Руставелі, 30, Київ, Україна<br/><br/><a href=\"https://goo.gl/maps/6Vd3Dh4JKyVKsUGv9\" target=\"_blank\" title=\"https://goo.gl/maps/6Vd3Dh4JKyVKsUGv9\">Відкрити в картах </a></p><p>Телефон: <br/><a href=\"tel:+38 093 397 79 17\" target=\"_blank\" title=\"tel:+38 093 397 79 17\">+38 093 397 79 17</a></p><p>Робота шоуруму:<br/>ПН— НД<br/>11:00— 20:00</p><p>Офіційні аккаунти: <br/><strong>STORAGE Store </strong>— <a href=\"https://www.instagram.com/strgstore_/?hl=ru\" target=\"_blank\" title=\"https://www.instagram.com/strgstore_/?hl=ru\">Instagram</a> <br/><strong>Domaine17</strong> — <a href=\"https://www.instagram.com/domaine17\" target=\"_blank\" title=\"https://www.instagram.com/domaine17\">Instagram</a><br/></p>",
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default"
       }
     },
     "form": {
       "type": "form-contact",
+      "disabled": true,
       "settings": {
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default"
@@ -29,6 +31,7 @@
     },
     "map": {
       "type": "map",
+      "disabled": true,
       "settings": {
         "api_key": "",
         "address_query": "",

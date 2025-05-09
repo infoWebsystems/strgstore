@@ -16,23 +16,24 @@
           "type": "slide",
           "settings": {
             "banner_layout": "hero-banner--full",
-            "color_scheme_text": "text-colors-default",
+            "color_scheme_text": "text-colors-inverse",
             "color_scheme_background": "background-colors-inverse",
             "header_menu_text_color": "#ffffff",
+            "image": "shopify://shop_images/frame_1.webp",
             "video_external": "",
             "enable_media_overlay_desktop": true,
             "video_external_mobile": "",
             "enable_media_overlay_mobile": true,
             "content_position_horizontal": "align-center text-center",
             "content_position_vertical": "justify-end",
-            "subtitle": "Brand Outline",
+            "subtitle": "",
             "subtitle_url": "",
-            "title": "Highlight your brand",
-            "content": "<p>Give more info about your brand</p>",
-            "enable_vertical_line": true,
+            "title": "Ми дуже раді, що тобі цікаво почитати про нас, а хто ми такі, щоб тобі відмовляти.",
+            "content": "<p>Перш за все, ми команда ентузіастів. Коли ми привезли першу лімітовану річ у 2017 році в Україну, за мету поставили — створити ком‘юніті людей, які цікавляться стрітвіром . Наша основна відмінність від інших магазинів в тому, що ми не співпрацюємо з брендами напряму, а замовляємо речі з великої кількості концепт-сторів по всьому світу. Це дозволяє нам привозити лише ті речі, які ми вважаємо найкращими, найякіснішими та найцікавішими. У зібраній нами колекції ви можете побачити вже класичні, стрітвірні, концептуальні та дизайнерські бренди: Stone Island, Maison Margiela, Off-White, Stussy, Kenzo, A-COLD-WALL , 1017 ALYX 9SM.</p>",
+            "enable_vertical_line": false,
             "button_style": "button--outlined-inverse",
-            "button_text": "",
-            "button_url": ""
+            "button_text": "Дивитися бренди",
+            "button_url": "shopify://collections"
           }
         }
       },
@@ -40,6 +41,8 @@
         "e3867974-072c-4cfe-968e-a10d22e8941a"
       ],
       "settings": {
+        "enable_transparent_header": true,
+        "slider_height": 100,
         "slider_autoplay": true,
         "slider_autoplay_interval": 5,
         "slider_arrows": true,
@@ -49,14 +52,16 @@
     },
     "9585dbdf-5519-43bd-a4c5-6aa99afe9a31": {
       "type": "seo-content",
+      "disabled": true,
       "settings": {
+        "layout": "boxed",
         "padding_vertical_desktop": "",
         "padding_vertical_mobile": "",
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-inverse",
         "text_size": 1.5,
-        "title": "Talk About Your Brand",
-        "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+        "title": "Ми дуже раді, що тобі цікаво почитати про нас, а хто ми такі, щоб тобі відмовляти.",
+        "content": "<p>Перш за все, ми команда ентузіастів. Коли ми привезли першу лімітовану річ у 2017 році в Україну, за мету поставили — створити ком‘юніті людей, які цікавляться стрітвіром . Наша основна відмінність від інших магазинів в тому, що ми не співпрацюємо з брендами напряму, а замовляємо речі з великої кількості концепт-сторів по всьому світу. Це дозволяє нам привозити лише ті речі, які ми вважаємо найкращими, найякіснішими та найцікавішими. У зібраній нами колекції ви можете побачити вже класичні, стрітвірні, концептуальні та дизайнерські бренди: Stone Island, Maison Margiela, Off-White, Stussy, Kenzo, A-COLD-WALL , 1017 ALYX 9SM.</p>"
       }
     },
     "659a65bf-3115-47f3-af72-a53dd56039e2": {
@@ -125,11 +130,15 @@
         "template--16809880650043__659a65bf-3115-47f3-af72-a53dd56039e2-1667604434dda13274-0",
         "template--16809880650043__659a65bf-3115-47f3-af72-a53dd56039e2-1667604434dda13274-1"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "max-w-full",
         "section_height": 65,
+        "adopt_to_content": false,
         "layout": "section-dual-tiles--50-50",
+        "reverse_on_mobile": false,
         "gap_between_tiles": 0.2,
+        "gap_between_tiles_mobile": 0.2,
         "spacing_top_desktop": 6,
         "spacing_bottom_desktop": 6,
         "spacing_top_mobile": 6,
@@ -202,11 +211,15 @@
         "template--18086433161531__03a45767-3819-40b4-a750-ab1add481edc-1677165430713b18f7-0",
         "template--18086433161531__03a45767-3819-40b4-a750-ab1add481edc-1677165430713b18f7-1"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "max-w-seminarrow",
         "section_height": 65,
+        "adopt_to_content": false,
         "layout": "section-dual-tiles--50-50",
+        "reverse_on_mobile": false,
         "gap_between_tiles": 3.2,
+        "gap_between_tiles_mobile": 0.2,
         "spacing_top_desktop": 6,
         "spacing_bottom_desktop": 6,
         "spacing_top_mobile": 6,
@@ -239,6 +252,7 @@
         "template--16809880650043__ff1b88c1-7f9a-42ed-a737-5ce178874c08-1667844595b40c7541-0",
         "a10064c1-ac74-4fd8-b3ec-e5e7c8441642"
       ],
+      "disabled": true,
       "settings": {
         "padding_vertical_desktop": "",
         "padding_vertical_mobile": "",
@@ -252,6 +266,7 @@
     },
     "b9e1f375-bbe3-49e0-b449-eff934bd3497": {
       "type": "blog-articles",
+      "disabled": true,
       "settings": {
         "padding_vertical_desktop": "",
         "padding_vertical_mobile": "pt-0-mobile",

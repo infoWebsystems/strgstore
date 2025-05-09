@@ -9,6 +9,190 @@
  */
 {
   "sections": {
+    "full_width_banner_JmjNVD": {
+      "type": "full-width-banner",
+      "blocks": {
+        "buttons_Yhxbqb": {
+          "type": "buttons",
+          "settings": {
+            "first_button_text": "ДЛЯ НЬОГО",
+            "first_button_url": "shopify://collections/men",
+            "first_button_style": "button--outlined-inverse",
+            "first_button_color_scheme_background": "background-colors-default",
+            "second_button_text": "ДЛЯ НЕЇ",
+            "second_button_url": "shopify://collections/women",
+            "second_button_style": "button--outlined-inverse",
+            "second_button_color_scheme_background": "background-colors-default"
+          }
+        }
+      },
+      "block_order": [
+        "buttons_Yhxbqb"
+      ],
+      "name": "t:sections.full-width-banner.name",
+      "settings": {
+        "enable_transparent_header": true,
+        "full_width_banner_height": 100,
+        "full_width_banner_mobile_height": 75,
+        "banner_layout": "section-full-width-banner--full",
+        "spacing_top_desktop": 0,
+        "spacing_bottom_desktop": 6,
+        "spacing_top_mobile": 0,
+        "spacing_bottom_mobile": 6,
+        "color_scheme_text": "text-colors-inverse",
+        "color_scheme_background": "background-colors-accent-2",
+        "video_desktop": "shopify://files/videos/5699564-uhd_3840_2160_24fps.mp4",
+        "video_desktop_external": "",
+        "video_mobile_external": "",
+        "content_position_horizontal": "align-center text-center",
+        "content_position_vertical": "justify-end",
+        "content_padding_top": 9.6,
+        "content_padding_bottom": 9.6,
+        "content_padding_left": 32,
+        "content_padding_right": 32
+      }
+    },
+    "featured_collections_4Y79xc": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_slide_mQ44GH": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "pants",
+            "title": ""
+          }
+        },
+        "collection_slide_mJACy9": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "shoes",
+            "title": ""
+          }
+        },
+        "collection_slide_kYLADz": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "accessories",
+            "title": ""
+          }
+        },
+        "collection_slide_pQHAHy": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "t-shirts",
+            "title": ""
+          }
+        },
+        "collection_slide_MC7Ktq": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "shirts",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_slide_mQ44GH",
+        "collection_slide_mJACy9",
+        "collection_slide_kYLADz",
+        "collection_slide_pQHAHy",
+        "collection_slide_MC7Ktq"
+      ],
+      "name": "t:sections.featured-collections.name",
+      "settings": {
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "layout": "layout-1",
+        "card_style": "compact",
+        "gap_between_desktop": 2,
+        "gap_between_mobile": 2,
+        "color_scheme_text": "color-text-primary",
+        "color_scheme_background": "color-background-inverse",
+        "title": "Категорії",
+        "button_style": "button--outlined",
+        "button_text": "Дивитися всі",
+        "button_url": "shopify://collections"
+      }
+    },
+    "main_list_collections_tBGqWK": {
+      "type": "main-list-collections",
+      "blocks": {
+        "collection_pHYeER": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "pants",
+            "title": ""
+          }
+        },
+        "collection_MBPwwt": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "shoes",
+            "title": ""
+          }
+        },
+        "collection_WdUiDM": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "accessories",
+            "title": ""
+          }
+        },
+        "collection_CiVpKc": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "t-shirts",
+            "title": ""
+          }
+        },
+        "collection_Uk9WJy": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "shirts",
+            "title": ""
+          }
+        },
+        "collection_8RBgGE": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "jewelry",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_pHYeER",
+        "collection_MBPwwt",
+        "collection_WdUiDM",
+        "collection_CiVpKc",
+        "collection_Uk9WJy",
+        "collection_8RBgGE"
+      ],
+      "name": "t:sections.main-list-collections.name",
+      "settings": {
+        "collections_to_show": "selected",
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "card_collection_color_scheme_text": "text-colors-inverse",
+        "card_collection_color_scheme_text_no_image": "text-colors-default",
+        "column_gap_desktop": 0.2,
+        "column_gap_mobile": 0.2,
+        "collections_per_page": 12
+      }
+    },
     "1658995208ad05f95f": {
       "type": "hero-banner",
       "blocks": {
@@ -111,124 +295,15 @@
         "e3867974-072c-4cfe-968e-a10d22e8941a",
         "afab1620-7ab0-4ee7-ae91-4b75e0b0116d"
       ],
+      "disabled": true,
       "settings": {
+        "enable_transparent_header": true,
         "slider_height": 100,
         "slider_autoplay": true,
         "slider_autoplay_interval": 5,
         "slider_arrows": true,
         "slider_arrows_position": "hero__swiper-buttons--sides",
         "slider_arrows_color": "text-colors-inverse"
-      }
-    },
-    "16e24524-2040-41a4-b5ca-3a425d62879b": {
-      "type": "featured-collections",
-      "blocks": {
-        "8e756427-f886-410c-b65a-f8a1f0767ff1": {
-          "type": "collection-slide",
-          "settings": {
-            "color_scheme_text": "text-colors-default",
-            "collection": "",
-            "title": "Featured Collection"
-          }
-        },
-        "0502c0ed-6d29-4e80-9d4d-bef13b8c626f": {
-          "type": "collection-slide",
-          "settings": {
-            "color_scheme_text": "text-colors-default",
-            "collection": "",
-            "title": "Featured Collection"
-          }
-        },
-        "8410b9c7-f0ae-4be3-8e77-8d3411d02273": {
-          "type": "collection-slide",
-          "settings": {
-            "color_scheme_text": "text-colors-default",
-            "collection": "",
-            "title": "Featured Collection"
-          }
-        },
-        "5adebfc1-52ef-42e2-aa14-b28993b2b209": {
-          "type": "collection-slide",
-          "settings": {
-            "color_scheme_text": "text-colors-default",
-            "collection": "",
-            "title": "Featured Collection"
-          }
-        }
-      },
-      "block_order": [
-        "8e756427-f886-410c-b65a-f8a1f0767ff1",
-        "0502c0ed-6d29-4e80-9d4d-bef13b8c626f",
-        "8410b9c7-f0ae-4be3-8e77-8d3411d02273",
-        "5adebfc1-52ef-42e2-aa14-b28993b2b209"
-      ],
-      "settings": {
-        "padding_vertical_desktop": "",
-        "padding_vertical_mobile": "",
-        "layout": "layout-1",
-        "gap_between_desktop": 2,
-        "gap_between_mobile": 2,
-        "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "color-background-inverse",
-        "title": "Our collections",
-        "button_style": "button--outlined",
-        "button_text": "Explore all",
-        "button_url": "shopify://collections"
-      }
-    },
-    "90e984e6-6e27-4581-ad90-2ced240882b7": {
-      "type": "full-width-banner",
-      "blocks": {
-        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-0": {
-          "type": "subtitle",
-          "settings": {
-            "subtitle": "Your Brand Tagline",
-            "subtitle_url": ""
-          }
-        },
-        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-1": {
-          "type": "title",
-          "settings": {
-            "title": "Tell your brand's story through images"
-          }
-        },
-        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-2": {
-          "type": "buttons",
-          "settings": {
-            "first_button_text": "Shop new in",
-            "first_button_url": "shopify://collections",
-            "first_button_style": "button--outlined-inverse",
-            "first_button_color_scheme_background": "background-colors-default",
-            "second_button_text": "Shop all swimwear",
-            "second_button_url": "shopify://collections",
-            "second_button_style": "button--outlined-inverse",
-            "second_button_color_scheme_background": "background-colors-default"
-          }
-        }
-      },
-      "block_order": [
-        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-0",
-        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-1",
-        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-2"
-      ],
-      "settings": {
-        "full_width_banner_height": 70,
-        "full_width_banner_mobile_height": 75,
-        "banner_layout": "section-full-width-banner--full",
-        "spacing_top_desktop": 0,
-        "spacing_bottom_desktop": 0,
-        "spacing_top_mobile": 0,
-        "spacing_bottom_mobile": 0,
-        "color_scheme_text": "text-colors-inverse",
-        "color_scheme_background": "background-colors-default",
-        "video_desktop_external": "",
-        "video_mobile_external": "",
-        "content_position_horizontal": "align-center text-center",
-        "content_position_vertical": "justify-center",
-        "content_padding_top": 9.6,
-        "content_padding_bottom": 9.6,
-        "content_padding_left": 32,
-        "content_padding_right": 32
       }
     },
     "1658994245757c7b20": {
@@ -238,28 +313,107 @@
           "type": "collection",
           "settings": {
             "products": [],
-            "collection": "all-products",
+            "collection": "sale",
             "title": "Collection 1",
+            "max_products": 8,
+            "show_unavailable_products": false
+          }
+        },
+        "collection_JCFDie": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "products": [],
+            "collection": "shoes",
+            "title": "",
             "max_products": 8,
             "show_unavailable_products": false
           }
         }
       },
       "block_order": [
-        "8d8dee3c-2bdb-429e-9a6c-e5af884f102b"
+        "8d8dee3c-2bdb-429e-9a6c-e5af884f102b",
+        "collection_JCFDie"
       ],
       "settings": {
         "padding_vertical_desktop": "",
         "padding_vertical_mobile": "",
-        "layout": "layout-1",
+        "layout": "layout-2",
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default",
-        "title": "Best sellers",
-        "button_text": "View all",
-        "button_url": "shopify://collections",
+        "title": "Нове на сайті",
+        "button_text": "Дивитися всі",
+        "button_url": "shopify://collections/sale",
         "button_style": "button--outlined"
+      }
+    },
+    "featured_collections_nmwrby": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_slide_PVXV7m": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "pants",
+            "title": ""
+          }
+        },
+        "collection_slide_HN3rQk": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "shoes",
+            "title": ""
+          }
+        },
+        "collection_slide_pBgBck": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "accessories",
+            "title": ""
+          }
+        },
+        "collection_slide_L6rgHi": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "t-shirts",
+            "title": ""
+          }
+        },
+        "collection_slide_PD8mtE": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "shirts",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_slide_PVXV7m",
+        "collection_slide_HN3rQk",
+        "collection_slide_pBgBck",
+        "collection_slide_L6rgHi",
+        "collection_slide_PD8mtE"
+      ],
+      "name": "t:sections.featured-collections.name",
+      "settings": {
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "layout": "layout-1",
+        "card_style": "compact",
+        "gap_between_desktop": 2,
+        "gap_between_mobile": 2,
+        "color_scheme_text": "color-text-primary",
+        "color_scheme_background": "color-background-inverse",
+        "title": "Наші бренди",
+        "button_style": "button--outlined",
+        "button_text": "ВСІ 70+ БРЕНДІВ",
+        "button_url": "shopify://collections"
       }
     },
     "shoppable_FgbMfa": {
@@ -422,17 +576,23 @@
         "shoppable_social_item_gmaYrV",
         "shoppable_social_item_wUfVAX"
       ],
+      "disabled": true,
       "settings": {
+        "section_width": "max-w-page",
+        "add_padding": false,
         "padding_vertical_desktop": "",
         "padding_vertical_mobile": "",
         "layout": "tags",
         "grid_items": "4",
         "source_of_slide": "manual",
         "show_dots": true,
+        "button_label": "Shop The Look",
         "social_username": "Sahara",
         "social_url": "",
         "header_title": "Shoppable",
+        "follow_button_label": "Follow Us",
         "header_layout": "compact",
+        "color_scheme_text": "text-colors-default",
         "header_background_color": "color-background-accent-1",
         "product_image_ratio": "original"
       }
@@ -503,10 +663,13 @@
         "template--18086433161531__03a45767-3819-40b4-a750-ab1add481edc-1677165430713b18f7-1",
         "template--18086433161531__03a45767-3819-40b4-a750-ab1add481edc-1677165430713b18f7-0"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "max-w-page",
         "section_height": 65,
+        "adopt_to_content": false,
         "layout": "section-dual-tiles--50-50",
+        "reverse_on_mobile": false,
         "gap_between_tiles": 3.2,
         "gap_between_tiles_mobile": 0.2,
         "spacing_top_desktop": 6,
@@ -581,10 +744,13 @@
         "6aff3319-b9d8-4c04-8dac-7acde3f162fd",
         "780a4c93-0ce5-420e-89b4-e8cdc8f704bc"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "max-w-page",
         "section_height": 65,
+        "adopt_to_content": false,
         "layout": "section-dual-tiles--50-50",
+        "reverse_on_mobile": false,
         "gap_between_tiles": 3.2,
         "gap_between_tiles_mobile": 0.2,
         "spacing_top_desktop": 6,
@@ -619,6 +785,7 @@
         "template--16809880650043__ff1b88c1-7f9a-42ed-a737-5ce178874c08-1667844595b40c7541-0",
         "e7c7b6cf-a68b-409a-b328-07dd47892940"
       ],
+      "disabled": true,
       "settings": {
         "padding_vertical_desktop": "",
         "padding_vertical_mobile": "",
@@ -645,6 +812,60 @@
         "button_style": "button--outlined",
         "button_text": "Visit Blog",
         "blog": ""
+      }
+    },
+    "marquees_RDc6Uw": {
+      "type": "marquees",
+      "blocks": {
+        "item_jYdVfA": {
+          "type": "item",
+          "settings": {
+            "icon_svg_code": "",
+            "title": "Store Specification 1",
+            "link": ""
+          }
+        },
+        "item_kQmFhC": {
+          "type": "item",
+          "settings": {
+            "icon_svg_code": "",
+            "title": "Store Specification 2",
+            "link": ""
+          }
+        },
+        "item_HHKp7G": {
+          "type": "item",
+          "settings": {
+            "icon_svg_code": "",
+            "title": "Store Specification 3",
+            "link": ""
+          }
+        },
+        "item_yiepVg": {
+          "type": "item",
+          "settings": {
+            "icon_svg_code": "",
+            "title": "Store Specification 4",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_jYdVfA",
+        "item_kQmFhC",
+        "item_HHKp7G",
+        "item_yiepVg"
+      ],
+      "disabled": true,
+      "name": "t:sections.marquees.name",
+      "settings": {
+        "enable_animation": true,
+        "marquee_duration_rate": 5,
+        "marquee_font_size": 1,
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-accent-2",
+        "padding_vertical_desktop": "mt-1-desktop mb-1-desktop",
+        "padding_vertical_mobile": "mt-1-mobile mb-1-mobile"
       }
     },
     "90f0172d-db82-4963-95c4-6a1724783cd8": {
@@ -695,6 +916,7 @@
         "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-0",
         "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-2"
       ],
+      "disabled": true,
       "settings": {
         "slider_mobile": true,
         "layout": "layout-1",
@@ -702,9 +924,83 @@
         "padding_vertical_mobile": "pt-0-mobile pb-0-mobile"
       }
     },
-    "c6900f23-1eaa-4fc2-a4c6-bf9ef3cfc2ca": {
-      "type": "hero-banner",
+    "seo_content_Mnw3La": {
+      "type": "seo-content",
+      "name": "t:sections.seo-content.name",
       "settings": {
+        "layout": "full",
+        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
+        "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
+        "color_scheme_text": "text-colors-secondary",
+        "color_scheme_background": "background-colors-accent-1",
+        "text_size": 1,
+        "title": "Магазин стильного одягу STORAGE store",
+        "content": "<p>Кожен із нас хоче виглядати стильно та красиво. Як не крути, а зустрічають таки «по одягу». Саме тому багато людей віддають перевагу одягу та взуттю відомих марок, оскільки ці елементи гардеробу не тільки максимально повно відображають світовідчуття людини, а й дозволяють найбільш точно формувати імідж, що відповідає соціальному статусу. Звернувшись до магазину одягуSTORAGEStore, покупці отримують можливість найширшого вибору якісних товарів.</p><h3><br/>Асортимент та бренди</h3><p>Інтернет-магазин STORAGE Store готовий запропонувати клієнтам жіночий та чоловічий одяг всесвітньо відомих марок. Так, здійснюється співпраця із постачальниками брендів Adidas, Dr. Martens, Gucci, Nike, Burberry, Calvin Klein, Vans та багатьма іншими.<br/>Каталог брендового магазину розділений на дві великі групи – «Для неї» та «Для нього». У свою чергу, кожна група поділяється на категорії: Одяг, Аксесуари, Взуття, Новинки та Sale (спеціальні пропозиції). Наприклад, серед жіночого одягу та взуття можна знайти такі товарні позиції: Худі та світшоти; Футболки та лонгсліви; Кеди та кросівки; Штани; Куртки та пуховики; Купальники; Шорти та інші.</p><p></p><p>Задіявши зручну систему фільтрів, ви зможете легко підібрати потрібну продукцію за розміром, брендом або ціною. Більш того, за допомогою наявного механізму сортування забезпечується ранжування товарів у видачі за каталогом за назвою в алфавітному порядку, вартості (зменшення або зростання) та новизною.</p>"
+      }
+    },
+    "hero_alt_wyzktJ": {
+      "type": "hero-alt",
+      "blocks": {
+        "text_8C8tgH": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Highlight your promotion",
+            "title": "Highlight an image",
+            "content": "<p>Add text to describe your promotion.</p>",
+            "button_style": "button--filled",
+            "button_text": "View more",
+            "button_url": "/",
+            "button_separator": false
+          }
+        }
+      },
+      "block_order": [
+        "text_8C8tgH"
+      ],
+      "disabled": true,
+      "name": "t:sections.hero-alt.name",
+      "settings": {
+        "hero_alt_banner_height": 50,
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-accent-2"
+      }
+    },
+    "hero_banner_WpEhUV": {
+      "type": "hero-banner",
+      "blocks": {
+        "slide_ahNN9G": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme_text": "text-colors-inverse",
+            "color_scheme_background": "background-colors-accent-2",
+            "header_menu_text_color": "#ffffff",
+            "video_external": "",
+            "enable_media_overlay_desktop": true,
+            "video_external_mobile": "",
+            "enable_media_overlay_mobile": true,
+            "content_position_horizontal": "align-center text-center",
+            "content_position_vertical": "justify-end",
+            "subtitle": "Highlight your promotion",
+            "subtitle_url": "",
+            "title": "Highlight an image banner",
+            "content": "",
+            "enable_vertical_line": false,
+            "button_style": "button--filled",
+            "button_text": "View more",
+            "button_url": "/"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ahNN9G"
+      ],
+      "disabled": true,
+      "name": "t:sections.hero-banner.name",
+      "settings": {
+        "enable_transparent_header": true,
         "slider_height": 100,
         "slider_autoplay": false,
         "slider_autoplay_interval": 6,
@@ -712,19 +1008,203 @@
         "slider_arrows_position": "hero__swiper-buttons--sides",
         "slider_arrows_color": "text-colors-inverse"
       }
+    },
+    "dual_tiles_Mgq4jy": {
+      "type": "dual-tiles",
+      "blocks": {
+        "tile_gajDrH": {
+          "type": "tile",
+          "settings": {
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-accent-2",
+            "video_desktop_external": "",
+            "video_desktop_aspect_ratio": "16/9",
+            "placeholder_svg_code": "",
+            "video_mobile_external": "",
+            "video_mobile_aspect_ratio": "16/9",
+            "video_mobile_compact": false,
+            "content_position_horizontal": "text-left align-start",
+            "content_position_vertical": "justify-center",
+            "title": "Чому брендові речі такі популярні?",
+            "text_size": 1,
+            "content": "<p>Насамперед, звичайно, попит на брендовий чоловічий чи жіночий одяг обумовлюється прагненням людей створити власний унікальний та неповторний «стайл». При цьому людина може як слідувати поточним фешн-трендам, так і формувати оригінальний «бунтарський» образ. Втім, популярність такої продукції забезпечується не лише споживчою філософією, а й багатьма виключно практичними факторами.Само собою, необхідно говорити про гранично можливу якість матеріалів. При створенні колекцій майже завжди залучаються дизайнери, нерідко зі світовим ім'ям. Виконується скрупульозний підбір тканин та інших матеріалів, будь то хутро, шкіра, шерсть або кашемір. Особлива увага приділяється натуральності та екологічності – у рамках сучасних тенденцій.Цілком очевидно, що якість породжує довговічність. Багато брендових речей можна носити кілька сезонів. Ці предмети гардеробу довго не зношуються, спокійно переносять численні прання, не втрачають форми та кольори, відрізняються продуманою фурнітурою.</p>",
+            "button_style": "button--filled",
+            "button_separator": false,
+            "button_text": "",
+            "button_url": "",
+            "content_layout": "content--absolute",
+            "block_margin_left": 0,
+            "block_margin_right": 0,
+            "block_padding_top": 0,
+            "block_padding_bottom": 0,
+            "block_padding_left": 0,
+            "block_padding_right": 0
+          }
+        },
+        "tile_FL7f6T": {
+          "type": "tile",
+          "settings": {
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-accent-2",
+            "video_desktop_external": "",
+            "video_desktop_aspect_ratio": "16/9",
+            "placeholder_svg_code": "",
+            "video_mobile_external": "",
+            "video_mobile_aspect_ratio": "16/9",
+            "video_mobile_compact": false,
+            "content_position_horizontal": "text-left align-start",
+            "content_position_vertical": "justify-center",
+            "title": "",
+            "text_size": 1,
+            "content": "<p>По суті, купівлю одягу чи взуття відомої марки можна назвати довгостроковою інвестицією у особистий імідж.<br/>Продуманість конструкцій та майстерність крою – ось фактори, завдяки яким брендовий одяг завжди характеризується цілим рядом серйозних переваг. Продукція відрізняється зручністю, ідеальною посадкою, практичністю. Ще один важливий атрибут – здатність приховувати недоліки та підкреслювати переваги фігури.<br/>Обравши магазин одягу STORAGE Store, ви робите ставку не лише на ексклюзивність, а й на гарний смак. При цьому, зовсім не важливо, де ви будете перебувати у брендових речах – на вулиці чи в гостях, в офісі чи на виїзній зустрічі з діловими партнерами, у ресторані чи кіно. Скрізь оточуючі зможуть повною мірою оцінити ваш статус, становище і прагнення прекрасного.<br/>Тепер найцікавіше. Ваша потреба формувати власний вигляд за допомогою речей відомих марок зовсім не означає, що доведеться витрачати щоразу цілий статок. Зовсім ні! Так, модні бренди коштуватимуть дорожче, ніж одяг та взуття з ринку, але співвідношення «Ціна-якість» таких речей, перебуває в ідеальному балансі.</p>",
+            "button_style": "button--filled",
+            "button_separator": false,
+            "button_text": "",
+            "button_url": "",
+            "content_layout": "content--relative",
+            "block_margin_left": 0,
+            "block_margin_right": 0,
+            "block_padding_top": 0,
+            "block_padding_bottom": 0,
+            "block_padding_left": 0,
+            "block_padding_right": 0
+          }
+        }
+      },
+      "block_order": [
+        "tile_gajDrH",
+        "tile_FL7f6T"
+      ],
+      "name": "t:sections.dual-tiles.name",
+      "settings": {
+        "section_width": "max-w-full",
+        "section_height": 40,
+        "adopt_to_content": true,
+        "layout": "section-dual-tiles--50-50",
+        "reverse_on_mobile": false,
+        "gap_between_tiles": 0,
+        "gap_between_tiles_mobile": 0,
+        "spacing_top_desktop": 0,
+        "spacing_bottom_desktop": 0,
+        "spacing_top_mobile": 0,
+        "spacing_bottom_mobile": 0
+      }
+    },
+    "dual_tiles_V3yTFa": {
+      "type": "dual-tiles",
+      "blocks": {
+        "tile_bdfMDB": {
+          "type": "tile",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "color_scheme_background": "background-colors-secondary",
+            "video_desktop_external": "",
+            "video_desktop_aspect_ratio": "16/9",
+            "placeholder_svg_code": "",
+            "video_mobile_external": "",
+            "video_mobile_aspect_ratio": "16/9",
+            "video_mobile_compact": false,
+            "content_position_horizontal": "text-left align-start",
+            "content_position_vertical": "justify-center",
+            "title": "Основні переваги STRG Store",
+            "text_size": 1,
+            "content": "<p>Розпочавши роботу в 2017 році, брендовий магазин STORAGE Store продовжує створення партнерської мережі постачальників по всьому світу. При цьому закупівлі здійснюються в концепт-сторах Великобританії та Німеччини, Швеції та Фінляндії, Італії та Франції, США та Канади. Ідея полягає в тому, щоб дати вам кращі, якісні та цікаві речі в категоріях класичного, стритвирного, концептуального та дизайнерського одягу та взуття.</p><p></p><p>Розпочавши роботу в 2017 році, брендовий магазин STORAGE Store продовжує створення партнерської мережі постачальників по всьому світу. При цьому закупівлі здійснюються в концепт-сторах Великобританії та Німеччини, Швеції та Фінляндії, Італії та Франції, США та Канади. Ідея полягає в тому, щоб дати вам кращі, якісні та цікаві речі в категоріях класичного, стритвирного, концептуального та дизайнерського одягу та взуття.На окрему увагу заслуговує структура доставки товарів. Багато позицій є в наявності, що забезпечує максимальну швидкість прибуття замовлення клієнтів – відправлення виконується в термін не більше 2-х робочих днів.</p>",
+            "button_style": "button--filled",
+            "button_separator": false,
+            "button_text": "",
+            "button_url": "",
+            "content_layout": "content--absolute",
+            "block_margin_left": 0,
+            "block_margin_right": 0,
+            "block_padding_top": 0,
+            "block_padding_bottom": 0,
+            "block_padding_left": 0,
+            "block_padding_right": 0
+          }
+        },
+        "tile_8Y98AJ": {
+          "type": "tile",
+          "settings": {
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-default",
+            "video_desktop_external": "",
+            "video_desktop_aspect_ratio": "16/9",
+            "placeholder_svg_code": "",
+            "video_mobile_external": "",
+            "video_mobile_aspect_ratio": "16/9",
+            "video_mobile_compact": false,
+            "content_position_horizontal": "text-left align-start",
+            "content_position_vertical": "justify-center",
+            "title": "",
+            "text_size": 1,
+            "content": "<p>Більше того, існує можливість привезення на замовлення. Якщо у вас є спеціальні побажання, ми завжди готові піти назустріч, розглянувши їх у короткі терміни. Нарешті, здійснюється навіть міжнародна доставка в будь-яку країну.<br/>Команда нашого магазину пишається тим, що не тільки займається продажем брендового жіночого та чоловічого одягу, а й бере активну участь у благодійності та значущих соціальних проектах. На регулярній основі частина прибутків перераховується до різних фондів, оскільки ми відчуваємо та розуміємо громадянську відповідальність свого бізнесу.</p>",
+            "button_style": "button--filled",
+            "button_separator": false,
+            "button_text": "",
+            "button_url": "",
+            "content_layout": "content--relative",
+            "block_margin_left": 0,
+            "block_margin_right": 0,
+            "block_padding_top": 0,
+            "block_padding_bottom": 0,
+            "block_padding_left": 0,
+            "block_padding_right": 0
+          }
+        }
+      },
+      "block_order": [
+        "tile_bdfMDB",
+        "tile_8Y98AJ"
+      ],
+      "name": "t:sections.dual-tiles.name",
+      "settings": {
+        "section_width": "max-w-full",
+        "section_height": 40,
+        "adopt_to_content": true,
+        "layout": "section-dual-tiles--70-30",
+        "reverse_on_mobile": false,
+        "gap_between_tiles": 0,
+        "gap_between_tiles_mobile": 0,
+        "spacing_top_desktop": 0,
+        "spacing_bottom_desktop": 0,
+        "spacing_top_mobile": 0,
+        "spacing_bottom_mobile": 0
+      }
+    },
+    "seo_content_w6mhWw": {
+      "type": "seo-content",
+      "name": "t:sections.seo-content.name",
+      "settings": {
+        "layout": "full",
+        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
+        "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-inverse",
+        "text_size": 1,
+        "title": "",
+        "content": "<p>Ви готові до перетворення? Тоді зробіть своє перше замовлення у STORAGE Store <br/>прямо зараз!</p>"
+      }
     }
   },
   "order": [
+    "full_width_banner_JmjNVD",
+    "featured_collections_4Y79xc",
+    "main_list_collections_tBGqWK",
     "1658995208ad05f95f",
-    "16e24524-2040-41a4-b5ca-3a425d62879b",
-    "90e984e6-6e27-4581-ad90-2ced240882b7",
     "1658994245757c7b20",
+    "featured_collections_nmwrby",
     "shoppable_FgbMfa",
     "03a45767-3819-40b4-a750-ab1add481edc",
     "e9da00ce-591a-4a18-a2ed-a2aa55641e3d",
     "ff1b88c1-7f9a-42ed-a737-5ce178874c08",
     "b9e1f375-bbe3-49e0-b449-eff934bd3497",
+    "marquees_RDc6Uw",
     "90f0172d-db82-4963-95c4-6a1724783cd8",
-    "c6900f23-1eaa-4fc2-a4c6-bf9ef3cfc2ca"
+    "seo_content_Mnw3La",
+    "hero_alt_wyzktJ",
+    "hero_banner_WpEhUV",
+    "dual_tiles_Mgq4jy",
+    "dual_tiles_V3yTFa",
+    "seo_content_w6mhWw"
   ]
 }
