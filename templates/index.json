@@ -188,7 +188,7 @@
         "slider_arrows": true,
         "slider_arrows_position": "hero__swiper-buttons--sides",
         "slider_arrows_color": "text-colors-inverse",
-        "padding_vertical_desktop": "pb-0-desktop",
+        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
         "padding_vertical_mobile": "",
         "layout": "layout-1",
         "gap_between_desktop": 2,
