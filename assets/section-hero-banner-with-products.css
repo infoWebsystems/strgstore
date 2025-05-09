@@ -1,0 +1,6 @@
+.hero-banner-with-products-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
+}
