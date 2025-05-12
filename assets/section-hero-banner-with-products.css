@@ -11,3 +11,7 @@
   flex-wrap: wrap;
   gap: 6px;
 }
+
+.hero-banner-with-products-buttons .button {
+  min-width: 250px;
+}
