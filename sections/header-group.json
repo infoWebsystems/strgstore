@@ -97,7 +97,7 @@
       "settings": {
         "fullwidth": true,
         "sticky": false,
-        "color_scheme_background": "background-colors-default",
+        "color_scheme_background": "background-colors-accent-2",
         "color_scheme_text": "text-colors-default",
         "layout": "header--nav-centered",
         "transparent_header_on_scroll": true,
