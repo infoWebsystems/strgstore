@@ -239,7 +239,7 @@
       "settings": {
         "padding_vertical_desktop": "",
         "padding_vertical_mobile": "",
-        "layout": "layout-1",
+        "layout": "layout-2",
         "card_style": "compact",
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
@@ -311,6 +311,7 @@
         "collection_Uk9WJy",
         "collection_8RBgGE"
       ],
+      "disabled": true,
       "name": "t:sections.main-list-collections.name",
       "settings": {
         "collections_to_show": "selected",
@@ -477,7 +478,7 @@
         "color_scheme_background": "background-colors-default",
         "title": "Нове на сайті",
         "button_text": "Дивитися всі",
-        "button_url": "shopify://collections/sale",
+        "button_url": "shopify://collections/нові-надходження-1",
         "button_style": "button--outlined"
       }
     },
@@ -536,7 +537,7 @@
       "settings": {
         "padding_vertical_desktop": "",
         "padding_vertical_mobile": "",
-        "layout": "layout-1",
+        "layout": "layout-2",
         "card_style": "compact",
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
