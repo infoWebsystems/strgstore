@@ -138,6 +138,7 @@
       "blocks": {
         "fec25a48-cc42-4f7d-bbf5-215567a945e9": {
           "type": "popup-drawer",
+          "disabled": true,
           "settings": {
             "button_text": "Опис",
             "button_type": "collapsible",
