@@ -176,7 +176,7 @@
         "gap_between_mobile": 2,
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-accent-1",
-        "title": "Вам може сподобатися",
+        "title": "Вам можуть сподобатись",
         "products": [],
         "max_products": 8,
         "show_unavailable_products": false
@@ -184,6 +184,7 @@
     },
     "recently_viewed": {
       "type": "recently-viewed-products",
+      "disabled": true,
       "settings": {
         "padding_vertical_desktop": "pt-0-desktop",
         "padding_vertical_mobile": "pt-0-mobile",
