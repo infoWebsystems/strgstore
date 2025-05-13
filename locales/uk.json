@@ -325,7 +325,7 @@
     "product": {
       "title": "Назва продукту",
       "add_to_cart": "Додати до кошика",
-      "sold_out": "Розпродано",
+      "sold_out": "",
       "unavailable": "Недоступно",
       "from_price_per": "від {{ price }}/шт",
       "quantity": {
@@ -353,7 +353,7 @@
       },
       "show_full_product": "Переглянути повний продукт",
       "badges": {
-        "sold_out": "Розпродано",
+        "sold_out": "",
         "unavailable": "Недоступно",
         "new": "Новинка",
         "sale": "Знижка"
