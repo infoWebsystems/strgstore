@@ -167,7 +167,7 @@
       "total": "Разом",
       "order_subtotal": "Підсумок",
       "order_total": "Загальна сума",
-      "discount": "Знижка",
+      "discount": "Sale",
       "shipping": "Доставка",
       "tax": "Податок",
       "total_duties": "Мита",
@@ -343,7 +343,7 @@
         "sale_price": "Ціна зі знижкою",
         "unit_price": "Ціна за одиницю",
         "subscription": "Підписка",
-        "sale_badge": "Знижка"
+        "sale_badge": "Sale"
       },
       "tabs": {
         "description": "Опис",
@@ -356,7 +356,7 @@
         "sold_out": "",
         "unavailable": "Недоступно",
         "new": "Новинка",
-        "sale": "Знижка"
+        "sale": "Sale"
       },
       "media": {
         "open_media": "Відкрити медіа {{ index }} в модальному вікні"
