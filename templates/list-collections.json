@@ -76,6 +76,19 @@
     },
     "main": {
       "type": "main-list-collections",
+      "blocks": {
+        "collection_bkn63e": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "women",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_bkn63e"
+      ],
       "settings": {
         "collections_to_show": "all",
         "padding_vertical_desktop": "",
@@ -137,6 +150,7 @@
         "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-1",
         "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-2"
       ],
+      "disabled": true,
       "settings": {
         "slider_mobile": true,
         "layout": "layout-1",
