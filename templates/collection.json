@@ -15,7 +15,7 @@
         "enable_transparent_header": true,
         "section_height": 40,
         "banner_layout": "banner--full",
-        "color_scheme_text": "text-colors-inverse",
+        "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-accent-2"
       }
     },
