@@ -45,7 +45,7 @@
         "enable_products_count": true,
         "enable_sorting": true,
         "enable_filters": true,
-        "filters_style": "sidebar",
+        "filters_style": "drawer",
         "sidebar_navigation": "",
         "column_gap_desktop": 0.2,
         "column_gap_mobile": 0.2,
