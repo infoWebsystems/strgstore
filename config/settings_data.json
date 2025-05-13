@@ -21,7 +21,7 @@
     "color_text_primary": "#111111",
     "color_text_secondary": "#CD9B77",
     "color_text_inverse": "#FFFFFF",
-    "color_background_body": "#FFFFFF",
+    "color_background_body": "#f4f4f4",
     "color_background_accent_1": "#f4f4f4",
     "color_background_accent_2": "#f4f4f4",
     "color_background_primary": "#000000",

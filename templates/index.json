@@ -56,6 +56,35 @@
     "hero_banner_with_products_gr63ax": {
       "type": "hero-banner-with-products",
       "blocks": {
+        "slide_TXKcY6": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme_text": "text-colors-inverse",
+            "color_scheme_background": "background-colors-accent-2",
+            "header_menu_text_color": "#ffffff",
+            "image": "shopify://shop_images/shoe-care-step-1.webp",
+            "video_external": "",
+            "enable_media_overlay_desktop": false,
+            "video_external_mobile": "",
+            "enable_media_overlay_mobile": false,
+            "content_position_horizontal": "align-center text-center",
+            "content_position_vertical": "justify-end",
+            "subtitle": "",
+            "subtitle_url": "",
+            "block_title": "Highlight an image banner",
+            "content": "<p>1</p>",
+            "enable_vertical_line": false,
+            "button_style": "button--filled",
+            "button_text": "",
+            "button_url": "",
+            "products": [],
+            "collection": "sale",
+            "title": "Collection 1",
+            "max_products": 8,
+            "show_unavailable_products": false
+          }
+        },
         "slide_gFmbEP": {
           "type": "slide",
           "settings": {
@@ -83,35 +112,6 @@
             "products": [],
             "collection": "test-collection",
             "title": "Collection 2",
-            "max_products": 8,
-            "show_unavailable_products": false
-          }
-        },
-        "slide_TXKcY6": {
-          "type": "slide",
-          "settings": {
-            "banner_layout": "hero-banner--full",
-            "color_scheme_text": "text-colors-inverse",
-            "color_scheme_background": "background-colors-accent-2",
-            "header_menu_text_color": "#ffffff",
-            "image": "shopify://shop_images/shoe-care-step-1.webp",
-            "video_external": "",
-            "enable_media_overlay_desktop": false,
-            "video_external_mobile": "",
-            "enable_media_overlay_mobile": false,
-            "content_position_horizontal": "align-center text-center",
-            "content_position_vertical": "justify-end",
-            "subtitle": "",
-            "subtitle_url": "",
-            "block_title": "Highlight an image banner",
-            "content": "<p>1</p>",
-            "enable_vertical_line": false,
-            "button_style": "button--filled",
-            "button_text": "",
-            "button_url": "",
-            "products": [],
-            "collection": "sale",
-            "title": "Collection 1",
             "max_products": 8,
             "show_unavailable_products": false
           }
@@ -144,42 +144,12 @@
             "max_products": 8,
             "show_unavailable_products": false
           }
-        },
-        "slide_MRhPnj": {
-          "type": "slide",
-          "settings": {
-            "banner_layout": "hero-banner--full",
-            "color_scheme_text": "text-colors-inverse",
-            "color_scheme_background": "background-colors-accent-2",
-            "header_menu_text_color": "#ffffff",
-            "image": "shopify://shop_images/frame_1.webp",
-            "video_external": "",
-            "enable_media_overlay_desktop": false,
-            "video_external_mobile": "",
-            "enable_media_overlay_mobile": false,
-            "content_position_horizontal": "align-center text-center",
-            "content_position_vertical": "justify-end",
-            "subtitle": "",
-            "subtitle_url": "",
-            "block_title": "Highlight an image banner",
-            "content": "<p>4</p>",
-            "enable_vertical_line": false,
-            "button_style": "button--filled",
-            "button_text": "",
-            "button_url": "",
-            "products": [],
-            "collection": "test-collection",
-            "title": "Collection 4",
-            "max_products": 8,
-            "show_unavailable_products": false
-          }
         }
       },
       "block_order": [
-        "slide_gFmbEP",
         "slide_TXKcY6",
-        "slide_TQr7GL",
-        "slide_MRhPnj"
+        "slide_gFmbEP",
+        "slide_TQr7GL"
       ],
       "name": "Hero Banner With Products",
       "settings": {
@@ -216,7 +186,8 @@
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "pants",
+            "collection": "верхній-одяг",
+            "image": "shopify://shop_images/storage-8142.jpg",
             "title": ""
           }
         },
@@ -224,7 +195,8 @@
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "shoes",
+            "collection": "кросівки-1",
+            "image": "shopify://shop_images/storage-7939.jpg",
             "title": ""
           }
         },
@@ -232,7 +204,8 @@
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "accessories",
+            "collection": "jewelry",
+            "image": "shopify://shop_images/storage-8008.jpg",
             "title": ""
           }
         },
@@ -240,15 +213,17 @@
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "t-shirts",
-            "title": ""
+            "collection": "футболки-та-лонгсліви",
+            "image": "shopify://shop_images/storage-8115.jpg",
+            "title": "Футболки"
           }
         },
         "collection_slide_MC7Ktq": {
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "shirts",
+            "collection": "худі-та-світшоти-1",
+            "image": "shopify://shop_images/storage-8064.jpg",
             "title": ""
           }
         }
@@ -269,7 +244,7 @@
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
         "color_scheme_text": "color-text-primary",
-        "color_scheme_background": "color-background-inverse",
+        "color_scheme_background": "color-background-accent-1",
         "title": "Категорії",
         "button_style": "button--outlined",
         "button_text": "Дивитися всі",
@@ -566,7 +541,7 @@
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
         "color_scheme_text": "color-text-primary",
-        "color_scheme_background": "color-background-inverse",
+        "color_scheme_background": "color-background-accent-1",
         "title": "Наші бренди",
         "button_style": "button--outlined",
         "button_text": "ВСІ 70+ БРЕНДІВ",
@@ -1336,7 +1311,7 @@
         "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
         "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
         "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-inverse",
+        "color_scheme_background": "background-colors-accent-1",
         "text_size": 1,
         "title": "",
         "content": "<p>Ви готові до перетворення? Тоді зробіть своє перше замовлення у STORAGE Store <br/>прямо зараз!</p>"
