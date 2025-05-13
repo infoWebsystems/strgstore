@@ -531,6 +531,13 @@
         "date_descending": "По даті, від нових до старих",
         "manual": "Новинки"
       }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "Є в наявності"
+        }
+      }
     }
   }
 }
