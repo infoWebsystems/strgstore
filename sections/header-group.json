@@ -85,10 +85,9 @@
         "cee0c4f6-5546-43a3-bfc3-2f3afa36d9d5",
         "5e0cad2e-d931-416e-ac29-51a4a683ade2"
       ],
-      "disabled": true,
       "settings": {
-        "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-accent-1",
+        "color_scheme_text": "text-colors-inverse",
+        "color_scheme_background": "background-colors-secondary",
         "slider_autoplay_interval": 5
       }
     },
@@ -97,7 +96,7 @@
       "settings": {
         "fullwidth": true,
         "sticky": false,
-        "color_scheme_background": "background-colors-accent-2",
+        "color_scheme_background": "background-colors-accent-1",
         "color_scheme_text": "text-colors-inverse",
         "layout": "header--nav-centered",
         "transparent_header_on_scroll": true,
