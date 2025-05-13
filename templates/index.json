@@ -56,6 +56,37 @@
     "hero_banner_with_products_gr63ax": {
       "type": "hero-banner-with-products",
       "blocks": {
+        "slide_gFmbEP": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme_text": "text-colors-inverse",
+            "color_scheme_background": "background-colors-accent-2",
+            "header_menu_text_color": "#ffffff",
+            "image": "shopify://shop_images/frame_1.webp",
+            "video": "shopify://files/videos/site_4.webm",
+            "video_external": "",
+            "enable_media_overlay_desktop": false,
+            "video_mobile": "shopify://files/videos/vertical_site.webm",
+            "video_external_mobile": "",
+            "enable_media_overlay_mobile": false,
+            "content_position_horizontal": "align-center text-center",
+            "content_position_vertical": "justify-end",
+            "subtitle": "",
+            "subtitle_url": "",
+            "block_title": "",
+            "content": "",
+            "enable_vertical_line": false,
+            "button_style": "button--filled",
+            "button_text": "",
+            "button_url": "",
+            "products": [],
+            "collection": "test-collection",
+            "title": "Collection 2",
+            "max_products": 8,
+            "show_unavailable_products": false
+          }
+        },
         "slide_TXKcY6": {
           "type": "slide",
           "settings": {
@@ -81,37 +112,6 @@
             "products": [],
             "collection": "sale",
             "title": "Collection 1",
-            "max_products": 8,
-            "show_unavailable_products": false
-          }
-        },
-        "slide_gFmbEP": {
-          "type": "slide",
-          "settings": {
-            "banner_layout": "hero-banner--full",
-            "color_scheme_text": "text-colors-inverse",
-            "color_scheme_background": "background-colors-accent-2",
-            "header_menu_text_color": "#ffffff",
-            "image": "shopify://shop_images/frame_1.webp",
-            "video": "shopify://files/videos/site_4.webm",
-            "video_external": "",
-            "enable_media_overlay_desktop": false,
-            "video_mobile": "shopify://files/videos/vertical_site.webm",
-            "video_external_mobile": "",
-            "enable_media_overlay_mobile": false,
-            "content_position_horizontal": "align-center text-center",
-            "content_position_vertical": "justify-end",
-            "subtitle": "",
-            "subtitle_url": "",
-            "block_title": "Highlight an image banner",
-            "content": "<p>2</p>",
-            "enable_vertical_line": false,
-            "button_style": "button--filled",
-            "button_text": "",
-            "button_url": "",
-            "products": [],
-            "collection": "test-collection",
-            "title": "Collection 2",
             "max_products": 8,
             "show_unavailable_products": false
           }
@@ -147,8 +147,8 @@
         }
       },
       "block_order": [
-        "slide_TXKcY6",
         "slide_gFmbEP",
+        "slide_TXKcY6",
         "slide_TQr7GL"
       ],
       "name": "Hero Banner With Products",
