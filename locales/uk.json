@@ -518,5 +518,18 @@
   "actions": {
     "read_less": "Читати менше",
     "read_more": "Читати далі"
+  },
+  "shopify": {
+    "collections": {
+      "sorting": {
+        "best_selling": "Бестселери",
+        "az": "По назві, від А до Я",
+        "za": "По назві, від Я до А",
+        "price_ascending": "Ціна, від низьої до високої",
+        "price_descending": "Ціна, від високої до низької",
+        "date_ascending": "По даті, від старих до нових",
+        "date_descending": "По даті, від нових до старих"
+      }
+    }
   }
 }
