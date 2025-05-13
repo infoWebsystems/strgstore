@@ -76,6 +76,7 @@
         },
         "e6d841d6-2f71-40b3-956a-912df13f9f6e": {
           "type": "inventory_notice",
+          "disabled": true,
           "settings": {
             "inventory_threshold": 15,
             "notice_just_text": true
@@ -83,14 +84,16 @@
         },
         "b2dabe12-2158-4ba6-bc54-9baae453acf5": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "Free delivery and shipping",
+            "text": "",
             "text_style": "body",
             "link_to_resource": "none"
           }
         },
         "1ad0121e-439d-45c0-b45d-4f080836ade5": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Secure online payment",
             "text_style": "body",
@@ -189,7 +192,7 @@
         "gap_between_mobile": 2,
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-accent-1",
-        "title": "Recently viewed",
+        "title": "Нещодавно переглянуті",
         "button_text": "",
         "button_url": "",
         "button_style": "button--filled",
