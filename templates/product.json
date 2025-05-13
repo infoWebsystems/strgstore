@@ -116,8 +116,8 @@
         "7be6b89c-da83-4ff2-9b85-44fb28cbfa27"
       ],
       "settings": {
-        "section_width": "container-fluid",
-        "product_media_layout": "product__media-layout--partial",
+        "section_width": "container",
+        "product_media_layout": "product__media-layout--full",
         "slides_with_thumbs": "none",
         "product_media_object_fit": "cover",
         "thumb_media_object_fit": "contain",
@@ -140,7 +140,7 @@
         "fec25a48-cc42-4f7d-bbf5-215567a945e9": {
           "type": "popup-drawer",
           "settings": {
-            "button_text": "Description",
+            "button_text": "Опис",
             "button_type": "collapsible",
             "button_url": "shopify://products/birdie-bottoms-nero",
             "drawer_richtext": "<p>[description]</p>",
