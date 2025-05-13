@@ -98,7 +98,7 @@
         "fullwidth": true,
         "sticky": false,
         "color_scheme_background": "background-colors-default",
-        "color_scheme_text": "text-colors-inverse",
+        "color_scheme_text": "text-colors-default",
         "layout": "header--nav-centered",
         "transparent_header_on_scroll": true,
         "transparent_header_bottom_border": false,
