@@ -118,7 +118,7 @@
       "settings": {
         "section_width": "container",
         "product_media_layout": "product__media-layout--full",
-        "slides_with_thumbs": "none",
+        "slides_with_thumbs": "desktop_and_mobile",
         "product_media_object_fit": "cover",
         "thumb_media_object_fit": "contain",
         "media_aspect_ratio": "default",
@@ -146,43 +146,10 @@
             "drawer_richtext": "<p>[description]</p>",
             "drawer_page": ""
           }
-        },
-        "4f41f466-653b-4675-91c2-051a7830a3cc": {
-          "type": "popup-drawer",
-          "settings": {
-            "button_text": "Delivery & Returns",
-            "button_type": "collapsible",
-            "button_url": "",
-            "drawer_richtext": "<p>Shipping and returns can be inserted here.</p>",
-            "drawer_page": ""
-          }
-        },
-        "f9d768f7-b69b-4425-b3d7-33216740b2dd": {
-          "type": "popup-drawer",
-          "settings": {
-            "button_text": "Stylist tip",
-            "button_type": "collapsible",
-            "button_url": "",
-            "drawer_richtext": "<p>Stylist tips can be entered here.</p>",
-            "drawer_page": ""
-          }
-        },
-        "ab4932da-0d31-4117-a170-3d12f59976ca": {
-          "type": "popup-drawer",
-          "settings": {
-            "button_text": "Contact us",
-            "button_type": "link",
-            "button_url": "shopify://pages/contact-us",
-            "drawer_richtext": "",
-            "drawer_page": ""
-          }
         }
       },
       "block_order": [
-        "fec25a48-cc42-4f7d-bbf5-215567a945e9",
-        "4f41f466-653b-4675-91c2-051a7830a3cc",
-        "f9d768f7-b69b-4425-b3d7-33216740b2dd",
-        "ab4932da-0d31-4117-a170-3d12f59976ca"
+        "fec25a48-cc42-4f7d-bbf5-215567a945e9"
       ],
       "settings": {
         "padding_vertical_desktop": "",
