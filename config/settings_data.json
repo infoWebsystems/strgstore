@@ -87,6 +87,8 @@
     "enable_dynamic_checkout": true,
     "enable_cart_upsell": true,
     "cart_upsell_title": "Доповніть образ",
+    "enable_breadcrumbs_on_product_page": false,
+    "enable_breadcrumbs_on_other_pages": false,
     "breadcrumbs_alignment": "center",
     "enable_back_to_top_button": false,
     "show_currency_codes": true,
