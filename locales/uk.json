@@ -535,8 +535,14 @@
     "filters": {
       "availability": {
         "value": {
-          "in_stock": "Є в наявності"
+          "in_stock": "Є в наявності",
+          "out_of_stock": "Немає в наявності"
         }
+      }
+    },
+    "checkout": {
+      "stock": {
+        "title": "Немає в наявності"
       }
     }
   }
