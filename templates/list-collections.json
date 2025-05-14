@@ -90,7 +90,7 @@
         "collection_bkn63e"
       ],
       "settings": {
-        "collections_to_show": "all",
+        "collections_to_show": "selected",
         "padding_vertical_desktop": "",
         "padding_vertical_mobile": "",
         "color_scheme_text": "text-colors-default",
