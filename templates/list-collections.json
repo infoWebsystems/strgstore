@@ -342,6 +342,78 @@
             "collection": "axel-arigato",
             "title": ""
           }
+        },
+        "collection_G7gKRh": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "balenciaga",
+            "title": ""
+          }
+        },
+        "collection_aEMTBg": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "barbour",
+            "title": ""
+          }
+        },
+        "collection_DUr6XB": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "bearbrick",
+            "title": ""
+          }
+        },
+        "collection_XYXTxe": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "billionaire-boys-club",
+            "title": ""
+          }
+        },
+        "collection_wPBJDP": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "brain-dead",
+            "title": ""
+          }
+        },
+        "collection_pneykD": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "bravest-studios",
+            "title": ""
+          }
+        },
+        "collection_chUigx": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "broq",
+            "title": ""
+          }
+        },
+        "collection_RNJw4F": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "burberry",
+            "title": ""
+          }
+        },
+        "collection_V8Xtak": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "by-a-bathing-ape",
+            "title": ""
+          }
         }
       },
       "block_order": [
@@ -358,7 +430,16 @@
         "collection_EitW3A",
         "collection_T8WPci",
         "collection_RDGDiX",
-        "collection_J7CP47"
+        "collection_J7CP47",
+        "collection_G7gKRh",
+        "collection_aEMTBg",
+        "collection_DUr6XB",
+        "collection_XYXTxe",
+        "collection_wPBJDP",
+        "collection_pneykD",
+        "collection_chUigx",
+        "collection_RNJw4F",
+        "collection_V8Xtak"
       ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
