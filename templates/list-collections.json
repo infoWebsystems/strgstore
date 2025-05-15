@@ -478,6 +478,158 @@
             "collection": "cp-company",
             "title": ""
           }
+        },
+        "collection_RnWTLP": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "dc",
+            "title": ""
+          }
+        },
+        "collection_APxQwU": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "dickies",
+            "title": ""
+          }
+        },
+        "collection_7QG3dX": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "diesel",
+            "title": ""
+          }
+        },
+        "collection_DmKMie": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "dior",
+            "title": ""
+          }
+        },
+        "collection_J3XTcJ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "dr-martens",
+            "title": ""
+          }
+        },
+        "collection_6RbMp3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "entire-studios",
+            "title": ""
+          }
+        },
+        "collection_pVncia": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "evisu",
+            "title": ""
+          }
+        },
+        "collection_C9k86j": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "fear-of-god",
+            "title": ""
+          }
+        },
+        "collection_7E8brf": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "fucking-awesome",
+            "title": ""
+          }
+        },
+        "collection_36NeJt": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "glossier",
+            "title": ""
+          }
+        },
+        "collection_tzUk6y": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "golf-wang",
+            "title": ""
+          }
+        },
+        "collection_x3c8qy": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "goyard",
+            "title": ""
+          }
+        },
+        "collection_DJrVKf": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "gramicci",
+            "title": ""
+          }
+        },
+        "collection_ncRYpa": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "gucci",
+            "title": ""
+          }
+        },
+        "collection_NbJydD": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "h-m",
+            "title": ""
+          }
+        },
+        "collection_iMHWAe": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "heliot-emil",
+            "title": ""
+          }
+        },
+        "collection_tVkrek": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "heron-preston",
+            "title": ""
+          }
+        },
+        "collection_t94wX9": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "hoka-one-one",
+            "title": ""
+          }
+        },
+        "collection_p3DgYc": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "huf",
+            "title": ""
+          }
         }
       },
       "block_order": [
@@ -511,7 +663,26 @@
         "collection_A8hBEe",
         "collection_dWEpty",
         "collection_b3BDFU",
-        "collection_zKRCYW"
+        "collection_zKRCYW",
+        "collection_RnWTLP",
+        "collection_APxQwU",
+        "collection_7QG3dX",
+        "collection_DmKMie",
+        "collection_J3XTcJ",
+        "collection_6RbMp3",
+        "collection_pVncia",
+        "collection_C9k86j",
+        "collection_7E8brf",
+        "collection_36NeJt",
+        "collection_tzUk6y",
+        "collection_x3c8qy",
+        "collection_DJrVKf",
+        "collection_ncRYpa",
+        "collection_NbJydD",
+        "collection_iMHWAe",
+        "collection_tVkrek",
+        "collection_t94wX9",
+        "collection_p3DgYc"
       ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
