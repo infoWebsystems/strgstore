@@ -614,22 +614,6 @@
             "collection": "heron-preston",
             "title": ""
           }
-        },
-        "collection_t94wX9": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "hoka-one-one",
-            "title": ""
-          }
-        },
-        "collection_p3DgYc": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "huf",
-            "title": ""
-          }
         }
       },
       "block_order": [
@@ -680,14 +664,50 @@
         "collection_ncRYpa",
         "collection_NbJydD",
         "collection_iMHWAe",
-        "collection_tVkrek",
-        "collection_t94wX9",
-        "collection_p3DgYc"
+        "collection_tVkrek"
       ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
         "collections_to_show": "selected",
         "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "card_collection_color_scheme_text": "text-colors-inverse",
+        "card_collection_color_scheme_text_no_image": "text-colors-default",
+        "column_gap_desktop": 0.2,
+        "column_gap_mobile": 0.2,
+        "collections_per_page": 12
+      }
+    },
+    "main_list_collections_3KD4TV": {
+      "type": "main-list-collections",
+      "blocks": {
+        "collection_BVnUg6": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "hoka-one-one",
+            "title": ""
+          }
+        },
+        "collection_eNmRHi": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "huf",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_BVnUg6",
+        "collection_eNmRHi"
+      ],
+      "name": "t:sections.main-list-collections.name",
+      "settings": {
+        "collections_to_show": "selected",
+        "padding_vertical_desktop": "pt-0-desktop",
         "padding_vertical_mobile": "",
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default",
@@ -703,6 +723,7 @@
     "page_banner_HecNfU",
     "main",
     "page_banner_ceqHt8",
-    "main_list_collections_wFBLGK"
+    "main_list_collections_wFBLGK",
+    "main_list_collections_3KD4TV"
   ]
 }
