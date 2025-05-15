@@ -1061,6 +1061,161 @@
         "column_gap_mobile": 0.2,
         "collections_per_page": 12
       }
+    },
+    "page_banner_EReAaD": {
+      "type": "page-banner",
+      "name": "t:sections.page-banner.name",
+      "settings": {
+        "enable_transparent_header": false,
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "title": "J",
+        "content": "",
+        "search_bar": false,
+        "search_bar_placeholder": "Search for 'return' or 'size'",
+        "show_default_description": true,
+        "show_on_description": "desktop",
+        "content_position": "center",
+        "content_alignment": "center",
+        "media_position": "background",
+        "page_menu": "",
+        "enable_breadcrumbs": true,
+        "section_height": "auto",
+        "show_controls_on_video": false,
+        "section_height_mobile": "auto",
+        "show_controls_on_video_mobile": false,
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-accent-2"
+      }
+    },
+    "main_list_collections_He78CL": {
+      "type": "main-list-collections",
+      "blocks": {
+        "collection_mtEJJT": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "jacquemus",
+            "title": ""
+          }
+        },
+        "collection_TKfb6k": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "jordan-brand",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_mtEJJT",
+        "collection_TKfb6k"
+      ],
+      "name": "t:sections.main-list-collections.name",
+      "settings": {
+        "collections_to_show": "selected",
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "card_collection_color_scheme_text": "text-colors-inverse",
+        "card_collection_color_scheme_text_no_image": "text-colors-default",
+        "column_gap_desktop": 0.2,
+        "column_gap_mobile": 0.2,
+        "collections_per_page": 12
+      }
+    },
+    "page_banner_Rh6iUw": {
+      "type": "page-banner",
+      "name": "t:sections.page-banner.name",
+      "settings": {
+        "enable_transparent_header": false,
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "title": "K",
+        "content": "",
+        "search_bar": false,
+        "search_bar_placeholder": "Search for 'return' or 'size'",
+        "show_default_description": true,
+        "show_on_description": "desktop",
+        "content_position": "center",
+        "content_alignment": "center",
+        "media_position": "background",
+        "page_menu": "",
+        "enable_breadcrumbs": true,
+        "section_height": "auto",
+        "show_controls_on_video": false,
+        "section_height_mobile": "auto",
+        "show_controls_on_video_mobile": false,
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-accent-2"
+      }
+    },
+    "main_list_collections_i8ViQJ": {
+      "type": "main-list-collections",
+      "blocks": {
+        "collection_8hKR9f": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "kaws",
+            "title": ""
+          }
+        },
+        "collection_qidxHW": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "kenzo",
+            "title": ""
+          }
+        },
+        "collection_7A7h6G": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "khy",
+            "title": ""
+          }
+        },
+        "collection_894UYx": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "kith",
+            "title": ""
+          }
+        },
+        "collection_jLqN7h": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "kylie-cosmetics",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_8hKR9f",
+        "collection_qidxHW",
+        "collection_7A7h6G",
+        "collection_894UYx",
+        "collection_jLqN7h"
+      ],
+      "name": "t:sections.main-list-collections.name",
+      "settings": {
+        "collections_to_show": "selected",
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "card_collection_color_scheme_text": "text-colors-inverse",
+        "card_collection_color_scheme_text_no_image": "text-colors-default",
+        "column_gap_desktop": 0.2,
+        "column_gap_mobile": 0.2,
+        "collections_per_page": 12
+      }
     }
   },
   "order": [
@@ -1083,6 +1238,10 @@
     "page_banner_VMtTWx",
     "main_list_collections_JPaTGe",
     "page_banner_g89rwJ",
-    "main_list_collections_7FC97B"
+    "main_list_collections_7FC97B",
+    "page_banner_EReAaD",
+    "main_list_collections_He78CL",
+    "page_banner_Rh6iUw",
+    "main_list_collections_i8ViQJ"
   ]
 }
