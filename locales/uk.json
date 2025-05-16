@@ -591,7 +591,8 @@
       "local_pickup": {
         "location_information": {
           "one": "Поблизу Вашого місцезнаходження доступний 1 магазин."
-        }
+        },
+        "toggle_location": "Змінити місцезнаходження"
       }
     },
     "store_availability": {
