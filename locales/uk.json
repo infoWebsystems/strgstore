@@ -557,10 +557,9 @@
         "postal_code_label": "Поштовий індекс",
         "phone_label": "Номер телефону",
         "country_label": "Країна",
-        "delivery_option_title": "Доставка"
+        "delivery_option_title": "Методи доставки"
       },
       "delivery_options": {
-        "ship": "Доставка",
         "pickup_point_method_definition": "Забрати в магазині",
         "pick_up": "Самовивіз з магазину",
         "pick_up_from_store": "Самовивіз з магазину"
@@ -572,7 +571,8 @@
         "save_my_information_label": "Зберегти інформацію для наступних покупок"
       },
       "shipping": {
-        "shipping_method_title": "Метод доставки"
+        "shipping_method_title": "Метод доставки",
+        "delivery_title": "Доставка"
       },
       "shipping_errors": {
         "empty_state": "Введіть дані для доставки, щоб переглянути доступні способи."
