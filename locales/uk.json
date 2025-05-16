@@ -556,6 +556,10 @@
         "zip_code_label": "Поштовий індекс",
         "postal_code_label": "Поштовий індекс",
         "phone_label": "Номер телефону"
+      },
+      "delivery_options": {
+        "ship": "Доставка",
+        "pickup_point_method_definition": "Забрати в магазині"
       }
     }
   }
