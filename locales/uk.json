@@ -583,7 +583,8 @@
       },
       "payment": {
         "title": "Оплата",
-        "no_method_error": "На даний момент магазин не примає оплати."
+        "no_method_error": "На даний момент магазин не примає оплати.",
+        "card_security_notice": "Усі транзакції безпечні та зашифровані."
       },
       "pickup_point": {
         "change": "Змінити місцезнаходження"
@@ -598,6 +599,15 @@
     "store_availability": {
       "pick_up_time": {
         "twenty_four_hours": "Зазвичай готовий через добу"
+      }
+    }
+  },
+  "customer_accounts": {
+    "payment_methods": {
+      "card_fields": {
+        "tooltip": {
+          "card_security_notice": "Усі транзакції безпечні та зашифровані."
+        }
       }
     }
   }
