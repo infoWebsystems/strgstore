@@ -543,6 +543,17 @@
     "checkout": {
       "stock": {
         "title": "Немає в наявності"
+      },
+      "contact": {
+        "contact_method_title": "Контакт",
+        "stored_addresses_label": "Збережені адреси",
+        "available_addresses_label": "Доступні адреси",
+        "new_address_label": "Використати нову адресу",
+        "first_name_label": "Ім'я",
+        "last_name_label": "Прізвище",
+        "address1_label": "Відділення НП або поштомат НП або повна адреса доставки",
+        "city_label": "Населений пункт",
+        "zip_code_label": "Поштовий індекс"
       }
     }
   }
