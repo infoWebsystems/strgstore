@@ -605,6 +605,9 @@
       },
       "thank_you": {
         "login": "Залогінитись"
+      },
+      "order_summary": {
+        "subtotal_label": "Проміжний підсумок"
       }
     },
     "store_availability": {
