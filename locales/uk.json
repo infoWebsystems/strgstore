@@ -586,6 +586,11 @@
       },
       "pickup_point": {
         "change": "Змінити моє місцезнаходження"
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "Поблизу Вашого місцезнаходження доступний {1} магазин."
+        }
       }
     },
     "store_availability": {
