@@ -573,7 +573,8 @@
       },
       "shipping": {
         "shipping_method_title": "Метод доставки",
-        "delivery_title": "Доставка"
+        "delivery_title": "Доставка",
+        "free_rate_label": "За тарифами перевізника"
       },
       "shipping_errors": {
         "empty_state": "Введіть дані для доставки, щоб переглянути доступні способи."
