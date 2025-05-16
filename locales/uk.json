@@ -555,7 +555,8 @@
         "city_label": "Населений пункт",
         "zip_code_label": "Поштовий індекс",
         "postal_code_label": "Поштовий індекс",
-        "phone_label": "Номер телефону"
+        "phone_label": "Номер телефону",
+        "country_label": "Країна"
       },
       "delivery_options": {
         "ship": "Доставка",
