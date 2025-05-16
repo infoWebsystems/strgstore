@@ -154,7 +154,7 @@
       "name": "Hero Banner With Products",
       "settings": {
         "enable_transparent_header": true,
-        "slider_height": 80,
+        "slider_height": 90,
         "slider_autoplay": false,
         "slider_autoplay_interval": 6,
         "slider_arrows": true,
