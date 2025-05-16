@@ -565,7 +565,8 @@
         "pick_up": "Самовивіз з магазину",
         "pick_up_from_store": "Самовивіз з магазину",
         "ship": "Доставити",
-        "pick_up_locations": "Місцезнаходження магазину"
+        "pick_up_locations": "Місцезнаходження магазину",
+        "free_total_label": "-"
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Хочу отримувати новини та пропозиції на email"
