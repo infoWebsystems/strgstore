@@ -569,6 +569,9 @@
       },
       "customer_account": {
         "save_my_information_label": "Зберегти інформацію для наступних покупок"
+      },
+      "shipping": {
+        "shipping_method_title": "Метод доставки"
       }
     }
   }
