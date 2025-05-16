@@ -187,8 +187,8 @@
       "name": "t:sections.dual-tiles.name",
       "settings": {
         "section_width": "max-w-page",
-        "section_height": 40,
-        "adopt_to_content": true,
+        "section_height": 50,
+        "adopt_to_content": false,
         "layout": "section-dual-tiles--50-50",
         "reverse_on_mobile": false,
         "gap_between_tiles": 0,
@@ -269,8 +269,8 @@
       "name": "t:sections.dual-tiles.name",
       "settings": {
         "section_width": "max-w-page",
-        "section_height": 40,
-        "adopt_to_content": true,
+        "section_height": 50,
+        "adopt_to_content": false,
         "layout": "section-dual-tiles--50-50",
         "reverse_on_mobile": false,
         "gap_between_tiles": 0,
@@ -351,8 +351,8 @@
       "name": "t:sections.dual-tiles.name",
       "settings": {
         "section_width": "max-w-page",
-        "section_height": 40,
-        "adopt_to_content": true,
+        "section_height": 50,
+        "adopt_to_content": false,
         "layout": "section-dual-tiles--50-50",
         "reverse_on_mobile": false,
         "gap_between_tiles": 0,
@@ -433,7 +433,7 @@
       "name": "t:sections.dual-tiles.name",
       "settings": {
         "section_width": "max-w-page",
-        "section_height": 40,
+        "section_height": 50,
         "adopt_to_content": true,
         "layout": "section-dual-tiles--50-50",
         "reverse_on_mobile": false,
@@ -515,8 +515,8 @@
       "name": "t:sections.dual-tiles.name",
       "settings": {
         "section_width": "max-w-page",
-        "section_height": 40,
-        "adopt_to_content": true,
+        "section_height": 50,
+        "adopt_to_content": false,
         "layout": "section-dual-tiles--50-50",
         "reverse_on_mobile": false,
         "gap_between_tiles": 0,
@@ -548,7 +548,7 @@
           "type": "tile",
           "settings": {
             "color_scheme_text": "text-colors-default",
-            "color_scheme_background": "background-colors-inverse",
+            "color_scheme_background": "background-colors-default",
             "image_desktop": "shopify://shop_images/shoe-type-1.webp",
             "video_desktop_external": "",
             "video_desktop_aspect_ratio": "16/9",
@@ -618,9 +618,9 @@
         "gap_between_tiles": 0,
         "gap_between_tiles_mobile": 0,
         "spacing_top_desktop": 0,
-        "spacing_bottom_desktop": 6,
+        "spacing_bottom_desktop": 4,
         "spacing_top_mobile": 0,
-        "spacing_bottom_mobile": 6
+        "spacing_bottom_mobile": 4
       }
     },
     "dual_tiles_8mjAJT": {
@@ -630,7 +630,7 @@
           "type": "tile",
           "settings": {
             "color_scheme_text": "text-colors-default",
-            "color_scheme_background": "background-colors-inverse",
+            "color_scheme_background": "background-colors-default",
             "image_desktop": "shopify://shop_images/shoe-type-2.webp",
             "video_desktop_external": "",
             "video_desktop_aspect_ratio": "16/9",
@@ -700,9 +700,9 @@
         "gap_between_tiles": 0,
         "gap_between_tiles_mobile": 0,
         "spacing_top_desktop": 0,
-        "spacing_bottom_desktop": 6,
+        "spacing_bottom_desktop": 4,
         "spacing_top_mobile": 0,
-        "spacing_bottom_mobile": 6
+        "spacing_bottom_mobile": 4
       }
     },
     "dual_tiles_zryHE6": {
@@ -712,7 +712,7 @@
           "type": "tile",
           "settings": {
             "color_scheme_text": "text-colors-default",
-            "color_scheme_background": "background-colors-inverse",
+            "color_scheme_background": "background-colors-default",
             "image_desktop": "shopify://shop_images/shoe-type-3.webp",
             "video_desktop_external": "",
             "video_desktop_aspect_ratio": "16/9",
@@ -782,9 +782,9 @@
         "gap_between_tiles": 0,
         "gap_between_tiles_mobile": 0,
         "spacing_top_desktop": 0,
-        "spacing_bottom_desktop": 6,
+        "spacing_bottom_desktop": 4,
         "spacing_top_mobile": 0,
-        "spacing_bottom_mobile": 6
+        "spacing_bottom_mobile": 4
       }
     },
     "dual_tiles_4nFMHT": {
@@ -794,7 +794,7 @@
           "type": "tile",
           "settings": {
             "color_scheme_text": "text-colors-default",
-            "color_scheme_background": "background-colors-inverse",
+            "color_scheme_background": "background-colors-default",
             "image_desktop": "shopify://shop_images/shoe-type-4.webp",
             "video_desktop_external": "",
             "video_desktop_aspect_ratio": "16/9",
