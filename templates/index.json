@@ -258,27 +258,15 @@
           "type": "collection",
           "settings": {
             "products": [],
-            "collection": "clothes-1",
+            "collection": "новинка",
             "title": "Collection 1",
             "max_products": 12,
-            "show_unavailable_products": false
-          }
-        },
-        "collection_JCFDie": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "products": [],
-            "collection": "shoes",
-            "title": "",
-            "max_products": 8,
             "show_unavailable_products": false
           }
         }
       },
       "block_order": [
-        "8d8dee3c-2bdb-429e-9a6c-e5af884f102b",
-        "collection_JCFDie"
+        "8d8dee3c-2bdb-429e-9a6c-e5af884f102b"
       ],
       "settings": {
         "padding_vertical_desktop": "pt-0-desktop",
@@ -289,8 +277,8 @@
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default",
         "title": "Нове на сайті",
-        "button_text": "Дивитися всі",
-        "button_url": "shopify://collections/нові-надходження-1",
+        "button_text": "",
+        "button_url": "shopify://collections",
         "button_style": "button--outlined"
       }
     },
@@ -301,7 +289,7 @@
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "pants",
+            "collection": "1017-alyx-9sm",
             "title": ""
           }
         },
@@ -309,7 +297,7 @@
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "shoes",
+            "collection": "a-cold-wall",
             "title": ""
           }
         },
@@ -317,7 +305,7 @@
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "accessories",
+            "collection": "adidas",
             "title": ""
           }
         },
@@ -325,7 +313,7 @@
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "t-shirts",
+            "collection": "c2h4",
             "title": ""
           }
         },
@@ -333,7 +321,87 @@
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "shirts",
+            "collection": "dr-martens",
+            "title": ""
+          }
+        },
+        "collection_slide_EpRcmW": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "fear-of-god",
+            "title": ""
+          }
+        },
+        "collection_slide_TjYmR3": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "heliot-emil",
+            "title": ""
+          }
+        },
+        "collection_slide_A4QkCa": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "heron-preston",
+            "title": ""
+          }
+        },
+        "collection_slide_H8rjBW": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "misbhv",
+            "title": ""
+          }
+        },
+        "collection_slide_KhNKcq": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "nike",
+            "title": ""
+          }
+        },
+        "collection_slide_QRKtgw": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "off-white",
+            "title": ""
+          }
+        },
+        "collection_slide_cpNtxc": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "palm-angels",
+            "title": ""
+          }
+        },
+        "collection_slide_KAeEDp": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "ripndip",
+            "title": ""
+          }
+        },
+        "collection_slide_YPGeiq": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "stone-island",
+            "title": ""
+          }
+        },
+        "collection_slide_d3FQLg": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "stussy",
             "title": ""
           }
         }
@@ -343,7 +411,17 @@
         "collection_slide_HN3rQk",
         "collection_slide_pBgBck",
         "collection_slide_L6rgHi",
-        "collection_slide_PD8mtE"
+        "collection_slide_PD8mtE",
+        "collection_slide_EpRcmW",
+        "collection_slide_TjYmR3",
+        "collection_slide_A4QkCa",
+        "collection_slide_H8rjBW",
+        "collection_slide_KhNKcq",
+        "collection_slide_QRKtgw",
+        "collection_slide_cpNtxc",
+        "collection_slide_KAeEDp",
+        "collection_slide_YPGeiq",
+        "collection_slide_d3FQLg"
       ],
       "name": "t:sections.featured-collections.name",
       "settings": {
