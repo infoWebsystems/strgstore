@@ -560,6 +560,9 @@
       "delivery_options": {
         "ship": "Доставка",
         "pickup_point_method_definition": "Забрати в магазині"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Хочу отримувати новини та пропозиції на email"
       }
     }
   }
