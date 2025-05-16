@@ -607,7 +607,8 @@
         "login": "Залогінитись"
       },
       "order_summary": {
-        "subtotal_label": "Проміжний підсумок"
+        "subtotal_label": "Проміжний підсумок",
+        "pickup_label": "Самовивіз з магазину"
       }
     },
     "store_availability": {
