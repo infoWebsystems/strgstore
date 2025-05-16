@@ -562,7 +562,8 @@
       "delivery_options": {
         "pickup_point_method_definition": "Забрати в магазині",
         "pick_up": "Самовивіз з магазину",
-        "pick_up_from_store": "Самовивіз з магазину"
+        "pick_up_from_store": "Самовивіз з магазину",
+        "ship": "Доставити"
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Хочу отримувати новини та пропозиції на email"
