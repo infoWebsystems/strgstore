@@ -566,6 +566,9 @@
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Хочу отримувати новини та пропозиції на email"
+      },
+      "customer_account": {
+        "save_my_information_label": "Зберегти інформацію для наступних покупок"
       }
     }
   }
