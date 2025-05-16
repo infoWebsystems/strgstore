@@ -612,7 +612,8 @@
         "free_total_label": "-",
         "free_shipping_total_label": "-",
         "order_total_label": "Всього",
-        "total_label": "Всього"
+        "total_label": "Всього",
+        "vat_label_html": " "
       }
     },
     "store_availability": {
@@ -633,7 +634,8 @@
       "login_card": {
         "log_in": "Залогінитись"
       },
-      "log_in": "Залогінитись"
+      "log_in": "Залогінитись",
+      "taxes_included": " "
     }
   }
 }
