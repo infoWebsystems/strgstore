@@ -555,12 +555,12 @@
         "city_label": "Населений пункт",
         "zip_code_label": "Поштовий індекс",
         "postal_code_label": "Поштовий індекс",
-        "phone_label": "Номер телефону",
-        "delivery_option_title": "Доставка"
+        "phone_label": "Номер телефону"
       },
       "delivery_options": {
         "ship": "Доставка",
-        "pickup_point_method_definition": "Забрати в магазині"
+        "pickup_point_method_definition": "Забрати в магазині",
+        "pick_up": "Самовивіз з магазину"
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Хочу отримувати новини та пропозиції на email"
