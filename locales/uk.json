@@ -557,7 +557,8 @@
         "postal_code_label": "Поштовий індекс",
         "phone_label": "Номер телефону",
         "country_label": "Країна",
-        "delivery_option_title": "Методи доставки"
+        "delivery_option_title": "Методи доставки",
+        "change_location_link_label": "Змінити місцезнаходження"
       },
       "delivery_options": {
         "pickup_point_method_definition": "Забрати в магазині",
@@ -585,11 +586,11 @@
         "no_method_error": "На даний момент магазин не примає оплати."
       },
       "pickup_point": {
-        "change": "Змінити моє місцезнаходження"
+        "change": "Змінити місцезнаходження"
       },
       "local_pickup": {
         "location_information": {
-          "one": "Поблизу Вашого місцезнаходження доступний {{1}} магазин."
+          "one": "Поблизу Вашого місцезнаходження доступний 1 магазин."
         }
       }
     },
