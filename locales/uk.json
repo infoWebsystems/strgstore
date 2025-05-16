@@ -571,7 +571,8 @@
         "accept_marketing_checkbox_label": "Хочу отримувати новини та пропозиції на email"
       },
       "customer_account": {
-        "save_my_information_label": "Зберегти інформацію для наступних покупок"
+        "save_my_information_label": "Зберегти інформацію для наступних покупок",
+        "sign_in_link_label": "Залогінитись"
       },
       "shipping": {
         "shipping_method_title": "Метод доставки",
@@ -594,6 +595,16 @@
           "one": "Поблизу Вашого місцезнаходження доступний 1 магазин."
         },
         "toggle_location": "Змінити місцезнаходження"
+      },
+      "payment_gateway": {
+        "login_prompt": {
+          "no_access": {
+            "link": "Залогінитись"
+          }
+        }
+      },
+      "thank_you": {
+        "login": "Залогінитись"
       }
     },
     "store_availability": {
@@ -609,6 +620,12 @@
           "card_security_notice": "Усі транзакції безпечні та зашифровані."
         }
       }
+    },
+    "order_details": {
+      "login_card": {
+        "log_in": "Залогінитись"
+      },
+      "log_in": "Залогінитись"
     }
   }
 }
