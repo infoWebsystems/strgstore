@@ -99,7 +99,7 @@
         "color_scheme_background": "background-colors-default",
         "color_scheme_text": "text-colors-secondary",
         "layout": "header--nav-centered",
-        "transparent_header_on_scroll": true,
+        "transparent_header_on_scroll": false,
         "transparent_header_bottom_border": false,
         "drawer_layer": false,
         "logo": "shopify://shop_images/strgstore-logo.svg",
