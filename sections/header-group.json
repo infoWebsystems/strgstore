@@ -94,7 +94,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "fullwidth": true,
+        "fullwidth": false,
         "sticky": true,
         "color_scheme_background": "background-colors-default",
         "color_scheme_text": "text-colors-secondary",
