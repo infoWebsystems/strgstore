@@ -619,7 +619,24 @@
       "shipping": {
         "shipping_method_title": "Метод доставки",
         "delivery_title": "Доставка",
-        "free_rate_label": " "
+        "free_rate_label": " ",
+        "title": "Доставка",
+        "no_rates_for_cart_or_destination_notice": "Немає доставки на вашу адресу",
+        "no_rates_contact_notice": "Зконтактуйте з нами",
+        "unbranded_default_description": "Готово до відправки",
+        "shipping_line_phone_label": "Номер телефону",
+        "shipping_line_delivery_phone_label": "Номер телефону",
+        "address_update": "Оновити адресу",
+        "shipping_address_title": "Доставка до",
+        "add_address": "Використати іншу адресу",
+        "edit": "Редагувати",
+        "delete": "Видалити",
+        "address_edit": "Редагувати адресу",
+        "address_delete": "Видалити адресу",
+        "address_confirm": "Ви впевнені що хочете видалити цю адресу?",
+        "split_shipping_option_lowest_price": "Найнижча ціна",
+        "split_shipping_option_fastest": "Найшвидше",
+        "split_shipping_option_recommended": "Рекомендовано"
       },
       "shipping_errors": {
         "empty_state": "Введіть дані для доставки, щоб переглянути доступні способи."
@@ -688,7 +705,15 @@
         "original_price": "Оригінальна ціна",
         "sale_price": "Ціна зі знижкою",
         "total_already_paid_label": "Всього сплачено",
-        "multiple_shipping_lines_label": "Доставка"
+        "multiple_shipping_lines_label": "Доставка",
+        "total_updated_label": "Оновлена вартість:",
+        "order_total_updated_label": "Оновлена вартість замовлення:",
+        "unit_price": {
+          "accessible_separator": "за"
+        },
+        "deferred_payment_info": {
+          "paid_today": "Всього сплачено сьогодні"
+        }
       },
       "general": {
         "error_page_title": "Помилка",
