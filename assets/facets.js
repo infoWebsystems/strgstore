@@ -1,15 +1,29 @@
 class FacetFiltersForm extends HTMLElement {
+  // constructor() {
+  //   super();
+
+  //   this.onActiveFilterClick = this.onActiveFilterClick.bind(this);
+  //   this.debouncedOnSubmit = debounce(event => {
+  //     this.onSubmitHandler(event);
+  //   }, 500);
+  //   this.querySelector('form').addEventListener(
+  //     'input',
+  //     this.debouncedOnSubmit.bind(this)
+  //   );
+  //   this.btnClearFilters = this.querySelector('facet-remove')?.querySelector('a');
+  // }
+
   constructor() {
     super();
 
     this.onActiveFilterClick = this.onActiveFilterClick.bind(this);
-    this.debouncedOnSubmit = debounce(event => {
-      this.onSubmitHandler(event);
-    }, 500);
-    this.querySelector('form').addEventListener(
-      'input',
-      this.debouncedOnSubmit.bind(this)
-    );
+    this.onSubmitHandler = this.onSubmitHandler.bind(this);
+
+    const form = this.querySelector('form');
+    if (form) {
+      form.addEventListener('submit', this.onSubmitHandler);
+    }
+
     this.btnClearFilters = this.querySelector('facet-remove')?.querySelector('a');
   }
 

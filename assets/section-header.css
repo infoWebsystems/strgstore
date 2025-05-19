@@ -1,10 +1,16 @@
 .header {
   --header-vertical-padding: 1.6rem;
   position: relative;
-  color: var(--color-link-text);
+  
+  /* color: var(--color-link-text); */
+  color: #fff;
+  
   font-weight: var(--font-weight-normal);
   z-index: var(--z-header);
-  background-color: rgba(var(--color-body-background-rgb), var(--header-background-opacity, 1));
+
+  /* background-color: rgba(var(--color-body-background-rgb), var(--header-background-opacity, 1)); */
+  background-color: rgba(0, 0, 0, var(--header-background-opacity, 1));
+
   transition: background-color var(--duration-default), color var(--duration-default);
 }
 
