@@ -803,6 +803,16 @@
       "pick_up_time": {
         "twenty_four_hours": "Зазвичай готовий через добу"
       }
+    },
+    "pagination": {
+      "previous": "Попередня",
+      "next": "Наступна"
+    },
+    "attributes": {
+      "password": "Пароль",
+      "password_confirmation": "Підтвердження пароля",
+      "first_name": "Ім'я",
+      "last_name": "Прізвище"
     }
   },
   "customer_accounts": {
