@@ -747,7 +747,18 @@
           "other": "Підсумок · {{ count }} товари"
         },
         "confirmation_number_label": "Замовлення #{{ confirmation_number }}",
-        "partial_total_label": "Всього"
+        "partial_total_label": "Всього",
+        "more_items_modal": {
+          "search_item": "Шукати",
+          "clear_search": "Очистити",
+          "empty_results": "Нічого не знайдено для \"{{ searchText }}\". Перевірте правильність написання або використайте інше слово або фразу для пошуку.",
+          "number_items_shown": "{{ shownNumber }} з {{ totalNumber }} товарів"
+        },
+        "discount_title_stacking": {
+          "one": "Знижка",
+          "other": "Знижки"
+        },
+        "shipping_label": "Доставка"
       },
       "general": {
         "error_page_title": "Помилка",
