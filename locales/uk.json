@@ -650,7 +650,8 @@
         "card_security_notice": "Усі транзакції безпечні та зашифровані.",
         "billing_address_title": "Платіжна адреса",
         "payment_method": "Метод оплати",
-        "fact_billing_address_label": "Платіжна адреса"
+        "fact_billing_address_label": "Платіжна адреса",
+        "same_billing_address_checkbox_label": "Використати платіжну адресу для доставки"
       },
       "pickup_point": {
         "change": "Змінити місцезнаходження"
