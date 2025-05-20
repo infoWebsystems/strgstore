@@ -598,7 +598,7 @@
         "pick_up_from_store": "Самовивіз з магазину",
         "ship": "Доставити",
         "pick_up_locations": "Місцезнаходження магазину",
-        "free_total_label": " ",
+        "free_total_label": "  ",
         "ship_to_address": "Доставити на адресу",
         "shipping_address": "Адреса доставки",
         "pick_up_in_twenty_four_hours": "Зазвичай готово протягом доби"
@@ -843,7 +843,8 @@
         "title": "Методи оплати"
       },
       "payment_summary": {
-        "billing_address_title": "Платіжна адреса"
+        "billing_address_title": "Платіжна адреса",
+        "free_label": "  "
       },
       "change_currency": {
         "payment_total_label": "Всього"
@@ -887,7 +888,10 @@
       },
       "billing_address": "Платіжна адреса",
       "subtotal": "Проміжний підсумок",
-      "total": "Всього"
+      "total": "Всього",
+      "shipping": {
+        "free": "  "
+      }
     },
     "addresses": {
       "edit_modal_title": {
