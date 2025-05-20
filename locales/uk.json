@@ -695,7 +695,15 @@
         "breadcrumbs_confirmed": "Підтверджено",
         "title": "Дякуємо за покупку!",
         "page_title": "Дякуємо, {{ display_name }}!",
-        "page_title_no_name": "Дякуємо!"
+        "page_title_no_name": "Дякуємо!",
+        "thank_you_confirmed_order_with_email": "Ми надішлемо вам повідомлення з підтвердженням вашого замовлення.",
+        "thank_you_confirmed_order_with_email_and_phone": "Ми надішлемо вам повідомлення з підтвердженням вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Ми надішлемо вам повідомлення з підтвердженням вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Ми надішлемо вам повідомлення з підтвердженням вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Ми надішлемо вам повідомлення з підтвердженням вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "Ми надішлемо вам повідомлення з підтвердженням вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Ми надішлемо вам повідомлення з підтвердженням вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "Ми надішлемо вам повідомлення з підтвердженням вашого замовлення."
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
