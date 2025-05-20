@@ -895,7 +895,8 @@
       "total": "Всього",
       "shipping": {
         "free": "  "
-      }
+      },
+      "contact_information": "Контактна інформація"
     },
     "addresses": {
       "edit_modal_title": {
@@ -904,7 +905,8 @@
       "billing_address_dropdown_placeholder": "Платіжна адреса"
     },
     "navigation_and_structure": {
-      "orders_link_label": "Замовлення"
+      "orders_link_label": "Замовлення",
+      "contact_link": "Контактна інформація"
     },
     "orders": {
       "list_title": "Замовлення",
