@@ -670,7 +670,8 @@
         "login": "Залогінитись",
         "pick_up_in_store_marker": {
           "shipping": "Локація самовивозу"
-        }
+        },
+        "thank_you_title": "Ваше замовлення підтверджено"
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
