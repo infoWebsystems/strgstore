@@ -599,7 +599,8 @@
         "pick_up_locations": "Місцезнаходження магазину",
         "free_total_label": " ",
         "ship_to_address": "Доставити на адресу",
-        "shipping_address": "Адреса доставки"
+        "shipping_address": "Адреса доставки",
+        "pick_up_in_twenty_four_hours": "Зазвичай готово протягом доби"
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Хочу отримувати новини та пропозиції на email"
