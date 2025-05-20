@@ -902,7 +902,8 @@
       "order": "Замовлення {{ name }}",
       "account": "Аккаунт",
       "create_account": "Створити аккаунт",
-      "reset_account": "Перезавантажити аккаунт"
+      "reset_account": "Перезавантажити аккаунт",
+      "products": "Товари"
     },
     "errors": {
       "verify_email": "Ми відправили листа на {{ customer_email }}, будь ласка перейдіть за лінком у ньому, щоб підтвердити ваш email."
@@ -989,7 +990,8 @@
         "column_headers": {
           "order": "Замовлення",
           "items": "Товари",
-          "total": "Всього"
+          "total": "Всього",
+          "products_accessibility_label": "Товари"
         },
         "carousel": {
           "view_order_details": "Переглянути деталі замовлення",
