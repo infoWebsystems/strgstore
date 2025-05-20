@@ -689,7 +689,9 @@
         },
         "return_to_store_link_label": "Продовжити покупки",
         "order_number_label": "Номер замовлення",
-        "confirmed": "Підтверджено"
+        "confirmed": "Підтверджено",
+        "confirmed_title": "Ваше замовлення підтверджено",
+        "breadcrumbs_confirmed": "Підтверджено"
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
@@ -908,7 +910,8 @@
       "contact_information": "Контактна інформація",
       "payment": {
         "title": "Оплата"
-      }
+      },
+      "subtitle": "Підтверджено {{date}}"
     },
     "addresses": {
       "edit_modal_title": {
@@ -939,7 +942,10 @@
         "filter_title": "Фільтрувати"
       },
       "order_status": {
-        "confirmed_description_pickup": "Ви отримаєте повідомлення коли ваше замовлення буде готово."
+        "confirmed_description_pickup": "Ви отримаєте повідомлення коли ваше замовлення буде готово.",
+        "confirmed_description": "Ми отримали ваше замовлення.",
+        "confirmed_label": "Підтверджено",
+        "confirmed_title": "Ваше замовлення підтверджено."
       }
     }
   }
