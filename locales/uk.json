@@ -863,7 +863,8 @@
         "unavailable_label": "Недоступно"
       },
       "field_errors": {
-        "payment_gateway_missing": "Оберіть метод оплати"
+        "payment_gateway_missing": "Оберіть метод оплати",
+        "credit_card_expiry_invalid": "Введіть дійсний термін карти"
       },
       "review": {
         "blocks": {
@@ -883,6 +884,9 @@
       },
       "change_currency": {
         "payment_total_label": "Всього"
+      },
+      "payment_errors": {
+        "invalid_expiry_date": "Введіть дійсний термін карти"
       }
     },
     "store_availability": {
