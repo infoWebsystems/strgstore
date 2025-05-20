@@ -864,7 +864,8 @@
       },
       "field_errors": {
         "payment_gateway_missing": "Оберіть метод оплати",
-        "credit_card_expiry_invalid": "Введіть дійсний термін карти"
+        "credit_card_expiry_invalid": "Введіть дійсний термін карти",
+        "credit_card_verification_value_blank": "Введіть CVV код карти"
       },
       "review": {
         "blocks": {
@@ -934,6 +935,9 @@
       "card_fields": {
         "tooltip": {
           "card_security_notice": "Усі транзакції безпечні та зашифровані."
+        },
+        "field_errors": {
+          "credit_card_verification_value_blank": "Введіть CVV код карти"
         }
       },
       "title": "Методи оплати",
