@@ -688,7 +688,8 @@
           "contact_us": "Зв'яжіться з нами"
         },
         "return_to_store_link_label": "Продовжити покупки",
-        "order_number_label": "Номер замовлення"
+        "order_number_label": "Номер замовлення",
+        "confirmed": "Підтверджено"
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
