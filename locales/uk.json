@@ -667,7 +667,10 @@
         }
       },
       "thank_you": {
-        "login": "Залогінитись"
+        "login": "Залогінитись",
+        "pick_up_in_store_marker": {
+          "shipping": "Локація самовивозу"
+        }
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
@@ -837,7 +840,10 @@
         "log_in": "Залогінитись"
       },
       "log_in": "Залогінитись",
-      "taxes_included": " "
+      "taxes_included": " ",
+      "pickup": {
+        "pickup_location": "Локація самовивозу"
+      }
     }
   }
 }
