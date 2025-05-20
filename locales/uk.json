@@ -420,7 +420,7 @@
     "subtotal": "Проміжний підсумок",
     "taxes_and_shipping_at_checkout": "Податки та доставка розраховуються при оформленні замовлення",
     "taxes_included_and_shipping_policy_html": "Податки включено. <a href=\"{{ link }}\">Доставка</a> розраховується при оформленні замовлення.",
-    "taxes_included_but_shipping_at_checkout": "Податки включено",
+    "taxes_included_but_shipping_at_checkout": " ",
     "taxes_and_shipping_policy_at_checkout_html": "<a href=\"{{ link }}\">Доставка</a> розраховується при оформленні замовлення.",
     "checkout": "Оформити замовлення",
     "view_cart": "Переглянути кошик",
