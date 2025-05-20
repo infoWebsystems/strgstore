@@ -911,6 +911,9 @@
         },
         "fulfillment_status": {
           "unfulfilled": "Не виконано"
+        },
+        "cancel_reason": {
+          "customer": "Покупець змінив/відмінив замовлення"
         }
       }
     }
