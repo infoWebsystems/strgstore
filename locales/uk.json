@@ -721,7 +721,8 @@
         "subtotal_label_with_quantity": {
           "one": "Підсумок · {{ count }} товар",
           "other": "Підсумок · {{ count }} товари"
-        }
+        },
+        "confirmation_number_label": "Замовлення #{{ confirmation_number }}"
       },
       "general": {
         "error_page_title": "Помилка",
