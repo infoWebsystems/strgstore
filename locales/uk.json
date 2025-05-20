@@ -675,7 +675,8 @@
         "thank_you_confirmed_order_with_email_pick_up": "Ви отримаєте повідомлення коли ваше замовлення буде готово.",
         "thank_you_confirmed_order_with_email_and_phone_pick_up": "Ви отримаєте повідомлення коли ваше замовлення буде готово.",
         "order_status_confirmed_order_with_email_pick_up": "Ви отримаєте повідомлення коли ваше замовлення буде готово.",
-        "customer_information_title": "Деталі замовлення"
+        "customer_information_title": "Деталі замовлення",
+        "contact_information_title": "Контактна інформація"
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
