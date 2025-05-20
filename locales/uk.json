@@ -687,7 +687,8 @@
         "missing_shipping_address_banner": {
           "contact_us": "Зв'яжіться з нами"
         },
-        "return_to_store_link_label": "Продовжити покупки"
+        "return_to_store_link_label": "Продовжити покупки",
+        "order_number_label": "Номер замовлення"
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
@@ -866,7 +867,8 @@
       "last_name": "Прізвище"
     },
     "page_titles": {
-      "shopping_cart": "Ваша Корзина"
+      "shopping_cart": "Ваша Корзина",
+      "order": "Замовлення {{ name }}"
     }
   },
   "customer_accounts": {
@@ -899,6 +901,28 @@
         "billing": "Змінити платіжну адресу"
       },
       "billing_address_dropdown_placeholder": "Платіжна адреса"
+    },
+    "navigation_and_structure": {
+      "orders_link_label": "Замовлення"
+    },
+    "orders": {
+      "list_title": "Замовлення",
+      "order_list": {
+        "column_headers": {
+          "order": "Замовлення",
+          "items": "Товари",
+          "total": "Всього"
+        },
+        "carousel": {
+          "view_order_details": "Переглянути деталі замовлення",
+          "previous": "Попереднє",
+          "next": "Наступне"
+        },
+        "order_number": "Замовлення {{name}}",
+        "orders_title": "Підтверджено",
+        "sort_title": "Соотувати",
+        "filter_title": "Фільтрувати"
+      }
     }
   }
 }
