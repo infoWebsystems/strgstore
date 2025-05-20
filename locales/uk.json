@@ -808,7 +808,7 @@
     },
     "store_availability": {
       "pick_up_time": {
-        "twenty_four_hours": "Зазвичай готовий через добу"
+        "twenty_four_hours": "Зазвичай готово протягом доби"
       }
     },
     "pagination": {
