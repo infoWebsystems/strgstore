@@ -649,7 +649,8 @@
         "no_method_error": "На даний момент магазин не примає оплати.",
         "card_security_notice": "Усі транзакції безпечні та зашифровані.",
         "billing_address_title": "Платіжна адреса",
-        "payment_method": "Метод оплати"
+        "payment_method": "Метод оплати",
+        "fact_billing_address_label": "Платіжна адреса"
       },
       "pickup_point": {
         "change": "Змінити місцезнаходження"
@@ -678,7 +679,8 @@
         "order_status_confirmed_order_with_email_pick_up": "Ви отримаєте повідомлення коли ваше замовлення буде готово.",
         "customer_information_title": "Деталі замовлення",
         "contact_information_title": "Контактна інформація",
-        "payment_method_title": "Метод оплати"
+        "payment_method_title": "Метод оплати",
+        "billing_address_title": "Платіжна адреса"
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
@@ -824,12 +826,16 @@
       "review": {
         "blocks": {
           "payment_method_title": "Метод оплати",
-          "change_payment_method_link_label": "Змінити метод оплати"
+          "change_payment_method_link_label": "Змінити метод оплати",
+          "change_billing_address_link_label": "Змінити платіжну адресу"
         }
       },
       "customer_payment_methods": {
         "page_title": "Методи оплати",
         "title": "Методи оплати"
+      },
+      "payment_summary": {
+        "billing_address_title": "Платіжна адреса"
       }
     },
     "store_availability": {
@@ -864,7 +870,14 @@
       "taxes_included": " ",
       "pickup": {
         "pickup_location": "Локація самовивозу"
-      }
+      },
+      "billing_address": "Платіжна адреса"
+    },
+    "addresses": {
+      "edit_modal_title": {
+        "billing": "Змінити платіжну адресу"
+      },
+      "billing_address_dropdown_placeholder": "Платіжна адреса"
     }
   }
 }
