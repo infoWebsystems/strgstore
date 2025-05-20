@@ -648,7 +648,8 @@
         "title": "Оплата",
         "no_method_error": "На даний момент магазин не примає оплати.",
         "card_security_notice": "Усі транзакції безпечні та зашифровані.",
-        "billing_address_title": "Платіжна адреса"
+        "billing_address_title": "Платіжна адреса",
+        "payment_method": "Метод оплати"
       },
       "pickup_point": {
         "change": "Змінити місцезнаходження"
@@ -676,7 +677,8 @@
         "thank_you_confirmed_order_with_email_and_phone_pick_up": "Ви отримаєте повідомлення коли ваше замовлення буде готово.",
         "order_status_confirmed_order_with_email_pick_up": "Ви отримаєте повідомлення коли ваше замовлення буде готово.",
         "customer_information_title": "Деталі замовлення",
-        "contact_information_title": "Контактна інформація"
+        "contact_information_title": "Контактна інформація",
+        "payment_method_title": "Метод оплати"
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
@@ -815,6 +817,19 @@
       },
       "contextual_availability": {
         "unavailable_label": "Недоступно"
+      },
+      "field_errors": {
+        "payment_gateway_missing": "Оберіть метод оплати"
+      },
+      "review": {
+        "blocks": {
+          "payment_method_title": "Метод оплати",
+          "change_payment_method_link_label": "Змінити метод оплати"
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Методи оплати",
+        "title": "Методи оплати"
       }
     },
     "store_availability": {
