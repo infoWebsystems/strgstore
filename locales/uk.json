@@ -150,7 +150,7 @@
       "order_date": "Дата",
       "payment_status": "Статус оплати",
       "shipping_status": "Статус виконання",
-      "total": "Разом",
+      "total": "Всього",
       "view_order": "Переглянути замовлення"
     },
     "order": {
@@ -164,9 +164,9 @@
       "sku": "Артикул",
       "quantity": "Кількість",
       "price": "Ціна",
-      "total": "Разом",
-      "order_subtotal": "Підсумок",
-      "order_total": "Загальна сума",
+      "total": "Всього",
+      "order_subtotal": "Проміжний підсумок",
+      "order_total": "Загальна сума замовлення",
       "discount": "Sale",
       "shipping": "Доставка",
       "tax": "Податок",
@@ -742,7 +742,8 @@
           "one": "Підсумок · {{ count }} товар",
           "other": "Підсумок · {{ count }} товари"
         },
-        "confirmation_number_label": "Замовлення #{{ confirmation_number }}"
+        "confirmation_number_label": "Замовлення #{{ confirmation_number }}",
+        "partial_total_label": "Всього"
       },
       "general": {
         "error_page_title": "Помилка",
@@ -843,6 +844,9 @@
       },
       "payment_summary": {
         "billing_address_title": "Платіжна адреса"
+      },
+      "change_currency": {
+        "payment_total_label": "Всього"
       }
     },
     "store_availability": {
@@ -881,7 +885,9 @@
       "pickup": {
         "pickup_location": "Локація самовивозу"
       },
-      "billing_address": "Платіжна адреса"
+      "billing_address": "Платіжна адреса",
+      "subtotal": "Проміжний підсумок",
+      "total": "Всього"
     },
     "addresses": {
       "edit_modal_title": {
