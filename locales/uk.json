@@ -715,6 +715,10 @@
         },
         "deferred_payment_info": {
           "paid_today": "Всього сплачено сьогодні"
+        },
+        "subtotal_label_with_quantity": {
+          "one": "Підсумок · {{ count }} товар",
+          "other": "Підсумок · {{ count }} товари"
         }
       },
       "general": {
