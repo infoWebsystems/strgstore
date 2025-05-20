@@ -551,7 +551,7 @@
         "status_column_header": "Статус",
         "removed_from_cart_notice": "Вилучено з корзини",
         "remove_from_cart_button_label": "Вилучити з корзини",
-        "continue_shopping_button_label": "Продовжити",
+        "continue_shopping_button_label": "Продовжити покупки",
         "go_back_to_cart_button_label": "Повернутися до корзини",
         "remove": "Вилучити",
         "return_to_store_label": "Повернутися до магазину",
@@ -686,7 +686,8 @@
         "contact_us_lowercase": "зв'яжіться з нами",
         "missing_shipping_address_banner": {
           "contact_us": "Зв'яжіться з нами"
-        }
+        },
+        "return_to_store_link_label": "Продовжити покупки"
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
@@ -858,6 +859,9 @@
       "password_confirmation": "Підтвердження пароля",
       "first_name": "Ім'я",
       "last_name": "Прізвище"
+    },
+    "page_titles": {
+      "shopping_cart": "Ваша Корзина"
     }
   },
   "customer_accounts": {
