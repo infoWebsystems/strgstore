@@ -878,6 +878,15 @@
         "tooltip": {
           "card_security_notice": "Усі транзакції безпечні та зашифровані."
         }
+      },
+      "title": "Методи оплати",
+      "add_payment_method_button": "Додати метод оплати",
+      "delete_payment_method_button": "Видалити",
+      "back_button": "Назад",
+      "edit_payment_method": {
+        "title": "Редагувати метод оплати",
+        "save_payment_method_button": "Зберегти",
+        "cancel_edit_payment_method_button": "Відмінити"
       }
     },
     "order_details": {
@@ -896,7 +905,10 @@
       "shipping": {
         "free": "  "
       },
-      "contact_information": "Контактна інформація"
+      "contact_information": "Контактна інформація",
+      "payment": {
+        "title": "Оплата"
+      }
     },
     "addresses": {
       "edit_modal_title": {
