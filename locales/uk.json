@@ -908,6 +908,9 @@
       "order": {
         "financial_status": {
           "refunded": "Відшкодовано"
+        },
+        "fulfillment_status": {
+          "unfulfilled": "Не виконано"
         }
       }
     }
