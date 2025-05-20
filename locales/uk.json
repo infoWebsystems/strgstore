@@ -639,7 +639,10 @@
         "address_confirm": "Ви впевнені що хочете видалити цю адресу?",
         "split_shipping_option_lowest_price": "Найнижча ціна",
         "split_shipping_option_fastest": "Найшвидше",
-        "split_shipping_option_recommended": "Рекомендовано"
+        "split_shipping_option_recommended": "Рекомендовано",
+        "local_pickup": {
+          "rollup_title": "Місцезнаходження магазину"
+        }
       },
       "shipping_errors": {
         "empty_state": "Введіть дані для доставки, щоб переглянути доступні способи."
