@@ -593,7 +593,7 @@
         "optional_phone_label": "Номер телефону"
       },
       "delivery_options": {
-        "pickup_point_method_definition": "Забрати в магазині",
+        "pickup_point_method_definition": "Самовивіз з магазину",
         "pick_up": "Самовивіз з магазину",
         "pick_up_from_store": "Самовивіз з магазину",
         "ship": "Доставити",
@@ -884,7 +884,8 @@
       "log_in": "Залогінитись",
       "taxes_included": " ",
       "pickup": {
-        "pickup_location": "Локація самовивозу"
+        "pickup_location": "Локація самовивозу",
+        "pickup": "Самовивіз з магазину"
       },
       "billing_address": "Платіжна адреса",
       "subtotal": "Проміжний підсумок",
