@@ -625,7 +625,7 @@
         "free_rate_label": " ",
         "title": "Доставка",
         "no_rates_for_cart_or_destination_notice": "Немає доставки на вашу адресу",
-        "no_rates_contact_notice": "Зконтактуйте з нами",
+        "no_rates_contact_notice": "Зв'яжіться з нами",
         "unbranded_default_description": "Готово до відправки",
         "shipping_line_phone_label": "Номер телефону",
         "shipping_line_delivery_phone_label": "Номер телефону",
@@ -681,7 +681,12 @@
         "contact_information_title": "Контактна інформація",
         "payment_method_title": "Метод оплати",
         "billing_address_title": "Платіжна адреса",
-        "contact_us_html": "Потрібна допомога? {{ contact_us }}"
+        "contact_us_html": "Потрібна допомога? {{ contact_us }}",
+        "contact_us": "Зв'яжіться з нами",
+        "contact_us_lowercase": "зв'яжіться з нами",
+        "missing_shipping_address_banner": {
+          "contact_us": "Зв'яжіться з нами"
+        }
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
