@@ -645,7 +645,8 @@
       "payment": {
         "title": "Оплата",
         "no_method_error": "На даний момент магазин не примає оплати.",
-        "card_security_notice": "Усі транзакції безпечні та зашифровані."
+        "card_security_notice": "Усі транзакції безпечні та зашифровані.",
+        "billing_address_title": "Платіжна адреса"
       },
       "pickup_point": {
         "change": "Змінити місцезнаходження"
