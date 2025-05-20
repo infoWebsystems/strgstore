@@ -957,7 +957,8 @@
         "confirmed_description": "Ми отримали ваше замовлення.",
         "confirmed_label": "Підтверджено",
         "confirmed_title": "Ваше замовлення підтверджено."
-      }
+      },
+      "buy_again": "Купити знову"
     }
   }
 }
