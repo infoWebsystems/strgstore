@@ -680,7 +680,8 @@
         "customer_information_title": "Деталі замовлення",
         "contact_information_title": "Контактна інформація",
         "payment_method_title": "Метод оплати",
-        "billing_address_title": "Платіжна адреса"
+        "billing_address_title": "Платіжна адреса",
+        "contact_us_html": "Потрібна допомога? {{ contact_us }}"
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
