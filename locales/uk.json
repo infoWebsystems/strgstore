@@ -923,6 +923,9 @@
         "orders_title": "Підтверджено",
         "sort_title": "Соотувати",
         "filter_title": "Фільтрувати"
+      },
+      "order_status": {
+        "confirmed_description_pickup": "Ви отримаєте повідомлення коли ваше замовлення буде готово."
       }
     }
   }
