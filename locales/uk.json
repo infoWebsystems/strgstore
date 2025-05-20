@@ -654,7 +654,8 @@
         "billing_address_title": "Платіжна адреса",
         "payment_method": "Метод оплати",
         "fact_billing_address_label": "Платіжна адреса",
-        "same_billing_address_checkbox_label": "Використати платіжну адресу для доставки"
+        "same_billing_address_checkbox_label": "Використати платіжну адресу для доставки",
+        "amazon_payments_could_not_enqueue_authorize": "Виникла проблема з оплатою вашого замовлення. Спробуйте ще раз або оберіть інший метод оплати."
       },
       "pickup_point": {
         "change": "Змінити місцезнаходження"
