@@ -925,7 +925,8 @@
           "unpaid": "Неоплачено"
         },
         "fulfillment_status": {
-          "unfulfilled": "Не виконано"
+          "unfulfilled": "Не виконано",
+          "fulfilled": "Виконано"
         },
         "cancel_reason": {
           "customer": "Покупець змінив/відмінив замовлення"
