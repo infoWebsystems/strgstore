@@ -692,7 +692,10 @@
         "order_number_label": "Номер замовлення",
         "confirmed": "Підтверджено",
         "confirmed_title": "Ваше замовлення підтверджено",
-        "breadcrumbs_confirmed": "Підтверджено"
+        "breadcrumbs_confirmed": "Підтверджено",
+        "title": "Дякуємо за покупку!",
+        "page_title": "Дякуємо, {{ display_name }}!",
+        "page_title_no_name": "Дякуємо!"
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
