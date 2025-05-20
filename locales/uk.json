@@ -900,6 +900,9 @@
     "page_titles": {
       "shopping_cart": "Ваша Корзина",
       "order": "Замовлення {{ name }}"
+    },
+    "errors": {
+      "verify_email": "Ми відправили листа на {{ customer_email }}, будь ласка перейдіть за лінком у ньому, щоб підтвердити ваш email."
     }
   },
   "customer_accounts": {
