@@ -899,7 +899,10 @@
     },
     "page_titles": {
       "shopping_cart": "Ваша Корзина",
-      "order": "Замовлення {{ name }}"
+      "order": "Замовлення {{ name }}",
+      "account": "Аккаунт",
+      "create_account": "Створити аккаунт",
+      "reset_account": "Перезавантажити аккаунт"
     },
     "errors": {
       "verify_email": "Ми відправили листа на {{ customer_email }}, будь ласка перейдіть за лінком у ньому, щоб підтвердити ваш email."
@@ -971,7 +974,14 @@
     },
     "navigation_and_structure": {
       "orders_link_label": "Замовлення",
-      "contact_link": "Контактна інформація"
+      "contact_link": "Контактна інформація",
+      "account_menu": {
+        "label": "Аккаунт"
+      },
+      "delete_confirmation": {
+        "cancel": "Відмінити",
+        "delete": "Видалити"
+      }
     },
     "orders": {
       "list_title": "Замовлення",
@@ -998,6 +1008,18 @@
         "confirmed_title": "Ваше замовлення підтверджено."
       },
       "buy_again": "Купити знову"
+    },
+    "account_information": {
+      "profile_card": {
+        "cancel": "Відмінити",
+        "edit": "Редагувати",
+        "first_name": "Ім'я",
+        "last_name": "Прізвище",
+        "save": "Зберегти",
+        "title": "Профайл"
+      },
+      "profile_update_confirmation_message": "Профайл змінено",
+      "title": "Профайл"
     }
   }
 }
