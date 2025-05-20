@@ -903,6 +903,13 @@
     },
     "errors": {
       "verify_email": "Ми відправили листа на {{ customer_email }}, будь ласка перейдіть за лінком у ньому, щоб підтвердити ваш email."
+    },
+    "notices": {
+      "order": {
+        "financial_status": {
+          "refunded": "Відшкодовано"
+        }
+      }
     }
   },
   "customer_accounts": {
@@ -944,7 +951,9 @@
       "payment": {
         "title": "Оплата"
       },
-      "subtitle": "Підтверджено {{date}}"
+      "subtitle": "Підтверджено {{date}}",
+      "fully_refunded_label": "Відшкодовано",
+      "refunded_amount": "Відшкодовано"
     },
     "addresses": {
       "edit_modal_title": {
