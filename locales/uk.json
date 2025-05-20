@@ -589,7 +589,8 @@
         "title": "Інформація",
         "address_title": "Адреса",
         "shipping_used_as_billing_notice": "Ця адреса буде використана для доставки",
-        "different_shipping_address_label": "Доставити на іншу адресу"
+        "different_shipping_address_label": "Доставити на іншу адресу",
+        "optional_phone_label": "Номер телефону"
       },
       "delivery_options": {
         "pickup_point_method_definition": "Забрати в магазині",
