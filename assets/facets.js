@@ -1,4 +1,6 @@
 class FacetFiltersForm extends HTMLElement {
+  // Original Constructor START
+
   // constructor() {
   //   super();
 
@@ -13,11 +15,17 @@ class FacetFiltersForm extends HTMLElement {
   //   this.btnClearFilters = this.querySelector('facet-remove')?.querySelector('a');
   // }
 
+  // Original Constructor END
+
+  // Update Constructor START
   constructor() {
     super();
 
     this.onActiveFilterClick = this.onActiveFilterClick.bind(this);
     this.onSubmitHandler = this.onSubmitHandler.bind(this);
+
+    // Global event listener for sorting (delegated)
+    document.addEventListener('input', this.globalSortingListener.bind(this), true);
 
     const form = this.querySelector('form');
     if (form) {
@@ -26,6 +34,27 @@ class FacetFiltersForm extends HTMLElement {
 
     this.btnClearFilters = this.querySelector('facet-remove')?.querySelector('a');
   }
+  // Update Constructor END
+
+  // Helper Method For the Global Sorting (It does not rerender when filtering) START
+  globalSortingListener(event) {
+    const isSortingSelect =
+      event.target.matches('form select[name="sort_by"]');
+
+    if (!isSortingSelect) return;
+
+    event.preventDefault();
+
+    const form = event.target.closest('form');
+    if (!form) return;
+
+    const formData = new FormData(form);
+    const searchParams = new URLSearchParams(formData).toString();
+
+    FacetFiltersForm.renderPage(searchParams, event);
+  }
+
+  // Helper Method For the Global Sorting (It does not rerender when filtering) START
 
   static setListeners() {
     const onHistoryChange = event => {
