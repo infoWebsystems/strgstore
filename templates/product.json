@@ -27,7 +27,7 @@
           "settings": {
             "title": "Variant picker",
             "back_in_stock": false,
-            "variant_picker_type": "dropdowns",
+            "variant_picker_type": "buttons",
             "variant_picker_layout": "product-selector--default",
             "size_guide_page": "size-guide"
           }
@@ -102,6 +102,7 @@
         },
         "7be6b89c-da83-4ff2-9b85-44fb28cbfa27": {
           "type": "pickup-availability",
+          "disabled": true,
           "settings": {}
         }
       },
