@@ -778,7 +778,8 @@
           "one": "Знижка",
           "other": "Знижки"
         },
-        "shipping_label": "Доставка"
+        "shipping_label": "Доставка",
+        "free_shipping_discount_label": "   "
       },
       "general": {
         "error_page_title": "Помилка",
