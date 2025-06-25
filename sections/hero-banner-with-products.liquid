@@ -189,6 +189,29 @@
 
   <div class="hero-banner-with-products-wrapper">
     <section class="hero-banner section-{{- section.id -}} {% if section.settings.enable_transparent_header %} header-is-transparent{% endif %}">
+        {% liquid
+          assign additional_button_url_1 = section.settings.additional_button_url_1
+          assign additional_button_text_1 = section.settings.additional_button_text_1
+          assign additional_button_style_1 = section.settings.additional_button_style_1
+
+          assign additional_button_url_2 = section.settings.additional_button_url_2
+          assign additional_button_text_2 = section.settings.additional_button_text_2
+          assign additional_button_style_2 = section.settings.additional_button_style_2
+        %}
+
+        {% if additional_button_url_1 != blank or additional_button_url_2 != blank %}
+          <div class="container">
+            <div class="hero-banner-with-products-buttons">
+              {% if additional_button_url_1 != blank and additional_button_text_1 != blank %}
+                <a href="{{ additional_button_url_1 }}" class="button {{ additional_button_style_1 }} button--uppercase">{{ additional_button_text_1 }}</a>
+              {% endif %}
+              {% if additional_button_url_2 != blank and additional_button_text_2 != blank %}
+                <a href="{{ additional_button_url_2 }}" class="button {{ additional_button_style_2 }} button--uppercase">{{ additional_button_text_2 }}</a>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+
       {%- if section.blocks.size > 1 -%}
         <hero-slider
           class="swiper hero__swiper"
@@ -219,29 +242,6 @@
     </section>
 
     {%- render 'products-feed', section: section, products_array: true, section_name: 'featured-products', section_blocks: section.blocks, hide_tabs_triggers: true -%}
-
-    {% liquid
-      assign additional_button_url_1 = section.settings.additional_button_url_1
-      assign additional_button_text_1 = section.settings.additional_button_text_1
-      assign additional_button_style_1 = section.settings.additional_button_style_1
-
-      assign additional_button_url_2 = section.settings.additional_button_url_2
-      assign additional_button_text_2 = section.settings.additional_button_text_2
-      assign additional_button_style_2 = section.settings.additional_button_style_2
-    %}
-
-    {% if additional_button_url_1 != blank or additional_button_url_2 != blank %}
-      <div class="container">
-        <div class="hero-banner-with-products-buttons" style="margin: 0 auto;">
-          {% if additional_button_url_1 != blank and additional_button_text_1 != blank %}
-            <a href="{{ additional_button_url_1 }}" class="button {{ additional_button_style_1 }} button--uppercase">{{ additional_button_text_1 }}</a>
-          {% endif %}
-          {% if additional_button_url_2 != blank and additional_button_text_2 != blank %}
-            <a href="{{ additional_button_url_2 }}" class="button {{ additional_button_style_2 }} button--uppercase">{{ additional_button_text_2 }}</a>
-          {% endif %}
-        </div>
-      </div>
-    {% endif %}
   </div>
 {%- endif -%}
 

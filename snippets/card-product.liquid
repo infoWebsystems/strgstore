@@ -86,21 +86,6 @@
 
           {% if settings.quick_add_to_cart != 'no_button' %}
             {%- capture size_item_html -%}
-              {% comment %} <li {% if settings.quick_add_to_cart == 'basic_button' %}class="basic-button"{% endif %}>
-                <button
-                  type="button"
-                  class="card-product__sizes-btn button-reset js-btn-size{% if variant.id == selected_variant.id %} is-active{% endif %}{% if variant.available == false %} is-disabled{% endif %}"
-                  data-size="{{- option_value -}}"
-                  aria-disabled="{{- aria_disabled -}}"
-                  title="{{- 'products.card-product.add_to_cart' | t -}}"
-                >
-                  {% if settings.quick_add_to_cart == 'basic_button' %}
-                    {{- 'products.card-product.add_to_cart' | t -}}
-                  {% else %}
-                    {{- option_value -}}
-                  {% endif %}
-                </button>
-              </li> {% endcomment %}
               {% unless variant.available == false %}
                 <li {% if settings.quick_add_to_cart == 'basic_button' %}class="basic-button"{% endif %}>
                   <button
