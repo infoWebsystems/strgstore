@@ -173,10 +173,10 @@
         "button_style": "button--outlined",
         "additional_button_text_1": "ДЛЯ НЬОГО STORAGE",
         "additional_button_url_1": "shopify://collections/men",
-        "additional_button_style_1": "button--outlined",
+        "additional_button_style_1": "button--filled",
         "additional_button_text_2": "ДЛЯ НЕЇ DOMAINE17",
         "additional_button_url_2": "shopify://collections/women",
-        "additional_button_style_2": "button--outlined"
+        "additional_button_style_2": "button--filled"
       }
     },
     "featured_collections_4Y79xc": {
