@@ -137,7 +137,8 @@ input:disabled + .card-product__swatch {
 
 .card-product__sizes {
   position: absolute;
-  inset-block-end: 1.2rem;
+  /* inset-block-end: 1.2rem; */
+  inset-block-end: 0;
   inset-inline: 1.2rem;
   z-index: 2;
   text-align: end;
@@ -368,7 +369,7 @@ input:disabled + .card-product__swatch {
   }
 
   .card-product__sizes {
-    inset-block-end: 1.6rem;
+    /* inset-block-end: 1.6rem; */
     inset-inline: 1.6rem;
     margin-block-start: -5.4rem;
   }
