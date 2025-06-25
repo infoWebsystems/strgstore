@@ -242,6 +242,12 @@ class FacetFiltersForm extends HTMLElement {
 
   onSubmitHandler(event) {
     event.preventDefault();
+    const closeFiltersBtns = document.querySelectorAll('menu-drawer button.js-btn-close-drawer');
+
+    closeFiltersBtns.forEach(btn => {
+      btn.click();
+    })
+
     const context = event.target.id.includes('desktop')
       ? 'mobile'
       : 'desktop';
