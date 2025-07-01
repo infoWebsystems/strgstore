@@ -709,6 +709,13 @@
   {{ product | structured_data }}
 </script>
 
+<script>
+  const productImages = document.querySelectorAll('product-media .swiper .swiper-slide .media img');
+  const productGalleryTriggers = document.querySelectorAll('.product__gallery-toggle');
+
+  productImages.forEach((image, i) => image.addEventListener('click', () => productGalleryTriggers[i].click()));
+</script>
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",
