@@ -1,5 +1,8 @@
+{%- comment -%}
+  Updated to show collections as a simple text list with no images
+{%- endcomment -%}
+
 {{- 'section-main-list-collections.css' | asset_url | stylesheet_tag -}}
-{{- 'component-card-collection.css' | asset_url | stylesheet_tag -}}
 
 {% style %}
   .main-list-collections__grid {
@@ -10,23 +13,24 @@
       column-gap: {{ section.settings.column_gap_desktop }}rem;
     }
   }
+  .collection-list-text {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .collection-list-text li {
+    padding: 0.5rem 0;
+  }
+  .collection-list-text a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+  }
 {% endstyle %}
-
-<script src="{{- 'collection-load-more.js' | asset_url -}}" defer="defer"></script>
 
 {%- capture section_additional_classes -%}
   {{ section.settings.padding_vertical_desktop }} {{ section.settings.padding_vertical_mobile }} {{ section.settings.color_scheme_text }} {{ section.settings.color_scheme_background }}
 {%- endcapture -%}
-
-{%- liquid
-  capture card_classes
-    echo section.settings.card_collection_color_scheme_text
-  endcapture
-
-  capture card_classes_no_image
-    echo section.settings.card_collection_color_scheme_text_no_image
-  endcapture
--%}
 
 <section class="main-list-collections color-body-background {{ section_additional_classes | strip }}">
   <div class="container" id="ProductGridContainer">
@@ -35,18 +39,18 @@
 
       {%- when 'all' -%}
         {%- paginate collections by section.settings.collections_per_page -%}
-          <div class="main-list-collections__grid" id="product-grid">
-            {%- for collection in collections -%}
-              {%- render 'card-collection', collection_ref: collection, class: card_classes, class_without_image: card_classes_no_image -%}
-            {%- endfor -%}
-          </div>
+          <ul class="collection-list-text">
+            {% for collection in collections %}
+              <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
+            {% endfor %}
+          </ul>
           {%- if paginate.pages > 1 -%}
             <collection-load-more class="main-list-collections__actions text-center no-js-hidden{% unless paginate.next %} hidden{% endunless %}" data-current-page="{{- paginate.current_page -}}">
               {%- liquid
               assign load_more_button_data_href = 'data-href="' | append: paginate.next.url | append: '"'
               assign load_more_value = 'collection.ajax_button' | t
               render 'button', class: 'button js-btn-load-more', button_style: 'button--filled', attr: load_more_button_data_href, value: load_more_value, loading_spinner: true
-            -%}
+              -%}
             </collection-load-more>
             <div class="main-list-collections__actions no-js">
               {%- render 'pagination', paginate: paginate, anchor: '' -%}
@@ -55,11 +59,14 @@
         {%- endpaginate -%}
 
       {%- when 'selected' -%}
-        <div class="main-list-collections__grid" id="product-grid">
-          {%- for block in section.blocks -%}
-            {%- render 'card-collection', collection_ref: block.settings.collection, class: block.settings.color_scheme_text, title: block.settings.title, image: block.settings.image -%}
-          {%- endfor -%}
-        </div>
+        <ul class="collection-list-text">
+          {% for block in section.blocks %}
+            {% assign collection = block.settings.collection %}
+            {% if collection %}
+              <li><a href="{{ collection.url }}">{{ block.settings.title | default: collection.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
     {%- endcase -%}
 
   </div>
