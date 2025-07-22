@@ -325,6 +325,14 @@ input:disabled + .card-product__swatch {
   transition: background-color var(--duration-default), color var(--duration-default);
 }
 
+@media only screen and (max-width: 574px) {
+  .card-product__sizes-btn {
+    padding: 1rem .6rem;
+    min-width: 3rem;
+    min-height: 4rem;
+  }
+}
+
 .card-product__sizes-btn.is-disabled {
   pointer-events: none;
   color: var(--color-body-text-default);
