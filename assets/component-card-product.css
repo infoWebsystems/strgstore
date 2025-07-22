@@ -328,8 +328,8 @@ input:disabled + .card-product__swatch {
 @media only screen and (max-width: 574px) {
   .card-product__sizes-btn {
     padding: 1rem .6rem;
-    min-width: 3rem;
-    min-height: 4rem;
+    min-width: 2.5rem;
+    min-height: 3rem;
   }
 }
 
