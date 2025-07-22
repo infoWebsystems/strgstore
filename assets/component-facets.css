@@ -157,6 +157,12 @@ html.no-js .facets__actions-item {
   overflow-y: auto;
 }
 
+@media only screen and (max-width: 989px) {
+  .facets__list {
+    width: unset;
+  }
+}
+
 .facets__price {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
