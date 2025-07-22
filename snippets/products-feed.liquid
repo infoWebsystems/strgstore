@@ -96,7 +96,7 @@
             endfor
           %}
 
-          <div class="products-feed__tab {% if total_tab_count < 2 %}hidden{% endif %}">
+          <div class="products-feed__tab {% if total_tab_count < 2 or hide_tabs_triggers %}hidden{% endif %}">
             {%- assign tab_counter = 0 -%}
             {%- for block in section_blocks -%}
 

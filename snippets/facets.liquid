@@ -86,15 +86,19 @@
                             </accordion-default>
                           </div>
 
-                          <div class="drawer__row drawer__row--buttons">
+                          <div class="drawer__row drawer__row--buttons" style="position: sticky; bottom: 0; background-color: #f4f4f4;">
                             {%- assign clear_text = 'collection.facets.clear_all' | t -%}
 
                             <facet-remove>
                               {%- render 'button', type: 'link', class: 'button button--full facets__clear-button', button_style: 'button--outlined', value: clear_text | escape, href: results_sort_url -%}
                             </facet-remove>
 
-                            {%- assign show_results_button_value = 'collection.facets.filters_submit' | t -%}
-                            {%- render 'button', type: 'button', class: 'button button--full js-btn-close-drawer no-js-hidden', button_style: 'button--filled', value: show_results_button_value -%}
+                            {% comment %} {%- assign show_results_button_value = 'collection.facets.filters_submit' | t -%} {% endcomment %}
+                            {%- assign show_results_button_value = 'collection.facets.apply' | t -%}
+                            {%- render 'button', type: 'submit', class: 'button button--full no-js-hidden', button_style: 'button--filled', value: show_results_button_value -%}
+
+                            {%- assign close_button_value = 'collection.facets.close' | t -%}
+                            {%- render 'button', type: 'button', class: 'button button--full js-btn-close-drawer no-js-hidden hidden', button_style: 'button--filled', value: close_button_value -%}
 
                           </div>
                         </div>

@@ -85,10 +85,9 @@
         "cee0c4f6-5546-43a3-bfc3-2f3afa36d9d5",
         "5e0cad2e-d931-416e-ac29-51a4a683ade2"
       ],
-      "disabled": true,
       "settings": {
-        "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-accent-1",
+        "color_scheme_text": "text-colors-inverse",
+        "color_scheme_background": "background-colors-secondary",
         "slider_autoplay_interval": 5
       }
     },
@@ -96,13 +95,13 @@
       "type": "header",
       "settings": {
         "fullwidth": true,
-        "sticky": false,
+        "sticky": true,
         "color_scheme_background": "background-colors-default",
-        "color_scheme_text": "text-colors-default",
+        "color_scheme_text": "text-colors-secondary",
         "layout": "header--nav-centered",
-        "transparent_header_on_scroll": true,
+        "transparent_header_on_scroll": false,
         "transparent_header_bottom_border": false,
-        "drawer_layer": true,
+        "drawer_layer": false,
         "logo": "shopify://shop_images/strgstore-logo.svg",
         "logo_svg_code": "",
         "logo_width": 200,

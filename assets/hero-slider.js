@@ -71,6 +71,15 @@ if (!customElements.get('hero-slider')) {
           button.classList.add(className);
         });
       });
+
+      // Change collection on swipe START
+      const sectionWrapper = activeSlide.closest('.section-hero-banner');
+      const tabs = sectionWrapper.querySelectorAll('.products-feed__tab [class*="products-feed__tablinks"]') || null;
+
+      if (tabs[swiper.activeIndex]) {
+        tabs[swiper.activeIndex].click();
+      }
+      // Change collection on swipe END
     }
 
     addKeyboardNavigation() {

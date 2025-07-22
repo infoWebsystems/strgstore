@@ -15,7 +15,7 @@
         "enable_transparent_header": true,
         "section_height": 40,
         "banner_layout": "banner--full",
-        "color_scheme_text": "text-colors-inverse",
+        "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-accent-2"
       }
     },
@@ -42,17 +42,17 @@
       "settings": {
         "color_scheme_text": "color-text-primary",
         "color_scheme_background": "background-colors-default",
-        "enable_products_count": true,
+        "enable_products_count": false,
         "enable_sorting": true,
         "enable_filters": true,
         "filters_style": "sidebar",
         "sidebar_navigation": "",
         "column_gap_desktop": 0.2,
         "column_gap_mobile": 0.2,
-        "products_per_page": 12,
+        "products_per_page": 36,
         "products_per_row_default": "4",
         "products_per_row_ui": true,
-        "pagination_style": "default",
+        "pagination_style": "load_more",
         "button_style": "button--filled"
       }
     },

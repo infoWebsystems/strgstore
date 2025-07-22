@@ -86,21 +86,23 @@
 
           {% if settings.quick_add_to_cart != 'no_button' %}
             {%- capture size_item_html -%}
-              <li {% if settings.quick_add_to_cart == 'basic_button' %}class="basic-button"{% endif %}>
-                <button
-                  type="button"
-                  class="card-product__sizes-btn button-reset js-btn-size{% if variant.id == selected_variant.id %} is-active{% endif %}{% if variant.available == false %} is-disabled{% endif %}"
-                  data-size="{{- option_value -}}"
-                  aria-disabled="{{- aria_disabled -}}"
-                  title="{{- 'products.card-product.add_to_cart' | t -}}"
-                >
-                  {% if settings.quick_add_to_cart == 'basic_button' %}
-                    {{- 'products.card-product.add_to_cart' | t -}}
-                  {% else %}
-                    {{- option_value -}}
-                  {% endif %}
-                </button>
-              </li>
+              {% unless variant.available == false %}
+                <li {% if settings.quick_add_to_cart == 'basic_button' %}class="basic-button"{% endif %}>
+                  <button
+                    type="button"
+                    class="card-product__sizes-btn button-reset js-btn-size is-active"
+                    data-size="{{- option_value -}}"
+                    aria-disabled="{{- aria_disabled -}}"
+                    title="{{- 'products.card-product.add_to_cart' | t -}}"
+                  >
+                    {% if settings.quick_add_to_cart == 'basic_button' %}
+                      {{- 'products.card-product.add_to_cart' | t -}}
+                    {% else %}
+                      {{- option_value -}}
+                    {% endif %}
+                  </button>
+                </li>
+              {% endunless %}
             {%- endcapture -%}
 
             {% if settings.quick_add_to_cart == 'basic_button' %}
@@ -248,10 +250,20 @@
                 </div>
               </div>
 
-              {% if settings.quick_add_to_cart != 'no_button' %}
-                <ul class="list-unstyled">
-                  {{ size_items_html }}
-                </ul>
+              {% assign is_variant_available = false %}
+
+              {% for variant in product_ref.variants %}
+                {% if variant.available %}
+                  {% assign is_variant_available = true %}
+                {% endif %}
+              {% endfor %}
+
+              {% if is_variant_available %}
+                {% if settings.quick_add_to_cart != 'no_button' %}
+                  <ul class="list-unstyled">
+                    {{ size_items_html }}
+                  </ul>
+                {% endif %}
               {% endif %}
             </div>
           </div>

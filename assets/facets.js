@@ -1,17 +1,60 @@
 class FacetFiltersForm extends HTMLElement {
+  // Original Constructor START
+
+  // constructor() {
+  //   super();
+
+  //   this.onActiveFilterClick = this.onActiveFilterClick.bind(this);
+  //   this.debouncedOnSubmit = debounce(event => {
+  //     this.onSubmitHandler(event);
+  //   }, 500);
+  //   this.querySelector('form').addEventListener(
+  //     'input',
+  //     this.debouncedOnSubmit.bind(this)
+  //   );
+  //   this.btnClearFilters = this.querySelector('facet-remove')?.querySelector('a');
+  // }
+
+  // Original Constructor END
+
+  // Update Constructor START
   constructor() {
     super();
 
     this.onActiveFilterClick = this.onActiveFilterClick.bind(this);
-    this.debouncedOnSubmit = debounce(event => {
-      this.onSubmitHandler(event);
-    }, 500);
-    this.querySelector('form').addEventListener(
-      'input',
-      this.debouncedOnSubmit.bind(this)
-    );
+    this.onSubmitHandler = this.onSubmitHandler.bind(this);
+
+    // Global event listener for sorting (delegated)
+    document.addEventListener('input', this.globalSortingListener.bind(this), true);
+
+    const form = this.querySelector('form');
+    if (form) {
+      form.addEventListener('submit', this.onSubmitHandler);
+    }
+
     this.btnClearFilters = this.querySelector('facet-remove')?.querySelector('a');
   }
+  // Update Constructor END
+
+  // Helper Method For the Global Sorting (It does not rerender when filtering) START
+  globalSortingListener(event) {
+    const isSortingSelect =
+      event.target.matches('form select[name="sort_by"]');
+
+    if (!isSortingSelect) return;
+
+    event.preventDefault();
+
+    const form = event.target.closest('form');
+    if (!form) return;
+
+    const formData = new FormData(form);
+    const searchParams = new URLSearchParams(formData).toString();
+
+    FacetFiltersForm.renderPage(searchParams, event);
+  }
+
+  // Helper Method For the Global Sorting (It does not rerender when filtering) START
 
   static setListeners() {
     const onHistoryChange = event => {
@@ -199,6 +242,12 @@ class FacetFiltersForm extends HTMLElement {
 
   onSubmitHandler(event) {
     event.preventDefault();
+    const closeFiltersBtns = document.querySelectorAll('menu-drawer button.js-btn-close-drawer');
+
+    closeFiltersBtns.forEach(btn => {
+      btn.click();
+    })
+
     const context = event.target.id.includes('desktop')
       ? 'mobile'
       : 'desktop';

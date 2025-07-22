@@ -1,0 +1,33 @@
+.hero-banner-with-products-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+.hero-banner-with-products-wrapper .hero-banner {
+  position: relative;
+}
+
+.hero-banner-with-products-wrapper .hero-banner .container:has(.hero-banner-with-products-buttons) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-banner-with-products-buttons {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.hero-banner-with-products-buttons .button {
+  min-width: 250px;
+}

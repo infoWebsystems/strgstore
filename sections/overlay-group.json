@@ -29,6 +29,7 @@
     },
     "newsletter-popup": {
       "type": "newsletter-popup",
+      "disabled": true,
       "settings": {
         "customizer_visible": false,
         "color_scheme_text": "text-colors-primary",
