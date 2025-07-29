@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "spacing_wQRJaB": {
+      "type": "spacing",
+      "name": "t:sections.spacing.name",
+      "settings": {
+        "color_scheme_background": "background-colors-default",
+        "spacing_desktop": 20,
+        "spacing_mobile": 10
+      }
+    },
     "page_banner_HecNfU": {
       "type": "page-banner",
       "name": "t:sections.page-banner.name",
@@ -35,22 +44,6 @@
         "show_controls_on_video_mobile": false,
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-accent-2"
-      }
-    },
-    "main_list_collections_8pPqKf": {
-      "type": "main-list-collections",
-      "name": "t:sections.main-list-collections.name",
-      "settings": {
-        "collections_to_show": "all",
-        "padding_vertical_desktop": "",
-        "padding_vertical_mobile": "",
-        "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-default",
-        "card_collection_color_scheme_text": "text-colors-inverse",
-        "card_collection_color_scheme_text_no_image": "text-colors-default",
-        "column_gap_desktop": 0.2,
-        "column_gap_mobile": 0.2,
-        "collections_per_page": 12
       }
     },
     "main": {
@@ -1288,8 +1281,8 @@
     }
   },
   "order": [
+    "spacing_wQRJaB",
     "page_banner_HecNfU",
-    "main_list_collections_8pPqKf",
     "main",
     "page_banner_ceqHt8",
     "main_list_collections_wFBLGK",
