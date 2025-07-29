@@ -4,7 +4,18 @@
 
 {{- 'section-main-list-collections.css' | asset_url | stylesheet_tag -}}
 
+{%- comment -%}
+  Updated to show collections as a simple text list with no images and responsive columns (1 on mobile, 2 on tablet, 3 on desktop)
+{%- endcomment -%}
+
+{{- 'section-main-list-collections.css' | asset_url | stylesheet_tag -}}
+
 {% style %}
+  .collection-group-heading {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
   .main-list-collections__grid {
     column-gap: {{ section.settings.column_gap_mobile }}rem;
   }
@@ -54,9 +65,18 @@
         {%- paginate collections by section.settings.collections_per_page -%}
           <ul class="collection-list-text">
             {% assign sorted_collections = collections | sort: 'title' %}
+{% assign current_letter = '' %}
 {% for collection in sorted_collections %}
-              <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
-            {% endfor %}
+  {% assign first_letter = collection.title | slice: 0 | upcase %}
+  {% if first_letter != current_letter %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h3 class="collection-group-heading">{{ first_letter }}</h3>
+    <ul class="collection-list-text">
+    {% assign current_letter = first_letter %}
+  {% endif %}
+  <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
+{% endfor %}
+</ul>
           </ul>
           {%- if paginate.pages > 1 -%}
             <collection-load-more class="main-list-collections__actions text-center no-js-hidden{% unless paginate.next %} hidden{% endunless %}" data-current-page="{{- paginate.current_page -}}">
@@ -85,6 +105,7 @@
 
   </div>
 </section>
+
 
 {% schema %}
 {
