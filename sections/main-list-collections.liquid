@@ -1,36 +1,46 @@
 {%- comment -%}
-  Collections / Brands — groups only if more than 20 items total
-  • Mobile (<768px): 1 column
-  • Tablet (≥768px): 2 columns
-  • Desktop (≥990px): 4 columns
+  Collections / Brands — text list, grouped alphabetically, 4 columns on desktop
+  • Mobile (<768px) 1 column
+  • Tablet (≥768px) 2 columns
+  • Desktop (≥990px) 4 columns
+  • Each column = 1 letter group (0‑9, A, B, C … Z)
 {%- endcomment -%}
 
 {{- 'section-main-list-collections.css' | asset_url | stylesheet_tag -}}
 
 {% style %}
-  /* Responsive grid for simple list */
+  /* Grid container for groups */
+  .collection-groups {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .collection-groups { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 990px) {
+    .collection-groups { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  /* Heading for each letter group */
+  .collection-group-heading {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  /* List of brands inside each group */
   .collection-list-text {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.4rem;
-  }
-  @media (min-width: 768px) {
-    .collection-list-text { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (min-width: 990px) {
-    .collection-list-text { grid-template-columns: repeat(4, 1fr); }
   }
   .collection-list-text li { margin: 0.15rem 0; }
-  .collection-list-text a { text-decoration: none; color: inherit; font-size: 1.1rem; }
-
-  /* Grouped layout */
-  .collection-groups { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
-  @media (min-width: 768px) { .collection-groups { grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 990px) { .collection-groups { grid-template-columns: repeat(4, 1fr); } }
-  .collection-group-heading { margin: 0 0 0.5rem; font-size: 1.3rem; font-weight: 600; }
+  .collection-list-text a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+  }
 {% endstyle %}
 
 {%- capture section_additional_classes -%}
@@ -44,42 +54,30 @@
 
       {%- when 'all' -%}
         {%- paginate collections by section.settings.collections_per_page -%}
-          {% assign total_collections = collections.size %}
           {% assign sorted_collections = collections | sort: 'title' %}
+          {% assign current_letter = '' %}
+          <div class="collection-groups">
+            {% for collection in sorted_collections %}
+              {% assign char = collection.title | slice: 0, 1 | upcase %}
+              {% if char >= '0' and char <= '9' %}
+                {% assign letter = '0-9' %}
+              {% else %}
+                {% assign letter = char %}
+              {% endif %}
 
-          {% if total_collections > 20 %}
-            {#-- GROUPED VERSION --#}
-            {% assign current_letter = '' %}
-            <div class="collection-groups">
-              {% for collection in sorted_collections %}
-                {% assign char = collection.title | slice: 0, 1 | upcase %}
-                {% if char >= '0' and char <= '9' %}
-                  {% assign letter = '0-9' %}
-                {% else %}
-                  {% assign letter = char %}
-                {% endif %}
+              {% if letter != current_letter %}
+                {% unless forloop.first %}</ul></div>{% endunless %}
+                <div class="collection-group">
+                  <h3 class="collection-group-heading" id="group-{{ letter | handle }}">{{ letter }}</h3>
+                  <ul class="collection-list-text">
+                {% assign current_letter = letter %}
+              {% endif %}
 
-                {% if letter != current_letter %}
-                  {% unless forloop.first %}</ul></div>{% endunless %}
-                  <div class="collection-group">
-                    <h3 class="collection-group-heading" id="group-{{ letter | handle }}">{{ letter }}</h3>
-                    <ul class="collection-list-text">
-                  {% assign current_letter = letter %}
-                {% endif %}
+              <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
 
-                <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
-
-                {% if forloop.last %}</ul></div>{% endif %}
-              {% endfor %}
-            </div>
-          {% else %}
-            {#-- SIMPLE LIST VERSION --#}
-            <ul class="collection-list-text">
-              {% for collection in sorted_collections %}
-                <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
-              {% endfor %}
-            </ul>
-          {% endif %}
+              {% if forloop.last %}</ul></div>{% endif %}
+            {% endfor %}
+          </div>
 
           {%- if paginate.pages > 1 -%}
             <collection-load-more class="main-list-collections__actions text-center no-js-hidden{% unless paginate.next %} hidden{% endunless %}" data-current-page="{{ paginate.current_page }}">
@@ -96,50 +94,34 @@
         {%- endpaginate -%}
 
       {%- when 'selected' -%}
-        {% assign total_blocks = section.blocks.size %}
         {% assign sorted_blocks = section.blocks | sort: 'settings.title' %}
-
-        {% if total_blocks > 20 %}
-          {#-- GROUPED --#}
-          {% assign current_letter = '' %}
-          <div class="collection-groups">
-            {% for block in sorted_blocks %}
-              {% assign collection = block.settings.collection %}
-              {% if collection %}
-                {% assign title = block.settings.title | default: collection.title %}
-                {% assign char = title | slice: 0, 1 | upcase %}
-                {% if char >= '0' and char <= '9' %}
-                  {% assign letter = '0-9' %}
-                {% else %}
-                  {% assign letter = char %}
-                {% endif %}
-
-                {% if letter != current_letter %}
-                  {% unless forloop.first %}</ul></div>{% endunless %}
-                  <div class="collection-group">
-                    <h3 class="collection-group-heading" id="group-{{ letter | handle }}">{{ letter }}</h3>
-                    <ul class="collection-list-text">
-                  {% assign current_letter = letter %}
-                {% endif %}
-
-                <li><a href="{{ collection.url }}">{{ title }}</a></li>
-
-                {% if forloop.last %}</ul></div>{% endif %}
+        {% assign current_letter = '' %}
+        <div class="collection-groups">
+          {% for block in sorted_blocks %}
+            {% assign collection = block.settings.collection %}
+            {% if collection %}
+              {% assign collection_title = block.settings.title | default: collection.title %}
+              {% assign char = collection_title | slice: 0, 1 | upcase %}
+              {% if char >= '0' and char <= '9' %}
+                {% assign letter = '0-9' %}
+              {% else %}
+                {% assign letter = char %}
               {% endif %}
-            {% endfor %}
-          </div>
-        {% else %}
-          {#-- SIMPLE LIST --#}
-          <ul class="collection-list-text">
-            {% for block in sorted_blocks %}
-              {% assign collection = block.settings.collection %}
-              {% if collection %}
-                {% assign title = block.settings.title | default: collection.title %}
-                <li><a href="{{ collection.url }}">{{ title }}</a></li>
+
+              {% if letter != current_letter %}
+                {% unless forloop.first %}</ul></div>{% endunless %}
+                <div class="collection-group">
+                  <h3 class="collection-group-heading" id="group-{{ letter | handle }}">{{ letter }}</h3>
+                  <ul class="collection-list-text">
+                {% assign current_letter = letter %}
               {% endif %}
-            {% endfor %}
-          </ul>
-        {% endif %}
+
+              <li><a href="{{ collection.url }}">{{ collection_title }}</a></li>
+
+              {% if forloop.last %}</ul></div>{% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
 
     {%- endcase -%}
 
