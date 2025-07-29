@@ -110,7 +110,7 @@
         "menu": "main-menu",
         "menu_mobile": "",
         "submenu": "",
-        "menu_column_count": 5,
+        "menu_column_count": 3,
         "country_drawer_header": false,
         "country_drawer_navigation_menu": false,
         "first_additional_link_title": "",

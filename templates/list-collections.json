@@ -27,10 +27,10 @@
         "media_position": "background",
         "page_menu": "",
         "enable_breadcrumbs": true,
-        "section_height": "33svh",
+        "section_height": "auto",
         "video_external": "",
         "show_controls_on_video": false,
-        "section_height_mobile": "33svh",
+        "section_height_mobile": "auto",
         "video_external_mobile": "",
         "show_controls_on_video_mobile": false,
         "color_scheme_text": "text-colors-default",
@@ -590,30 +590,6 @@
             "collection": "gucci",
             "title": ""
           }
-        },
-        "collection_NbJydD": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "h-m",
-            "title": ""
-          }
-        },
-        "collection_iMHWAe": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "heliot-emil",
-            "title": ""
-          }
-        },
-        "collection_tVkrek": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "heron-preston",
-            "title": ""
-          }
         }
       },
       "block_order": [
@@ -661,10 +637,7 @@
         "collection_tzUk6y",
         "collection_x3c8qy",
         "collection_DJrVKf",
-        "collection_ncRYpa",
-        "collection_NbJydD",
-        "collection_iMHWAe",
-        "collection_tVkrek"
+        "collection_ncRYpa"
       ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
@@ -683,6 +656,30 @@
     "main_list_collections_3KD4TV": {
       "type": "main-list-collections",
       "blocks": {
+        "collection_tGaWhQ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "h-m",
+            "title": ""
+          }
+        },
+        "collection_g7Y447": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "heliot-emil",
+            "title": ""
+          }
+        },
+        "collection_FdWgcU": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "heron-preston",
+            "title": ""
+          }
+        },
         "collection_BVnUg6": {
           "type": "collection",
           "settings": {
@@ -1051,33 +1048,12 @@
             "collection": "supreme",
             "title": ""
           }
-        },
-        "collection_ge3JUR": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "the-north-face",
-            "title": ""
-          }
-        },
-        "collection_ikHTRc": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "the-skateroom",
-            "title": ""
-          }
-        },
-        "collection_rgGPAd": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "thisisneverthat",
-            "title": ""
-          }
         }
       },
       "block_order": [
+        "collection_tGaWhQ",
+        "collection_g7Y447",
+        "collection_FdWgcU",
         "collection_BVnUg6",
         "collection_eNmRHi",
         "collection_EyWLRp",
@@ -1123,10 +1099,7 @@
         "collection_7nFPG9",
         "collection_XPcF9p",
         "collection_y637dc",
-        "collection_yaViHr",
-        "collection_ge3JUR",
-        "collection_ikHTRc",
-        "collection_rgGPAd"
+        "collection_yaViHr"
       ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
@@ -1145,6 +1118,30 @@
     "main_list_collections_i4GKqh": {
       "type": "main-list-collections",
       "blocks": {
+        "collection_pWR8JQ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "the-north-face",
+            "title": "THE NORTH FACE"
+          }
+        },
+        "collection_bbreGh": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "the-skateroom",
+            "title": "THE SKATEROOM"
+          }
+        },
+        "collection_Qht7Wp": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "thisisneverthat",
+            "title": "THISISNEVERTHAT"
+          }
+        },
         "collection_MjrfbL": {
           "type": "collection",
           "settings": {
@@ -1243,6 +1240,9 @@
         }
       },
       "block_order": [
+        "collection_pWR8JQ",
+        "collection_bbreGh",
+        "collection_Qht7Wp",
         "collection_MjrfbL",
         "collection_TL343D",
         "collection_t6Y83j",
