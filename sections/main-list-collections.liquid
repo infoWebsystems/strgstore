@@ -1,47 +1,45 @@
 {%- comment -%}
-  Collections Brands List — Shopify Section
-  • Text‑only list grouped alphabetically (0‑9, A, B, C … Z)
-  • Responsive columns — 1 (mobile <768px), 2 (tablet ≥768px), 3 (desktop ≥990px)
-  • Works for both “all collections” and “selected collections” modes
+  Collections / Brands — text list, grouped alphabetically, 4 columns on desktop
+  • Mobile (<768px) 1 column
+  • Tablet (≥768px) 2 columns
+  • Desktop (≥990px) 4 columns
+  • Each column = 1 letter group (0‑9, A, B, C … Z)
 {%- endcomment -%}
 
 {{- 'section-main-list-collections.css' | asset_url | stylesheet_tag -}}
 
 {% style %}
-  /* base column gaps inherited from theme settings */
-  .main-list-collections__grid {
-    column-gap: {{ section.settings.column_gap_mobile }}rem;
+  /* Grid container for groups */
+  .collection-groups {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .collection-groups { grid-template-columns: repeat(2, 1fr); }
   }
   @media (min-width: 990px) {
-    .main-list-collections__grid {
-      column-gap: {{ section.settings.column_gap_desktop }}rem;
-    }
+    .collection-groups { grid-template-columns: repeat(4, 1fr); }
   }
 
-  /* text list styles */
+  /* Heading for each letter group */
+  .collection-group-heading {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  /* List of brands inside each group */
   .collection-list-text {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.4rem;
   }
-  @media (min-width: 768px) { /* tablet */
-    .collection-list-text { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (min-width: 990px) { /* desktop */
-    .collection-list-text { grid-template-columns: repeat(3, 1fr); }
-  }
-
-  .collection-list-text li { padding: 0.15rem 0; }
-  .collection-list-text a { text-decoration: none; color: inherit; font-size: 1.1rem; }
-
-  /* heading for each letter group */
-  .collection-group-heading {
-    margin: 2rem 0 0.5rem;
-    font-weight: 600;
-    font-size: 1.4rem;
+  .collection-list-text li { margin: 0.15rem 0; }
+  .collection-list-text a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
   }
 {% endstyle %}
 
@@ -62,30 +60,31 @@
             {% for collection in sorted_collections %}
               {% assign char = collection.title | slice: 0, 1 | upcase %}
               {% if char >= '0' and char <= '9' %}
-                {% assign first_letter = '0-9' %}
+                {% assign letter = '0-9' %}
               {% else %}
-                {% assign first_letter = char %}
+                {% assign letter = char %}
               {% endif %}
 
-              {% if first_letter != current_letter %}
-                {% unless forloop.first %}</ul>{% endunless %}
-                <h3 class="collection-group-heading" id="group-{{ first_letter | handle }}">{{ first_letter }}</h3>
-                <ul class="collection-list-text">
-                {% assign current_letter = first_letter %}
+              {% if letter != current_letter %}
+                {% unless forloop.first %}</ul></div>{% endunless %}
+                <div class="collection-group">
+                  <h3 class="collection-group-heading" id="group-{{ letter | handle }}">{{ letter }}</h3>
+                  <ul class="collection-list-text">
+                {% assign current_letter = letter %}
               {% endif %}
 
               <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
 
-              {% if forloop.last %}</ul>{% endif %}
+              {% if forloop.last %}</ul></div>{% endif %}
             {% endfor %}
           </div>
 
           {%- if paginate.pages > 1 -%}
             <collection-load-more class="main-list-collections__actions text-center no-js-hidden{% unless paginate.next %} hidden{% endunless %}" data-current-page="{{ paginate.current_page }}">
               {%- liquid
-                assign load_more_button_data_href = 'data-href="' | append: paginate.next.url | append: '"'
-                assign load_more_value = 'collection.ajax_button' | t
-                render 'button', class: 'button js-btn-load-more', button_style: 'button--filled', attr: load_more_button_data_href, value: load_more_value, loading_spinner: true
+                assign href_attr = 'data-href="' | append: paginate.next.url | append: '"'
+                assign btn_label = 'collection.ajax_button' | t
+                render 'button', class: 'button js-btn-load-more', button_style: 'button--filled', attr: href_attr, value: btn_label, loading_spinner: true
               -%}
             </collection-load-more>
             <div class="main-list-collections__actions no-js">
@@ -104,21 +103,22 @@
               {% assign collection_title = block.settings.title | default: collection.title %}
               {% assign char = collection_title | slice: 0, 1 | upcase %}
               {% if char >= '0' and char <= '9' %}
-                {% assign first_letter = '0-9' %}
+                {% assign letter = '0-9' %}
               {% else %}
-                {% assign first_letter = char %}
+                {% assign letter = char %}
               {% endif %}
 
-              {% if first_letter != current_letter %}
-                {% unless forloop.first %}</ul>{% endunless %}
-                <h3 class="collection-group-heading" id="group-{{ first_letter | handle }}">{{ first_letter }}</h3>
-                <ul class="collection-list-text">
-                {% assign current_letter = first_letter %}
+              {% if letter != current_letter %}
+                {% unless forloop.first %}</ul></div>{% endunless %}
+                <div class="collection-group">
+                  <h3 class="collection-group-heading" id="group-{{ letter | handle }}">{{ letter }}</h3>
+                  <ul class="collection-list-text">
+                {% assign current_letter = letter %}
               {% endif %}
 
               <li><a href="{{ collection.url }}">{{ collection_title }}</a></li>
 
-              {% if forloop.last %}</ul>{% endif %}
+              {% if forloop.last %}</ul></div>{% endif %}
             {% endif %}
           {% endfor %}
         </div>
