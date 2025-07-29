@@ -1,21 +1,10 @@
 {%- comment -%}
-  Updated to show collections as a simple text list with no images and responsive columns (1 on mobile, 2 on tablet, 3 on desktop)
-{%- endcomment -%}
-
-{{- 'section-main-list-collections.css' | asset_url | stylesheet_tag -}}
-
-{%- comment -%}
-  Updated to show collections as a simple text list with no images and responsive columns (1 on mobile, 2 on tablet, 3 on desktop)
+  Updated to show collections as a grouped, alphabetical text list with responsive columns
 {%- endcomment -%}
 
 {{- 'section-main-list-collections.css' | asset_url | stylesheet_tag -}}
 
 {% style %}
-  .collection-group-heading {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
   .main-list-collections__grid {
     column-gap: {{ section.settings.column_gap_mobile }}rem;
   }
@@ -50,6 +39,12 @@
     color: inherit;
     font-size: 1.2rem;
   }
+  .collection-group-heading {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
 {% endstyle %}
 
 {%- capture section_additional_classes -%}
@@ -63,21 +58,22 @@
 
       {%- when 'all' -%}
         {%- paginate collections by section.settings.collections_per_page -%}
-          <ul class="collection-list-text">
-            {% assign sorted_collections = collections | sort: 'title' %}
-{% assign current_letter = '' %}
-{% for collection in sorted_collections %}
-  {% assign first_letter = collection.title | slice: 0 | upcase %}
-  {% if first_letter != current_letter %}
-    {% unless forloop.first %}</ul>{% endunless %}
-    <h3 class="collection-group-heading">{{ first_letter }}</h3>
-    <ul class="collection-list-text">
-    {% assign current_letter = first_letter %}
-  {% endif %}
-  <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
-{% endfor %}
-</ul>
-          </ul>
+          {% assign sorted_collections = collections | sort: 'title' %}
+          {% assign current_letter = '' %}
+          <div class="collection-groups">
+            {% for collection in sorted_collections %}
+              {% assign first_letter = collection.title | slice: 0, 1 | upcase %}
+              {% if first_letter != current_letter %}
+                {% unless forloop.first %}</ul>{% endunless %}
+                <h3 class="collection-group-heading">{{ first_letter }}</h3>
+                <ul class="collection-list-text">
+                {% assign current_letter = first_letter %}
+              {% endif %}
+              <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
+              {% if forloop.last %}</ul>{% endif %}
+            {% endfor %}
+          </div>
+
           {%- if paginate.pages > 1 -%}
             <collection-load-more class="main-list-collections__actions text-center no-js-hidden{% unless paginate.next %} hidden{% endunless %}" data-current-page="{{- paginate.current_page -}}">
               {%- liquid
@@ -93,18 +89,30 @@
         {%- endpaginate -%}
 
       {%- when 'selected' -%}
-        <ul class="collection-list-text">
-          {% for block in section.blocks %}
+        {% assign sorted_blocks = section.blocks | sort: 'settings.title' %}
+        {% assign current_letter = '' %}
+        <div class="collection-groups">
+          {% for block in sorted_blocks %}
             {% assign collection = block.settings.collection %}
             {% if collection %}
-              <li><a href="{{ collection.url }}">{{ block.settings.title | default: collection.title }}</a></li>
+              {% assign collection_title = block.settings.title | default: collection.title %}
+{% assign first_letter = collection_title | slice: 0, 1 | upcase %}
+              {% if first_letter != current_letter %}
+                {% unless forloop.first %}</ul>{% endunless %}
+                <h3 class="collection-group-heading">{{ first_letter }}</h3>
+                <ul class="collection-list-text">
+                {% assign current_letter = first_letter %}
+              {% endif %}
+              <li><a href="{{ collection.url }}">{{ collection_title }}</a></li>
+              {% if forloop.last %}</ul>{% endif %}
             {% endif %}
           {% endfor %}
-        </ul>
+        </div>
     {%- endcase -%}
 
   </div>
 </section>
+
 
 
 {% schema %}
