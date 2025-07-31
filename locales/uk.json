@@ -590,7 +590,8 @@
         "address_title": "Адреса",
         "shipping_used_as_billing_notice": "Ця адреса буде використана для доставки",
         "different_shipping_address_label": "Доставити на іншу адресу",
-        "optional_phone_label": "Номер телефону"
+        "optional_phone_label": "Номер телефону",
+        "phone_tooltip": "На випадок якщо нам треба буде зконтактувати з вами з приводу замовлення"
       },
       "delivery_options": {
         "pickup_point_method_definition": "Самовивіз з магазину",
