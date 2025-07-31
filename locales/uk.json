@@ -621,7 +621,7 @@
         "saved_address_modal_title": "Використати мою збережену адресу"
       },
       "shipping": {
-        "shipping_method_title": "Метод доставки",
+        "shipping_method_title": "Спосіб доставки",
         "delivery_title": "Доставка",
         "free_rate_label": " ",
         "title": "Доставка",
@@ -714,7 +714,8 @@
         "shipping_address_title": "Адреса доставки",
         "marker": {
           "shipping": "Адреса доставки"
-        }
+        },
+        "shipping_method_title": "Спосіб доставки"
       },
       "order_summary": {
         "subtotal_label": "Проміжний підсумок",
@@ -881,7 +882,9 @@
           "payment_method_title": "Метод оплати",
           "change_payment_method_link_label": "Змінити метод оплати",
           "change_billing_address_link_label": "Змінити платіжну адресу",
-          "change_shipping_address_link_label": "Змінити адресу доставки"
+          "change_shipping_address_link_label": "Змінити адресу доставки",
+          "shipping_method_title": "Спосіб доставки",
+          "change_shipping_method_link_label": "Змінити спосіб доставки"
         }
       },
       "customer_payment_methods": {
@@ -981,7 +984,8 @@
       "shipping": {
         "free": "  ",
         "address": "Адреса доставки",
-        "address_map_marker": "Адреса доставки"
+        "address_map_marker": "Адреса доставки",
+        "method": "Спосіб доставки"
       },
       "contact_information": "Контактна інформація",
       "payment": {
