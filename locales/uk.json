@@ -780,7 +780,11 @@
           "other": "Знижки"
         },
         "shipping_label": "Доставка",
-        "free_shipping_discount_label": "   "
+        "free_shipping_discount_label": "   ",
+        "discount_order_stacking": {
+          "one": "Знижка",
+          "other": "Знижки"
+        }
       },
       "general": {
         "error_page_title": "Помилка",
