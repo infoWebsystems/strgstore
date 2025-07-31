@@ -972,7 +972,8 @@
       "shipping": {
         "free": "  ",
         "address": "Адреса доставки",
-        "address_map_marker": "Адреса доставки"
+        "address_map_marker": "Адреса доставки",
+        "free_shipping_discount": "Безкоштовна доставка"
       },
       "contact_information": "Контактна інформація",
       "payment": {
@@ -981,7 +982,8 @@
       "subtitle": "Підтверджено {{date}}",
       "fully_refunded_label": "Відшкодовано",
       "refunded_amount": "Відшкодовано",
-      "paid_amount": "Оплачено"
+      "paid_amount": "Оплачено",
+      "discount": "Знижка"
     },
     "addresses": {
       "edit_modal_title": {
