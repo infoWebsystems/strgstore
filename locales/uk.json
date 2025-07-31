@@ -1002,7 +1002,8 @@
       "fully_refunded_label": "Відшкодовано",
       "refunded_amount": "Відшкодовано",
       "paid_amount": "Оплачено",
-      "discount": "Знижка"
+      "discount": "Знижка",
+      "title": "Замовлення {{name}}"
     },
     "addresses": {
       "edit_modal_title": {
