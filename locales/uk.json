@@ -656,7 +656,8 @@
         "payment_method": "Метод оплати",
         "fact_billing_address_label": "Платіжна адреса",
         "same_billing_address_checkbox_label": "Використати платіжну адресу для доставки",
-        "amazon_payments_could_not_enqueue_authorize": "Виникла проблема з оплатою вашого замовлення. Спробуйте ще раз або оберіть інший метод оплати."
+        "amazon_payments_could_not_enqueue_authorize": "Виникла проблема з оплатою вашого замовлення. Спробуйте ще раз або оберіть інший метод оплати.",
+        "same_billing_address_label": "Така ж як адреса доставки"
       },
       "pickup_point": {
         "change": "Змінити місцезнаходження"
@@ -895,6 +896,9 @@
       },
       "payment_errors": {
         "invalid_expiry_date": "Введіть дійсний термін карти"
+      },
+      "billing": {
+        "same_as_shipping": "Така ж як адреса доставки"
       }
     },
     "store_availability": {
