@@ -903,6 +903,12 @@
       },
       "billing": {
         "same_as_shipping": "Така ж як адреса доставки"
+      },
+      "shop_policies": {
+        "shipping_policy": "Доставка"
+      },
+      "wallets": {
+        "shipping_line_label": "Доставка"
       }
     },
     "store_availability": {
@@ -985,7 +991,8 @@
         "free": "  ",
         "address": "Адреса доставки",
         "address_map_marker": "Адреса доставки",
-        "method": "Спосіб доставки"
+        "method": "Спосіб доставки",
+        "summary": "Доставка"
       },
       "contact_information": "Контактна інформація",
       "payment": {
