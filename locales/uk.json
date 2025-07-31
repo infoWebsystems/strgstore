@@ -972,8 +972,7 @@
       "shipping": {
         "free": "  ",
         "address": "Адреса доставки",
-        "address_map_marker": "Адреса доставки",
-        "free_shipping_discount": "Безкоштовна доставка"
+        "address_map_marker": "Адреса доставки"
       },
       "contact_information": "Контактна інформація",
       "payment": {
