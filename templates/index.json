@@ -258,7 +258,7 @@
           "type": "collection",
           "settings": {
             "products": [],
-            "collection": "новинка",
+            "collection": "нові-надходження-1",
             "title": "Collection 1",
             "max_products": 12,
             "show_unavailable_products": false
@@ -276,7 +276,7 @@
         "gap_between_mobile": 2,
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default",
-        "title": "Нове на сайті",
+        "title": "Нові Надходження",
         "button_text": "",
         "button_url": "shopify://collections",
         "button_style": "button--outlined"
