@@ -186,7 +186,7 @@
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "верхній-одяг",
+            "collection": "clothes-1",
             "image": "shopify://shop_images/02-07-25_STOR199629.jpg",
             "title": ""
           }
@@ -213,7 +213,7 @@
           "type": "collection-slide",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "футболки-та-лонгсліви",
+            "collection": "home-art",
             "image": "shopify://shop_images/02-07-25_STOR199601.jpg",
             "title": ""
           }
