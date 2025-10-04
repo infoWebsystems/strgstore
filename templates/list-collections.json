@@ -105,6 +105,22 @@
             "title": ""
           }
         },
+        "collection_G4Gi76": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "kith",
+            "title": ""
+          }
+        },
+        "collection_CCLWaV": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "represent",
+            "title": ""
+          }
+        },
         "collection_mV7VNp": {
           "type": "collection",
           "settings": {
@@ -170,6 +186,8 @@
         "collection_gp6R8H",
         "collection_byFfRy",
         "collection_PazHzC",
+        "collection_G4Gi76",
+        "collection_CCLWaV",
         "collection_mV7VNp",
         "collection_6YwUbW",
         "collection_TDWKUk",
