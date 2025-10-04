@@ -57,6 +57,14 @@
             "title": ""
           }
         },
+        "collection_8AWGBC": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "alo-yoga",
+            "title": ""
+          }
+        },
         "collection_E4zELi": {
           "type": "collection",
           "settings": {
@@ -65,19 +73,19 @@
             "title": ""
           }
         },
-        "collection_xxF74m": {
+        "collection_8Rx8dn": {
           "type": "collection",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "adidas",
+            "collection": "burberry",
             "title": ""
           }
         },
-        "collection_7L4rqq": {
+        "collection_gp6R8H": {
           "type": "collection",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
-            "collection": "c2h4",
+            "collection": "balenciaga",
             "title": ""
           }
         },
@@ -86,30 +94,6 @@
           "settings": {
             "color_scheme_text": "text-colors-inverse",
             "collection": "chrome-hearts",
-            "title": ""
-          }
-        },
-        "collection_JLrt9X": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "dr-martens",
-            "title": ""
-          }
-        },
-        "collection_4PcVRG": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "fear-of-god",
-            "title": ""
-          }
-        },
-        "collection_YjxyVH": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "gucci",
             "title": ""
           }
         },
@@ -129,14 +113,6 @@
             "title": ""
           }
         },
-        "collection_JJgrcG": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "nike",
-            "title": ""
-          }
-        },
         "collection_6YwUbW": {
           "type": "collection",
           "settings": {
@@ -153,19 +129,27 @@
             "title": ""
           }
         },
-        "collection_yAqabw": {
-          "type": "collection",
-          "settings": {
-            "color_scheme_text": "text-colors-inverse",
-            "collection": "ripndip",
-            "title": ""
-          }
-        },
         "collection_qgqaCx": {
           "type": "collection",
           "settings": {
             "color_scheme_text": "text-colors-inverse",
             "collection": "stone-island",
+            "title": ""
+          }
+        },
+        "collection_RzBcfz": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "stone-island-1",
+            "title": ""
+          }
+        },
+        "collection_g7in4C": {
+          "type": "collection",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "skims",
             "title": ""
           }
         },
@@ -180,20 +164,18 @@
       },
       "block_order": [
         "collection_bkn63e",
+        "collection_8AWGBC",
         "collection_E4zELi",
-        "collection_xxF74m",
-        "collection_7L4rqq",
+        "collection_8Rx8dn",
+        "collection_gp6R8H",
         "collection_byFfRy",
-        "collection_JLrt9X",
-        "collection_4PcVRG",
-        "collection_YjxyVH",
         "collection_PazHzC",
         "collection_mV7VNp",
-        "collection_JJgrcG",
         "collection_6YwUbW",
         "collection_TDWKUk",
-        "collection_yAqabw",
         "collection_qgqaCx",
+        "collection_RzBcfz",
+        "collection_g7in4C",
         "collection_FDbewP"
       ],
       "settings": {
