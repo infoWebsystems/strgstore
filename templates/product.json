@@ -19,7 +19,7 @@
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
           "type": "price",
           "settings": {
-            "show_price_extra_info": true
+            "show_price_extra_info": false
           }
         },
         "1e939cd6-0958-4135-a9e5-c50faef01437": {
@@ -41,7 +41,7 @@
           "settings": {
             "show_quantity": true,
             "quantity_type": "inline",
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
         },
