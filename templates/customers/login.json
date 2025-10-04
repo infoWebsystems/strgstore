@@ -12,6 +12,8 @@
     "main": {
       "type": "main-login",
       "settings": {
+        "image_aside": "shopify://shop_images/02-07-25_STOR199559.jpg",
+        "enable_shop_login_button": false,
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default"
       }
