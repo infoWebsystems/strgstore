@@ -80,10 +80,17 @@
             "button_style": "button--filled",
             "button_text": "",
             "button_url": "",
-            "products": [],
-            "collection": "нові-надходження-1",
+            "products": [
+              "stone-island-alligator-camo-sweatshirt",
+              "stone-island-black-classic-hoodie",
+              "alo-yoga-airbrush-streamlined-bra-tank-black-white",
+              "skims-body-long-sleeve-slip-dress",
+              "skims-cotton-jersey-heart-flare-legging-cherry-blossom",
+              "skims-cotton-jersey-heart-flare-legging-soot"
+            ],
+            "collection": "",
             "title": "Collection 2",
-            "max_products": 8,
+            "max_products": 12,
             "show_unavailable_products": false
           }
         },
@@ -112,7 +119,7 @@
             "products": [],
             "collection": "sale",
             "title": "Collection 1",
-            "max_products": 8,
+            "max_products": 12,
             "show_unavailable_products": false
           }
         },
@@ -162,7 +169,7 @@
         "slider_arrows_color": "text-colors-inverse",
         "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
         "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
-        "layout": "layout-1",
+        "layout": "layout-2",
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
         "color_scheme_text": "text-colors-default",
