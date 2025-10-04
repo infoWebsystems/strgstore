@@ -254,19 +254,19 @@
     "1658994245757c7b20": {
       "type": "featured-products",
       "blocks": {
-        "8d8dee3c-2bdb-429e-9a6c-e5af884f102b": {
+        "collection_tAprBP": {
           "type": "collection",
           "settings": {
             "products": [],
             "collection": "нові-надходження-1",
-            "title": "Collection 1",
+            "title": "",
             "max_products": 12,
             "show_unavailable_products": false
           }
         }
       },
       "block_order": [
-        "8d8dee3c-2bdb-429e-9a6c-e5af884f102b"
+        "collection_tAprBP"
       ],
       "settings": {
         "padding_vertical_desktop": "pt-0-desktop",
