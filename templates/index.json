@@ -251,7 +251,7 @@
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
         "color_scheme_text": "color-text-primary",
-        "color_scheme_background": "color-background-accent-1",
+        "color_scheme_background": "color-background-primary",
         "title": "Категорії",
         "button_style": "button--outlined",
         "button_text": "Дивитися всі",
