@@ -483,8 +483,8 @@
       "name": "t:sections.seo-content.name",
       "settings": {
         "layout": "full",
-        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
-        "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default",
         "text_size": 1,
@@ -659,8 +659,8 @@
       "name": "t:sections.seo-content.name",
       "settings": {
         "layout": "full",
-        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
-        "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default",
         "text_size": 1,
