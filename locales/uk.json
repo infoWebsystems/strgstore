@@ -523,7 +523,7 @@
   "shopify": {
     "collections": {
       "sorting": {
-        "best_selling": "Бестселери",
+        "best_selling": "Сортування",
         "az": "По назві, від А до Я",
         "za": "По назві, від Я до А",
         "price_ascending": "Ціна, від низької до високої",
