@@ -16,7 +16,7 @@
         "section_height": 40,
         "banner_layout": "banner--full",
         "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-accent-2"
+        "color_scheme_background": "background-colors-default"
       }
     },
     "main": {

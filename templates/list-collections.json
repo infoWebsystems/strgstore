@@ -43,7 +43,7 @@
         "video_external_mobile": "",
         "show_controls_on_video_mobile": false,
         "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-accent-2"
+        "color_scheme_background": "background-colors-default"
       }
     },
     "main": {
@@ -234,7 +234,7 @@
         "video_external_mobile": "",
         "show_controls_on_video_mobile": false,
         "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-accent-2"
+        "color_scheme_background": "background-colors-default"
       }
     },
     "main_list_collections_wFBLGK": {

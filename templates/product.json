@@ -126,7 +126,7 @@
         "thumb_media_object_fit": "contain",
         "media_aspect_ratio": "default",
         "adaptive_ratio_and_auto_height": "default",
-        "slider_background_color_transparent": true,
+        "slider_background_color_transparent": false,
         "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
         "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
         "breadcrumbs_color_scheme_text": "text-colors-default",
