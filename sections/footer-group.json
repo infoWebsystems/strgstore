@@ -67,7 +67,7 @@
         "social_links": true,
         "social_links_in_new_tab": true,
         "color_scheme_text": "color-text-inverse",
-        "color_scheme_background": "color-background-primary",
+        "color_scheme_background": "color-background-inverse",
         "layout": "footer--logo-large",
         "logo": "shopify://shop_images/strgstore-logo.svg",
         "logo_svg_code": "",

@@ -454,7 +454,7 @@
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
         "color_scheme_text": "color-text-primary",
-        "color_scheme_background": "color-background-accent-1",
+        "color_scheme_background": "color-background-primary",
         "title": "Наші бренди",
         "button_style": "button--outlined",
         "button_text": "ВСІ 70+ БРЕНДІВ",
@@ -662,7 +662,7 @@
         "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
         "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
         "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-accent-1",
+        "color_scheme_background": "background-colors-default",
         "text_size": 1,
         "title": "",
         "content": "<p>Ви готові до перетворення? Тоді зробіть своє перше замовлення у STORAGE Store <br/>прямо зараз!</p>"
