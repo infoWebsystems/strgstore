@@ -211,6 +211,7 @@
     },
     "page_banner_ceqHt8": {
       "type": "page-banner",
+      "custom_css": [],
       "name": "t:sections.page-banner.name",
       "settings": {
         "enable_transparent_header": false,
