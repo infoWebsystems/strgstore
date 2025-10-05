@@ -482,7 +482,7 @@
       "type": "seo-content",
       "name": "t:sections.seo-content.name",
       "settings": {
-        "layout": "full",
+        "layout": "boxed",
         "padding_vertical_desktop": "pt-0-desktop",
         "padding_vertical_mobile": "pt-0-mobile",
         "color_scheme_text": "text-colors-default",
