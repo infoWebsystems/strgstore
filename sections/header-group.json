@@ -17,7 +17,7 @@
         "cee0c4f6-5546-43a3-bfc3-2f3afa36d9d5": {
           "type": "text-slide",
           "settings": {
-            "content": "<p>WELCOME TO OUR STORE</p>",
+            "content": "<p>-20% ЗА ПРОМОКОДОМ SUMMER</p>",
             "dropdown_cards": false,
             "color_scheme_background_dropdown": "background-colors-default",
             "color_scheme_text_dropdown": "text-colors-default",
@@ -86,8 +86,8 @@
         "5e0cad2e-d931-416e-ac29-51a4a683ade2"
       ],
       "settings": {
-        "color_scheme_text": "text-colors-inverse",
-        "color_scheme_background": "background-colors-secondary",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-accent-2",
         "slider_autoplay_interval": 5
       }
     },
