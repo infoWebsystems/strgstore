@@ -63,7 +63,7 @@
         "762130ce-c112-474e-ab41-0e908f95e578"
       ],
       "custom_css": [
-        ".footer {background: #111111}"
+        ".footer {background: #111111;}"
       ],
       "settings": {
         "first_accordion_show": true,
@@ -71,7 +71,7 @@
         "social_links_in_new_tab": true,
         "color_scheme_text": "color-text-inverse",
         "color_scheme_background": "color-background-primary",
-        "layout": "footer--logo-large",
+        "layout": "footer--logo-none",
         "logo": "shopify://shop_images/strgstore-logo.svg",
         "logo_svg_code": "",
         "logo_width": 160,
