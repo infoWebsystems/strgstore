@@ -61,7 +61,7 @@
           "settings": {
             "banner_layout": "hero-banner--full",
             "color_scheme_text": "text-colors-inverse",
-            "color_scheme_background": "background-colors-accent-2",
+            "color_scheme_background": "background-colors-default",
             "header_menu_text_color": "#ffffff",
             "image": "shopify://shop_images/frame_1.webp",
             "video": "shopify://files/videos/site_4.webm",
