@@ -43,7 +43,7 @@
       "settings": {
         "color_scheme_text": "color-text-primary",
         "color_scheme_background": "background-colors-default",
-        "enable_products_count": true,
+        "enable_products_count": false,
         "enable_sorting": true,
         "enable_filters": true,
         "filters_style": "sidebar",
