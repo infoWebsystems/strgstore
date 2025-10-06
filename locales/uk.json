@@ -674,7 +674,8 @@
           "no_access": {
             "link": "Залогінитись"
           }
-        }
+        },
+        "cash_on_delivery_label": "Оплата при отриманні"
       },
       "thank_you": {
         "login": "Залогінитись",
@@ -950,7 +951,8 @@
         },
         "cancel_reason": {
           "customer": "Покупець змінив/відмінив замовлення"
-        }
+        },
+        "cash_on_delivery": "Оплата при отриманні"
       }
     }
   },
@@ -996,7 +998,10 @@
       },
       "contact_information": "Контактна інформація",
       "payment": {
-        "title": "Оплата"
+        "title": "Оплата",
+        "payment_type": {
+          "cash_on_delivery": "Оплата при отриманні"
+        }
       },
       "subtitle": "Підтверджено {{date}}",
       "fully_refunded_label": "Відшкодовано",
