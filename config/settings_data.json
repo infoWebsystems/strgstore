@@ -47,7 +47,7 @@
     "product_swatches_show_always": "none",
     "quick_add_to_cart": "with_variant",
     "sizes_option": "Size",
-    "card_product_layout": "card-product__layout--standard",
+    "card_product_layout": "card-product__layout--compact",
     "card_product_image_ratio": "100%",
     "card_product_media_object_fit": "cover",
     "card_product_image_hover": true,
