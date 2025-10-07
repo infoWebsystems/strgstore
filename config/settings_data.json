@@ -91,7 +91,7 @@
     "enable_breadcrumbs_on_other_pages": false,
     "breadcrumbs_alignment": "center",
     "enable_back_to_top_button": false,
-    "show_currency_codes": true,
+    "show_currency_codes": false,
     "theme_style_name": "sahara",
     "image_snippet": "native",
     "max_image_url_width": "1",
