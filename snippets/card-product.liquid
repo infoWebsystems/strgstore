@@ -236,9 +236,7 @@
     </h6>
     
     {%- for option_value in variant.options -%}
-      {% unless variant.available == false %}
         {{- option_value -}}
-      {% endunless %}
     {%- endfor -%}
 
     {%- render 'price', product_ref: product_ref, price_class: 'card-product__price' -%}
