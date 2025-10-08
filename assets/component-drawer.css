@@ -404,16 +404,6 @@ html.no-js .drawer__nav details[open] .drawer__nav-link svg {
   display: block;
 }
 
-.drawer__utils-items {
-  display: flex;
-  align-items: center;
-  color: var(--color-body-text);
-}
-
-.drawer__utils-item + .drawer__utils-item {
-  border-inline-start: 0.1rem solid currentColor;
-}
-
 .drawer__utils-link {
   color: var(--color-body-text);
   display: block;
