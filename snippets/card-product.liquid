@@ -225,48 +225,6 @@
           >
             {% render 'icon-plus' %}
           </button>
-
-          <div class="card-product__sizes-content js-sizes-content" data-id="{{- card_id -}}">
-            <div class="card-product__sizes-items">
-              <div class="card-product__sizes-overlay">
-                {% render 'loading-spinner' %}
-              </div>
-
-              <div class="card-product__sizes-messages js-messages">
-                <div class="card-product__sizes-message js-success-message hidden">
-                  {% render 'icon-check' %}
-
-                  <p>
-                    {{- 'products.card-product.add_to_cart_success' | t -}}
-                  </p>
-                </div>
-
-                <div class="card-product__sizes-message js-error-message hidden">
-                  {% render 'icon-close' %}
-
-                  <p data-text>
-                    {{- 'products.card-product.add_to_cart_error' | t -}}
-                  </p>
-                </div>
-              </div>
-
-              {% assign is_variant_available = false %}
-
-              {% for variant in product_ref.variants %}
-                {% if variant.available %}
-                  {% assign is_variant_available = true %}
-                {% endif %}
-              {% endfor %}
-
-              {% if is_variant_available %}
-                {% if settings.quick_add_to_cart != 'no_button' %}
-                  <ul class="list-unstyled">
-                    {{ size_items_html }}
-                  </ul>
-                {% endif %}
-              {% endif %}
-            </div>
-          </div>
         </div>
       {%- endcapture -%}
     {%- endif -%}
