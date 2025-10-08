@@ -204,29 +204,22 @@
 
       <div class="drawer__row">
         <nav class="drawer__utils">
-          <ul class="drawer__utils-items list-unstyled">
-            <li >
-              <a
-                href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-                class="button button--filled button--uppercase"
-                title="{%- if customer -%}{{ 'accessibility.account' | t }}{%- else -%}{{ 'accessibility.sign_in' | t }}{%- endif -%}"
-              >
-                {{- 'header.navigation_drawer.account_link' | t -}}
-              </a>
-            </li>
-
-            {%- if section.settings.country_drawer_navigation_menu -%}
-              <li class="drawer__utils-item">
-                <menu-drawer class="drawer">
-                  {%- render 'country-drawer' with
-                    button_class: ' drawer__utils-link h6',
-                    section: section,
-                    append_id: 'header-drawer'
-                  -%}
-                </menu-drawer>
-              </li>
-            {%- endif -%}
-          </ul>
+          <a
+            href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+            class="button button--filled button--uppercase"
+            title="{%- if customer -%}{{ 'accessibility.account' | t }}{%- else -%}{{ 'accessibility.sign_in' | t }}{%- endif -%}"
+          >
+            {{- 'header.navigation_drawer.account_link' | t -}}
+          </a>
+          {%- if section.settings.country_drawer_navigation_menu -%}
+              <menu-drawer class="drawer">
+                {%- render 'country-drawer' with
+                  button_class: ' drawer__utils-link h6',
+                  section: section,
+                  append_id: 'header-drawer'
+                -%}
+              </menu-drawer>
+          {%- endif -%}
         </nav>
       </div>
     </div>
