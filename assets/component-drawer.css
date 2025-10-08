@@ -407,7 +407,6 @@ html.no-js .drawer__nav details[open] .drawer__nav-link svg {
 .drawer__utils-items {
   display: flex;
   align-items: center;
-  justify-content: center;
   color: var(--color-body-text);
 }
 
