@@ -15,7 +15,6 @@ html .card-slider {
 }
 
 .card-slider .card-slider__slide {
-  width: calc(100% - 16.666%);
 }
 
 html.no-js .card-slider__wrapper {
