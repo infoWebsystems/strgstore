@@ -146,7 +146,8 @@ input:disabled + .card-product__swatch {
 }
 
 .card-product__sizes{
-  color: #9E9A99
+  color: #9E9A99;
+  font-size: 0.75rem;
 }
 
 .card-product__layout--compact .marquee-tags {
