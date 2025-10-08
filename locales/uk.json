@@ -295,7 +295,7 @@
       "to": "До",
       "clear_all": "Очистити все",
       "filters_button": "Фільтри",
-      "filters_title": "Фільтрувати за",
+      "filters_title": "Фільтри",
       "filters_submit": "Показати результати",
       "filters_selected": {
         "one": "{{ count }} вибрано",
