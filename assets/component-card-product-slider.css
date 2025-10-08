@@ -20,6 +20,10 @@ html.no-js .card-product-slider__wrapper {
   margin: 0 calc(0rem - var(--page-gutter));
   padding: 0 var(--page-gutter) 2rem;
 }
+@media screen and (max-width: 750px) {
+  .card-product-slider__wrapper
+{overflow: hidden}
+}
 
 html.no-js .card-product-slider__slide + .card-product-slider__slide {
   margin-inline-start: .2rem;
