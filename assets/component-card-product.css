@@ -150,10 +150,10 @@ input:disabled + .card-product__swatch {
   font-size: calc(var(--font-heading-scale) * var(--h6-multiplier));
 }
 
-.price card-product__price{
+.card-product__price{
   margin-top: 1rem;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .card-product__layout--compact .marquee-tags {
