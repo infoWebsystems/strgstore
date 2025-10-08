@@ -1,14 +1,14 @@
 {% comment %}
-    Renders a product card
-    Accepts:
-    - product_ref: {Object} Product Liquid object
-    - collection_ref: {Object} Collection Liquid object
-    - class: {String} CSS class to apply to the card
-    - hide_actions: {Boolean} Hides tags, sizes and color swatches
-    - section_id: {String} Section id used to make the product id attribute unique
-    - card_index: {Number} Loop index
-    Usage:
-    {%- render 'card-product', product_ref: product_ref -%}
+  Renders a product card
+  Accepts:
+  - product_ref: {Object} Product Liquid object
+  - collection_ref: {Object} Collection Liquid object
+  - class: {String} CSS class to apply to the card
+  - hide_actions: {Boolean} Hides tags, sizes and color swatches
+  - section_id: {String} Section id used to make the product id attribute unique
+  - card_index: {Number} Loop index
+  Usage:
+  {%- render 'card-product', product_ref: product_ref -%}
 {% endcomment %}
 
 {%- assign hide_actions = hide_actions | default: false -%}
@@ -55,7 +55,6 @@
     -%}
 
     {%- for variant in product_ref.variants -%}
-
       {%- capture aria_disabled -%}
         {%- if variant.available -%}false{%- else -%}true{%- endif -%}
       {%- endcapture -%}
@@ -63,7 +62,6 @@
       {%- assign forloop_index = forloop.index -%}
 
       {%- for option_value in variant.options -%}
-
         {%- if size_option_values contains option_value -%}
           {%- liquid
             if selected_variant_color != blank
@@ -110,7 +108,6 @@
             {% else %}
               {%- assign size_items_html = size_items_html | append: size_item_html -%}
             {% endif %}
-
           {% endif %}
 
         {%- elsif color_option_values contains option_value -%}
@@ -149,12 +146,10 @@
                 endif
 
                 if settings.product_swatches_on_card == true
-
                   render 'image', image: variant.featured_image, alt: variant.featured_image.alt | escape, class: class, image_per_view: image_per_view
                 endif
 
                 if settings.card_product_image_hover and forloop_index == 1 and product_ref.media.size > 1
-
                   assign variant_cover_media = product_ref.media[0]
                   assign variant_cover_media_type = variant_cover_media.media_type
 
@@ -170,15 +165,13 @@
                     endif
                   endif
 
-                  if variant_hover_media != nil
+                  if variant_hover_media != null
                     assign hover_class = 'js-media-' | append: option_value | handleize
                     assign hover_class = hover_class | append: ' hover-img'
 
                     render 'image', image: variant_hover_media, alt: variant_hover_media.alt | default: product_ref.title | escape, class: hover_class, image_per_view: image_per_view
                   endif
-
                 endif
-
               endcapture
 
               if settings.product_swatches_on_card == false and variant_media_counter > 1
@@ -186,7 +179,6 @@
               else
                 assign variants_media = variants_media | append: variant_media
               endif
-
             endif
           -%}
 
@@ -209,8 +201,6 @@
 
           {%- assign swatch_items_html = swatch_items_html | append: swatch_item_html -%}
         {%- endif -%}
-
-
       {%- endfor -%}
     {%- endfor -%}
 
@@ -253,7 +243,6 @@
   {%- endif -%}
 
   {%- if quick_add_to_cart_button_html == blank and settings.quick_add_to_cart != 'no_button' -%}
-
     {%- capture quick_add_to_cart_button_html -%}
       <div class="card-product__sizes js-sizes svg-color-inherit no-js-hidden">
         <button
@@ -320,9 +309,7 @@
         </div>
       </div>
     {%- endcapture -%}
-
   {%- endif -%}
-
 {%- endunless -%}
 
 <card-product
@@ -352,11 +339,13 @@
       endif
     %}
 
-    <a href="{{- product_ref.url -}}" class="media card-product__media {{ media_classes }}{% if settings.card_product_image_hover and product_ref.media.size > 1 and hover_media != nil %} has-hover{% endif %}" aria-label="{{- product_ref.title -}}">
+    <a
+      href="{{- product_ref.url -}}"
+      class="media card-product__media {{ media_classes }}{% if settings.card_product_image_hover and product_ref.media.size > 1 and hover_media != nil %} has-hover{% endif %}"
+      aria-label="{{- product_ref.title -}}"
+    >
       {%- liquid
-
         if product_ref.featured_image
-
           if hide_actions
             assign class = 'js-media-default is-visible'
           else
@@ -370,7 +359,7 @@
           render 'image', image: product_ref.featured_image, alt: product_ref.featured_image.alt | escape, class: class, image_per_view: image_per_view
 
           if variants_media == blank
-            if settings.card_product_image_hover and product_ref.media.size > 1 and hover_media != nil
+            if settings.card_product_image_hover and product_ref.media.size > 1 and hover_media != null
               render 'image', image: hover_media, alt: hover_media.alt | default: product_ref.title | escape, class: ' hover-img', image_per_view: image_per_view
             endif
           endif
@@ -411,47 +400,25 @@
         {{- 'products.product.title' | t -}}
       {%- endif -%}
     </h6>
-    <div class="card-product__sizes-content js-sizes-content" data-id="{{- card_id -}}">
-            <div class="card-product__sizes-items">
-              <div class="card-product__sizes-overlay">
-                {% render 'loading-spinner' %}
-              </div>
+    <div class="" data-id="{{- card_id -}}">
+      <div class="">
+        {% assign is_variant_available = false %}
 
-              <div class="card-product__sizes-messages js-messages">
-                <div class="card-product__sizes-message js-success-message hidden">
-                  {% render 'icon-check' %}
+        {% for variant in product_ref.variants %}
+          {% if variant.available %}
+            {% assign is_variant_available = true %}
+          {% endif %}
+        {% endfor %}
 
-                  <p>
-                    {{- 'products.card-product.add_to_cart_success' | t -}}
-                  </p>
-                </div>
-
-                <div class="card-product__sizes-message js-error-message hidden">
-                  {% render 'icon-close' %}
-
-                  <p data-text>
-                    {{- 'products.card-product.add_to_cart_error' | t -}}
-                  </p>
-                </div>
-              </div>
-
-              {% assign is_variant_available = false %}
-
-              {% for variant in product_ref.variants %}
-                {% if variant.available %}
-                  {% assign is_variant_available = true %}
-                {% endif %}
-              {% endfor %}
-
-              {% if is_variant_available %}
-                {% if settings.quick_add_to_cart != 'no_button' %}
-                  <ul class="list-unstyled">
-                    {{ size_items_html }}
-                  </ul>
-                {% endif %}
-              {% endif %}
-            </div>
-          </div>
+        {% if is_variant_available %}
+          {% if settings.quick_add_to_cart != 'no_button' %}
+            <ul class="list-unstyled">
+              {{ size_items_html }}
+            </ul>
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
     {%- render 'price', product_ref: product_ref, price_class: 'card-product__price' -%}
   </a>
 
