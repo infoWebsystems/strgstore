@@ -230,11 +230,16 @@
         {{- 'products.product.title' | t -}}
       {%- endif -%}
     </h6>
-    
-    {{ product_ref | json }}
-      {%- for option_value in variant.options -%}
-          {{- option_value -}}
-      {%- endfor -%}
+
+    {%- assign available_variants = product_ref.variants | where: 'available', true -%}
+    {%- assign sizes = available_variants | map: 'option1' | compact | uniq -%}
+    {%- if sizes.size > 0 -%}
+      <div class="product-card__sizes">
+        <span class="label">Available sizes:</span>
+        <span class="values">{{ sizes | join: ', ' }}</span>
+      </div>
+    {%- endif -%}
+
 
     {%- render 'price', product_ref: product_ref, price_class: 'card-product__price' -%}
   </a>
