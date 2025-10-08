@@ -404,6 +404,12 @@ html.no-js .drawer__nav details[open] .drawer__nav-link svg {
   display: block;
 }
 
+.drawer__utils{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .drawer__utils-link {
   color: var(--color-body-text);
   display: block;
