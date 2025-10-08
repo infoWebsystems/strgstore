@@ -237,9 +237,7 @@
     
     {%- for option_value in variant.options -%}
       {% unless variant.available == false %}
-        <li {% if settings.quick_add_to_cart == 'basic_button' %}class="basic-button"{% endif %}>
-          {{- option_value -}}
-        </li>
+        {{- option_value -}}
       {% endunless %}
     {%- endfor -%}
 
