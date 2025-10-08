@@ -19,10 +19,6 @@
 
 {%- unless hide_actions -%}
   {%- liquid
-    capture color_codes
-      render 'color-codes-to-check'
-    endcapture
-
     assign size_option_values = product_ref.options_by_name[settings.sizes_option].values
     assign color_option_values = product_ref.options_by_name[settings.swatches_option].values
     assign selected_variant = product_ref.selected_or_first_available_variant
@@ -235,9 +231,10 @@
       {%- endif -%}
     </h6>
     
-    {%- for option_value in variant.options -%}
-        {{- option_value -}}
-    {%- endfor -%}
+    {{ product_ref | json }}
+      {%- for option_value in variant.options -%}
+          {{- option_value -}}
+      {%- endfor -%}
 
     {%- render 'price', product_ref: product_ref, price_class: 'card-product__price' -%}
   </a>
