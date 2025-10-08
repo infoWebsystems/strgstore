@@ -341,7 +341,7 @@ input:disabled + .card-product__swatch {
 
 .card-product__content {
   display: block;
-  text-align: center;
+  text-align: left;
   padding: 1.2rem .8rem 0;
 }
 
