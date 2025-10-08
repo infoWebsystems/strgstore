@@ -152,7 +152,7 @@ input:disabled + .card-product__swatch {
 
 .card-product__price{
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 
