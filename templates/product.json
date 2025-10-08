@@ -176,7 +176,7 @@
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
         "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-accent-1",
+        "color_scheme_background": "background-colors-default",
         "title": "Вам можуть сподобатись",
         "products": [],
         "max_products": 8,
