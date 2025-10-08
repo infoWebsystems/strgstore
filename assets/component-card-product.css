@@ -154,7 +154,6 @@ input:disabled + .card-product__swatch {
 }
 
 .card-product__sizes{
-  margin-top: 1rem;
   color: #9E9A99;
   font-size: calc(var(--font-heading-scale) * var(--h6-multiplier));
 }
