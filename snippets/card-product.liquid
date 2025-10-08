@@ -32,177 +32,11 @@
 
   {%- if size_option_values != blank or color_option_values != blank -%}
     {%- liquid
-      assign selected_variant_color = blank
-      assign looped_sizes = blank
-      assign looped_sizes_check = blank
-      assign looped_swatches = blank
-      assign size_items_html = ''
       assign swatch_items_html = ''
       assign variants_media = ''
-      assign variant_media_counter = 0
       assign swatches_number = 0
       assign swatches_limit = 4
-
-      for option_value in selected_variant.options
-        if color_option_values contains option_value
-          assign selected_variant_color = option_value
-        endif
-
-        if size_option_values contains option_value
-          assign selected_variant_size = option_value
-        endif
-      endfor
     -%}
-
-    {%- for variant in product_ref.variants -%}
-      {%- capture aria_disabled -%}
-        {%- if variant.available -%}false{%- else -%}true{%- endif -%}
-      {%- endcapture -%}
-
-      {%- assign forloop_index = forloop.index -%}
-
-      {%- for option_value in variant.options -%}
-        {%- if size_option_values contains option_value -%}
-          {%- liquid
-            if selected_variant_color != blank
-              unless variant.options contains selected_variant_color
-                continue
-              endunless
-            endif
-
-            assign option_value_check = '#' | append: option_value | append: '#'
-
-            if looped_sizes_check contains option_value_check
-              continue
-            endif
-
-            # assignment just for checking
-            assign looped_sizes_check = looped_sizes_check | append: option_value_check
-
-            assign looped_sizes = looped_sizes | append: option_value
-          -%}
-
-          {% if settings.quick_add_to_cart != 'no_button' %}
-            {%- capture size_item_html -%}
-              {% unless variant.available == false %}
-                <li {% if settings.quick_add_to_cart == 'basic_button' %}class="basic-button"{% endif %}>
-                  <button
-                    type="button"
-                    class="card-product__sizes-btn button-reset js-btn-size is-active"
-                    data-size="{{- option_value -}}"
-                    aria-disabled="{{- aria_disabled -}}"
-                    title="{{- 'products.card-product.add_to_cart' | t -}}"
-                  >
-                    {% if settings.quick_add_to_cart == 'basic_button' %}
-                      {{- 'products.card-product.add_to_cart' | t -}}
-                    {% else %}
-                      {{- option_value -}}
-                    {% endif %}
-                  </button>
-                </li>
-              {% endunless %}
-            {%- endcapture -%}
-
-            {% if settings.quick_add_to_cart == 'basic_button' %}
-              {%- assign size_items_html = size_item_html -%}
-            {% else %}
-              {%- assign size_items_html = size_items_html | append: size_item_html -%}
-            {% endif %}
-          {% endif %}
-
-        {%- elsif color_option_values contains option_value -%}
-          {%- liquid
-            if selected_variant_size != blank
-              unless variant.options contains selected_variant_size
-                continue
-              endunless
-            endif
-
-            if looped_swatches contains option_value
-              continue
-            endif
-
-            assign looped_swatches = looped_swatches | append: option_value
-            assign swatches_number = swatches_number | plus: 1
-
-            if swatches_number > swatches_limit
-              continue
-            endif
-
-            if variant.featured_media != blank
-              assign variant_media_counter = variant_media_counter | plus: 1
-            endif
-
-            if variant.featured_image != blank
-              capture variant_media
-                assign class = 'js-media-' | append: option_value | handleize
-
-                if variant.id == selected_variant.id
-                  assign class = class | append: ' js-media-default is-visible'
-                endif
-
-                if forloop_index == 1
-                  assign class = class | append: ' is-first'
-                endif
-
-                if settings.product_swatches_on_card == true
-                  render 'image', image: variant.featured_image, alt: variant.featured_image.alt | escape, class: class, image_per_view: image_per_view
-                endif
-
-                if settings.card_product_image_hover and forloop_index == 1 and product_ref.media.size > 1
-                  assign variant_cover_media = product_ref.media[0]
-                  assign variant_cover_media_type = variant_cover_media.media_type
-
-                  assign variant_hover_media = product_ref.media[1]
-                  assign variant_hover_media_type = variant_hover_media.media_type
-
-                  if variant_cover_media_type == 'video' or variant_cover_media_type == 'external_video'
-                    assign variant_cover_media = product_ref.media[1]
-                    assign variant_hover_media = product_ref.media[2]
-
-                    if variant_hover_media_type == 'video' or variant_hover_media_type == 'external_video'
-                      assign variant_hover_media = product_ref.media[3]
-                    endif
-                  endif
-
-                  if variant_hover_media != null
-                    assign hover_class = 'js-media-' | append: option_value | handleize
-                    assign hover_class = hover_class | append: ' hover-img'
-
-                    render 'image', image: variant_hover_media, alt: variant_hover_media.alt | default: product_ref.title | escape, class: hover_class, image_per_view: image_per_view
-                  endif
-                endif
-              endcapture
-
-              if settings.product_swatches_on_card == false and variant_media_counter > 1
-                assign variants_media = variants_media
-              else
-                assign variants_media = variants_media | append: variant_media
-              endif
-            endif
-          -%}
-
-          {%- capture swatch_item_html -%}
-            <li>
-              {%- liquid
-                capture swatch_input_class
-                  echo 'js-btn-swatch'
-                  if variant.id == selected_variant.id
-                    echo ' is-active'
-                  endif
-                endcapture
-                assign id = variant.id | append: card_index | append: '-' | append: section_id | append: '-color-' | append: forloop.index | append: '-' | append: option_value | handle
-                assign name = product_ref.handle | append: '-color-' | append: section_id | append: card_index
-
-                render 'product-swatch', value: option_value, colors_for_check: color_codes, class: 'swatch--sm swatch--hide-line card-product__swatch', id: id, name: name, input_class: swatch_input_class, variant_id: variant.id
-              -%}
-            </li>
-          {%- endcapture -%}
-
-          {%- assign swatch_items_html = swatch_items_html | append: swatch_item_html -%}
-        {%- endif -%}
-      {%- endfor -%}
-    {%- endfor -%}
 
     {%- if size_option_values != blank and settings.quick_add_to_cart != 'no_button' -%}
       {%- capture quick_add_to_cart_button_html -%}
@@ -400,25 +234,15 @@
         {{- 'products.product.title' | t -}}
       {%- endif -%}
     </h6>
-    <div class="" data-id="{{- card_id -}}">
-      <div class="">
-        {% assign is_variant_available = false %}
+    
+    {%- for option_value in variant.options -%}
+      {% unless variant.available == false %}
+        <li {% if settings.quick_add_to_cart == 'basic_button' %}class="basic-button"{% endif %}>
+          {{- option_value -}}
+        </li>
+      {% endunless %}
+    {%- endfor -%}
 
-        {% for variant in product_ref.variants %}
-          {% if variant.available %}
-            {% assign is_variant_available = true %}
-          {% endif %}
-        {% endfor %}
-
-        {% if is_variant_available %}
-          {% if settings.quick_add_to_cart != 'no_button' %}
-            <ul class="list-unstyled">
-              {{ size_items_html }}
-            </ul>
-          {% endif %}
-        {% endif %}
-      </div>
-    </div>
     {%- render 'price', product_ref: product_ref, price_class: 'card-product__price' -%}
   </a>
 
