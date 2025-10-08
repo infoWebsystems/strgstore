@@ -365,7 +365,6 @@ a.header__nav-link {
 
 .header__nav-item.default-dropdown .header__nav-dropdown.no-child {
   inset-inline-start: auto;
-  min-width: 40rem;
 }
 
 .header:not(.header--nav-centered-below):not(.header--logo-centered-nav-centered-below) .header__nav-items li.header__nav-item.has-dropdown.default-dropdown:first-child .header__nav-dropdown {
