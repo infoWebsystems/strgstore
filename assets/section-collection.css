@@ -181,6 +181,7 @@ collection-load-previous.collection__actions {
 @media screen and (min-width: 990px) {
   .collection__inner {
     display: flex;
+    gap: 2rem;
     align-items: flex-start;
   }
 
