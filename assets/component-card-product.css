@@ -153,7 +153,7 @@ input:disabled + .card-product__swatch {
 
 .card-product__price{
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: calc(var(--font-heading-scale) * var(--h5-multiplier));
   font-weight: 500;
 }
 
