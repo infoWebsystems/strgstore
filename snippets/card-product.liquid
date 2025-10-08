@@ -234,8 +234,7 @@
     {%- assign available_variants = product_ref.variants | where: 'available', true -%}
     {%- assign sizes = available_variants | map: 'option1' | compact | uniq -%}
     {%- if sizes.size > 0 -%}
-      <div class="product-card__sizes">
-        <span class="label">Available sizes:</span>
+      <div class="card-product__sizes">
         <span class="values">{{ sizes | join: ', ' }}</span>
       </div>
     {%- endif -%}
