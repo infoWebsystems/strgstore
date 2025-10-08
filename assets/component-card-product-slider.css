@@ -22,7 +22,7 @@ html.no-js .card-product-slider__wrapper {
 }
 @media screen and (max-width: 750px) {
   .card-product-slider__wrapper
-{overflow: hidden}
+  {overflow: hidden}
 }
 
 html.no-js .card-product-slider__slide + .card-product-slider__slide {
