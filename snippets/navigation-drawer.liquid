@@ -208,7 +208,7 @@
             <li >
               <a
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-                class="drawer__account-button"
+                class="button button--filled button--uppercase"
                 title="{%- if customer -%}{{ 'accessibility.account' | t }}{%- else -%}{{ 'accessibility.sign_in' | t }}{%- endif -%}"
               >
                 {{- 'header.navigation_drawer.account_link' | t -}}

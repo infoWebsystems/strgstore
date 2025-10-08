@@ -221,6 +221,9 @@ html.no-js .drawer__container[open] > .drawer__button::after,
 .drawer__row {
   margin-block-end: 2.8rem;
 }
+.drawer__account-button{
+  
+}
 
 .drawer__row--gutter-lg {
   padding-block-end: 2.8rem;
