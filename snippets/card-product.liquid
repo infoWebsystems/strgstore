@@ -83,17 +83,18 @@
 
       {{ variants_media }}
     </a>
-
-    {%- unless hide_actions -%}
-      <div class="card-product__overlay-content">
-        {%- if settings.product_swatches_on_card -%}
-          {%- if card_product_layout == 'card-product__layout--compact' -%}
-            {{ product_swatches_html }}
+    {%- unless template.name == 'index' -%}
+      {%- unless hide_actions -%}
+        <div class="card-product__overlay-content">
+          {%- if settings.product_swatches_on_card -%}
+            {%- if card_product_layout == 'card-product__layout--compact' -%}
+              {{ product_swatches_html }}
+            {%- endif -%}
           {%- endif -%}
-        {%- endif -%}
-        {%- render 'product-tags' with product_ref: product_ref -%}
-      </div>
-      {{ quick_add_to_cart_button_html }}
+          {%- render 'product-tags' with product_ref: product_ref -%}
+        </div>
+        {{ quick_add_to_cart_button_html }}
+      {%- endunless -%}
     {%- endunless -%}
   </div>
 
