@@ -149,7 +149,8 @@ input:disabled + .card-product__swatch {
 }
 
 .card-product__title {
-  margin: 0;
+  margin: 0 0 1rem 0;
+  
 }
 
 .card-product__sizes{
@@ -159,7 +160,7 @@ input:disabled + .card-product__swatch {
 }
 
 .card-product__price{
-  margin-top: 1rem;
+  margin-top: auto;
   font-size: 1.5rem;
   font-weight: 600;
 }
