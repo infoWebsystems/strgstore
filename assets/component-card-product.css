@@ -142,6 +142,7 @@ input:disabled + .card-product__swatch {
 }
 
 .card-product__title {
+  margin: 0;
 }
 
 .card-product__sizes{
