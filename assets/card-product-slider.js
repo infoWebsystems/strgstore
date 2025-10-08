@@ -14,6 +14,7 @@ if (!customElements.get('card-product-slider')) {
         spaceBetween: swiperOptions.spaceBetweenMobile || 2,
         slidesPerView: 'auto',
         resistanceRatio: 0.72,
+        slidesPerView: 2,
         navigation: {
           nextEl: '.swiper-button--next',
           prevEl: '.swiper-button--prev'
