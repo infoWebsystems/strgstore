@@ -15,10 +15,6 @@ html .card-product-slider {
   justify-content: flex-end;
 }
 
-.card-product-slider .card-product-slider__slide {
-  width: calc(100% - 16.666%);
-}
-
 html.no-js .card-product-slider__wrapper {
   overflow-x: auto;
   margin: 0 calc(0rem - var(--page-gutter));
