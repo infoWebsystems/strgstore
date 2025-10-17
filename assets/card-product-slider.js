@@ -27,6 +27,18 @@ if (!customElements.get('card-product-slider')) {
           1100: {
             slidesPerView: 4,
             spaceBetween: swiperOptions.spaceBetweenDesktop || 2
+          },
+          1500: {
+            slidesPerView: 5,
+            spaceBetween: swiperOptions.spaceBetweenDesktop || 2
+          },
+          1900: {
+            slidesPerView: 6,
+            spaceBetween: swiperOptions.spaceBetweenDesktop || 2
+          },
+          2200: {
+            slidesPerView: 7,
+            spaceBetween: swiperOptions.spaceBetweenDesktop || 2
           }
         }
       };
