@@ -179,7 +179,7 @@ html.no-js .hero__swiper-slide {
 
 @media screen and (min-width: 340px) {
   .hero-banner .hero__title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -314,7 +314,7 @@ html.no-js .hero__swiper-slide {
   } */
 
   .hero-banner .hero__title {
-    font-size: 5rem;
+    font-size: 3.5rem;
     line-height: 1.1;
     letter-spacing: var(--letter-spacing-extra-small);
   }
@@ -326,6 +326,6 @@ html.no-js .hero__swiper-slide {
   }
 
   .hero-banner .hero__title {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
