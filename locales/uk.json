@@ -16,7 +16,7 @@
       "new_window": "Відкривається в новому вікні."
     },
     "search": "ПОШУК",
-    "close_search": "Закрити ПОШУК",
+    "close_search": "ЗАКРИТИ ПОШУК",
     "account": "Обліковий запис",
     "favorites": "Улюблене",
     "sign_in": "Увійти",
@@ -326,7 +326,7 @@
     "product": {
       "title": "Назва продукту",
       "add_to_cart": "Додати до кошика",
-      "sold_out": "НЕМАЄ В НАЯВНОСТІ",
+      "sold_out": "SOLD OUT",
       "unavailable": "Недоступно",
       "from_price_per": "від {{ price }}/шт",
       "quantity": {
@@ -354,7 +354,7 @@
       },
       "show_full_product": "Переглянути повний продукт",
       "badges": {
-        "sold_out": "НЕМАЄ В НАЯВНОСТІ",
+        "sold_out": "SOLD OUT",
         "unavailable": "Недоступно",
         "new": "Новинка",
         "sale": "Sale"
