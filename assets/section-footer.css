@@ -10,10 +10,9 @@
 }
 
 .footer__kid-image{
-  position: relative;
-
+  position: absolute;
   right: -7%;
-  bottom: 5%;
+  bottom: 40px;
   width: 421px;
 }
 
