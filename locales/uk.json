@@ -29,8 +29,8 @@
     "close_search_drawer": "Закрити панель пошуку",
     "toggle_country_drawer": "Перемкнути вибір країни",
     "close_country_drawer": "Закрити вибір країни",
-    "toggle_filters_drawer": "Перемкнути фільтри",
-    "close_filters_drawer": "Закрити фільтри",
+    "toggle_filters_drawer": "ПЕРЕМКНУТИ ФІЛЬТРИ",
+    "close_filters_drawer": "ЗАКРИТИ ФІЛЬТРИ",
     "hero_slider_label": "Головний слайдер",
     "jump_to_slide": "Перейти до слайду {{ slide_index }}"
   },
@@ -294,8 +294,8 @@
       "from": "Від",
       "to": "До",
       "clear_all": "Очистити все",
-      "filters_button": "Фільтри",
-      "filters_title": "Фільтри",
+      "filters_button": "ФІЛЬТРИ",
+      "filters_title": "ФІЛЬТРИ",
       "filters_submit": "Показати результати",
       "filters_selected": {
         "one": "{{ count }} вибрано",
@@ -311,7 +311,7 @@
         "other": "{{ product_count }} з {{ count }} продуктів"
       },
       "button_per_row_label": "Продукти в рядку: {{ count }}",
-      "clear_filter": "Очистити фільтр",
+      "clear_filter": "ОЧИСТИТИ ФІЛЬТР",
       "reset": "Скинути",
       "sort_by_label": "Сортувати за"
     }
@@ -1046,7 +1046,7 @@
         "order_number": "Замовлення {{name}}",
         "orders_title": "Підтверджено",
         "sort_title": "Соотувати",
-        "filter_title": "Фільтрувати",
+        "filter_title": "ФІЛЬТРУВАТИ",
         "payment_status": {
           "table_view": {
             "paid": "Оплачено"
