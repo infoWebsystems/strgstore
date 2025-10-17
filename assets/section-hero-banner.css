@@ -64,6 +64,10 @@ html.no-js .hero__swiper-slide {
   }
 }
 
+.hero-banner--full{
+  justify-content: center;
+  align-items: center;
+}
 .hero-banner--full .hero__content {
   flex: 1;
   background-color: transparent;
