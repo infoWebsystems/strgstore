@@ -25,7 +25,7 @@
             "video_external_mobile": "",
             "enable_media_overlay_mobile": true,
             "content_position_horizontal": "align-center text-center",
-            "content_position_vertical": "justify-end",
+            "content_position_vertical": "justify-center",
             "subtitle": "",
             "subtitle_url": "",
             "title": "Ми дуже раді, що тобі цікаво почитати про нас, а хто ми такі, щоб тобі відмовляти.",
