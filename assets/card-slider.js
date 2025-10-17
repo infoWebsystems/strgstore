@@ -36,10 +36,10 @@ if (!customElements.get('card-slider')) {
         },
         breakpoints: {
           750: {
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
           1100: {
-            slidesPerView: 4,
+            slidesPerView: 3,
           },
           1500: {
             slidesPerView: 4,
