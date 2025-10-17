@@ -135,7 +135,7 @@
 
         {%- if block.settings.title != blank or block.settings.content != blank or block.settings.button_text != blank and block.settings.button_url != blank -%}
           {% capture content_element %}
-            <div class="hero__content {{ hero_inner_setting_classes | strip }}">
+            <div class="hero__content container {{ hero_inner_setting_classes | strip }}">
               {%- if block.settings.subtitle != blank -%}
                 <p class="hero__subtitle">
                   {%- if block.settings.subtitle_url != blank -%}
