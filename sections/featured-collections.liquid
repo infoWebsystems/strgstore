@@ -48,8 +48,8 @@
     {% endstyle %}
   {% endif %}
 
-  <section class="section section-{{ section.id }} overflow-hidden js-animation-fade-in {{ section_additional_classes | strip }}">
-    <div class="container">
+  <section class="featured-collections section section-{{ section.id }} overflow-hidden js-animation-fade-in {{ section_additional_classes | strip }}">
+    <div class="featured-collections__inner">
       <div class="section__head">
         {%- if section.settings.title != blank -%}
           <h2 class="section__title">
