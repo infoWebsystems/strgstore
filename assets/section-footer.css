@@ -4,7 +4,10 @@
   overflow: hidden;
 }
 
-
+.footer__logo{
+  width:100%;
+  height: auto;
+}
 
 .footer__body {
   margin-block-end: 4rem;
