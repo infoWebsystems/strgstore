@@ -28,7 +28,7 @@ if (!customElements.get('card-product-slider')) {
             slidesPerView: 4,
             spaceBetween: swiperOptions.spaceBetweenDesktop || 2
           },
-          1500: {
+          1450: {
             slidesPerView: 5,
             spaceBetween: swiperOptions.spaceBetweenDesktop || 2
           },
