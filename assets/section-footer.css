@@ -17,6 +17,12 @@
   width: 421px;
   height: auto;
 }
+@media screen and (max-width: 1000px) {
+  .footer__bottom {
+    display: none;
+  }
+}
+
 
 .footer__content {
   position: relative;
