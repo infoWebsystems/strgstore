@@ -1,9 +1,20 @@
 .footer {
   padding: 4rem 0;
+  position: relative;
 }
+
+
 
 .footer__body {
   margin-block-end: 4rem;
+}
+
+.footer__kid-image{
+  position: relative;
+
+  right: -7%;
+  bottom: 5%;
+  width: 421px;
 }
 
 .footer__content {
