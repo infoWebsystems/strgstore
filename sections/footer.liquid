@@ -36,7 +36,7 @@
   <div class="container">
     <div class="footer__body">
       <div class="footer__cols">
-        <img src="{{ 'footer-logo.svg' | asset_url }}" alt="Banner" width="100" height="50" class="footer__logo">
+        <img class="footer__col footer__col--sm medium-hide small-hide" src="{{ 'footer-logo.svg' | asset_url }}" alt="Banner" width="100" height="50" class="footer__logo">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'menu' -%}
