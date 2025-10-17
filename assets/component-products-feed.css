@@ -1,4 +1,7 @@
-.products-feed__container
+.products-feed__container{
+  padding: 0 var(--page-gutter);
+  margin: 0 auto;
+}
 
 .products-feed__pre-title,
 .products-feed__title {
