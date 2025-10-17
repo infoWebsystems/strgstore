@@ -487,9 +487,9 @@
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default",
         "title": "SALE",
-        "button_text": "ДИВИТИСЯ ВСІ",
+        "button_text": "ДИВИТИСЬ ВСІ",
         "button_url": "shopify://collections",
-        "button_style": "button--outlined"
+        "button_style": "button--filled"
       }
     },
     "b9e1f375-bbe3-49e0-b449-eff934bd3497": {
@@ -511,6 +511,7 @@
     },
     "seo_content_Mnw3La": {
       "type": "seo-content",
+      "disabled": true,
       "name": "t:sections.seo-content.name",
       "settings": {
         "layout": "boxed",
@@ -589,6 +590,7 @@
         "tile_gajDrH",
         "tile_FL7f6T"
       ],
+      "disabled": true,
       "name": "t:sections.dual-tiles.name",
       "settings": {
         "section_width": "max-w-full",
@@ -670,6 +672,7 @@
         "tile_bdfMDB",
         "tile_8Y98AJ"
       ],
+      "disabled": true,
       "name": "t:sections.dual-tiles.name",
       "settings": {
         "section_width": "max-w-full",
@@ -687,6 +690,7 @@
     },
     "seo_content_w6mhWw": {
       "type": "seo-content",
+      "disabled": true,
       "name": "t:sections.seo-content.name",
       "settings": {
         "layout": "full",
