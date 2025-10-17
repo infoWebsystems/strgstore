@@ -36,8 +36,13 @@ if (!customElements.get('card-slider')) {
         },
         breakpoints: {
           750: {
-            slidesPerView: swiperOptions.slidesPerViewDesktop || 3,
-            spaceBetween: swiperOptions.spaceBetweenDesktop || 2,
+            slidesPerView: 3,
+          },
+          1100: {
+            slidesPerView: 4,
+          },
+          1500: {
+            slidesPerView: 4,
           }
         }
       };
