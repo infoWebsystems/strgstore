@@ -28,15 +28,15 @@ if (!customElements.get('card-product-slider')) {
             slidesPerView: 4,
             spaceBetween: swiperOptions.spaceBetweenDesktop || 2
           },
-          1450: {
+          1400: {
             slidesPerView: 5,
             spaceBetween: swiperOptions.spaceBetweenDesktop || 2
           },
-          1900: {
+          1700: {
             slidesPerView: 6,
             spaceBetween: swiperOptions.spaceBetweenDesktop || 2
           },
-          2200: {
+          2000: {
             slidesPerView: 7,
             spaceBetween: swiperOptions.spaceBetweenDesktop || 2
           }
