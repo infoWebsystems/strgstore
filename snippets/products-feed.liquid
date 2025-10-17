@@ -27,6 +27,7 @@
 {%- if products_array != nil or url or product_list != nil -%}
 
   {% comment %} {{- 'swiper-bundle.min.css' | asset_url | stylesheet_tag -}} {% endcomment %}
+  {{- 'component-products-feed.css' | asset_url | stylesheet_tag -}}
   {{- 'component-card-product-slider.css' | asset_url | stylesheet_tag -}}
   {{- 'component-card-product.css' | asset_url | stylesheet_tag -}}
 
