@@ -189,7 +189,7 @@ html.no-js .hero__swiper-slide {
     text-align: center;
     align-items: flex-end;
     /* justify-content: center; */
-    height: calc(var(--inner-height) - var(--header-height, var(--default-header-height)));
+    height: calc(var(--inner-height) - var(--announcement-bar-height));
   }
 
   .hero__inner.hero-banner--30-70,
