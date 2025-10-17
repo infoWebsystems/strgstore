@@ -487,9 +487,9 @@
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default",
         "title": "SALE",
-        "button_text": "ДИВИТИСЬ ВСІ",
+        "button_text": "ДИВИТИСЯ ВСІ",
         "button_url": "shopify://collections",
-        "button_style": "button--filled"
+        "button_style": "button--outlined"
       }
     },
     "b9e1f375-bbe3-49e0-b449-eff934bd3497": {
