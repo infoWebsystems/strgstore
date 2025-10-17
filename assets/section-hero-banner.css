@@ -67,6 +67,7 @@ html.no-js .hero__swiper-slide {
 .hero-banner--full{
   justify-content: center!important;
   align-items: center!important;
+  padding-top: var(--header-height)!important;
 }
 .hero-banner--full .hero__content {
   flex: 1;
