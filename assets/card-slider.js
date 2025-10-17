@@ -43,6 +43,12 @@ if (!customElements.get('card-slider')) {
           },
           1500: {
             slidesPerView: 4,
+          },
+          1900: {
+            slidesPerView: 5,
+          },
+          2200: {
+            slidesPerView: 6,
           }
         }
       };
