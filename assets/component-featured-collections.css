@@ -1,4 +1,6 @@
 .featured-collections{
     padding: 0 2px;
     max-width: 2400px;
+    margin-left: auto;
+    margin-right: auto;
 }

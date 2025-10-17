@@ -47,9 +47,6 @@ if (!customElements.get('card-slider')) {
           1900: {
             slidesPerView: 5,
           },
-          2200: {
-            slidesPerView: 6,
-          }
         }
       };
 
