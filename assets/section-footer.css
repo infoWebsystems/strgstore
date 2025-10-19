@@ -6,7 +6,7 @@
 
 .footer__logo{
   display: block;
-  width: 148px;
+  width: 200px;
   height: auto;
   margin-top: -1%;
 }
@@ -26,7 +26,7 @@
   height: auto;
 }
 @media screen and (max-width: 1000px) {
-  .footer__bottom {
+  .footer__kid-image {
     display: none;
   }
 }
