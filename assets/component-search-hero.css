@@ -1,7 +1,7 @@
 .search-hero {
   position: relative;
   background-color: rgb(244, 244, 244);
-  padding: var(--section-vertical-padding-desktop) 0;
+  padding: 4rem 0;
   text-align: center;
 }
 .search-hero * {
