@@ -1,11 +1,10 @@
 .search-hero {
   position: relative;
-  background-color: var(--color-body-background);
+  background-color: #fff;
   padding: var(--section-vertical-padding-desktop) 0;
   text-align: center;
 }
 .search-hero * {
-  color: #fff!important;
 }
 
 .search-hero__title {
