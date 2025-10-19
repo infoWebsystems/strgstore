@@ -3,6 +3,7 @@
   background-color: var(--color-body-background);
   padding: var(--section-vertical-padding-desktop) 0;
   text-align: center;
+  color: #fff;
 }
 
 .search-hero__title {
