@@ -68,6 +68,7 @@ html.no-js [open] > .drawer__button noscript {
 
 html.no-js .drawer__container[open],
 html.js .drawer__content {
+  padding: 2.4rem var(--page-gutter) 3.1rem;
   background-color: var(--color-popup-background);
   width: 100%;
   max-width: 60rem;
