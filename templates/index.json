@@ -250,7 +250,7 @@
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
         "color_scheme_text": "color-text-primary",
-        "color_scheme_background": "color-background-primary",
+        "color_scheme_background": "color-background-accent-2",
         "title": "Категорії",
         "button_style": "default",
         "button_text": "",
