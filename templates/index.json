@@ -252,8 +252,8 @@
         "color_scheme_text": "color-text-primary",
         "color_scheme_background": "color-background-primary",
         "title": "Категорії",
-        "button_style": "button--outlined",
-        "button_text": "Дивитися всі",
+        "button_style": "default",
+        "button_text": "",
         "button_url": "shopify://collections"
       }
     },
@@ -455,7 +455,7 @@
         "color_scheme_text": "color-text-primary",
         "color_scheme_background": "color-background-primary",
         "title": "Наші бренди",
-        "button_style": "button--outlined",
+        "button_style": "button--filled",
         "button_text": "ВСІ 70+ БРЕНДІВ",
         "button_url": "shopify://collections"
       }
@@ -488,7 +488,7 @@
         "title": "SALE",
         "button_text": "ДИВИТИСЬ ВСІ",
         "button_url": "shopify://collections",
-        "button_style": "button--outlined"
+        "button_style": "button--filled"
       }
     },
     "b9e1f375-bbe3-49e0-b449-eff934bd3497": {
