@@ -17,7 +17,7 @@
         "cee0c4f6-5546-43a3-bfc3-2f3afa36d9d5": {
           "type": "text-slide",
           "settings": {
-            "content": "<p>Нові Надходження</p>",
+            "content": "<p><a href=\"/collections/нові-надходження-1\" title=\"Нові надходження\">Нові Надходження</a></p>",
             "dropdown_cards": false,
             "color_scheme_background_dropdown": "background-colors-default",
             "color_scheme_text_dropdown": "text-colors-default",
