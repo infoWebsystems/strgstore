@@ -283,9 +283,9 @@
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default",
         "title": "Нові Надходження",
-        "button_text": "",
+        "button_text": "НОВІ НАДХОДЖЕННЯ",
         "button_url": "shopify://collections",
-        "button_style": "button--outlined"
+        "button_style": "default"
       }
     },
     "featured_collections_nmwrby": {
