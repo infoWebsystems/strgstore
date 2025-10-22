@@ -17,14 +17,14 @@
         "cee0c4f6-5546-43a3-bfc3-2f3afa36d9d5": {
           "type": "text-slide",
           "settings": {
-            "content": "<p>-20% ЗА ПРОМОКОДОМ SUMMER</p>",
+            "content": "<p>Нові Надходження</p>",
             "dropdown_cards": false,
             "color_scheme_background_dropdown": "background-colors-default",
             "color_scheme_text_dropdown": "text-colors-default",
             "card_item_1__title": "",
             "card_item_1__content": "",
             "card_item_1__button_text": "",
-            "card_item_1__button_url": "",
+            "card_item_1__button_url": "shopify://collections/нові-надходження-1",
             "card_item_2__title": "",
             "card_item_2__content": "",
             "card_item_2__button_text": "",
