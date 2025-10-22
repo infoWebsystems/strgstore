@@ -50,7 +50,7 @@
         "5e0cad2e-d931-416e-ac29-51a4a683ade2": {
           "type": "text-slide",
           "settings": {
-            "content": "<p>SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE</p>",
+            "content": "<p><a href=\"/collections/sale\" title=\"SALE\">SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE</a></p>",
             "dropdown_cards": false,
             "color_scheme_background_dropdown": "background-colors-default",
             "color_scheme_text_dropdown": "text-colors-default",
