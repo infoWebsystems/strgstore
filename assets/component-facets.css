@@ -151,8 +151,7 @@ html.no-js .facets__actions-item {
 }
 
 .facets__list {
-  width: max-content;
-  max-width: 100%;
+  width: 100%;
   max-height: 300px;
   overflow-y: auto;
 }
