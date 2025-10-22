@@ -276,7 +276,7 @@
       ],
       "settings": {
         "padding_vertical_desktop": "pt-0-desktop",
-        "padding_vertical_mobile": "pt-0-mobile",
+        "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
         "layout": "layout-2",
         "gap_between_desktop": 2,
         "gap_between_mobile": 2,
