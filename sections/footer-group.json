@@ -74,7 +74,7 @@
         "layout": "footer--logo-none",
         "logo": "shopify://shop_images/strgstore-logo.svg",
         "logo_svg_code": "",
-        "logo_width": 160,
+        "logo_width": 162,
         "logo_width_mobile": 130,
         "footer_bottom_content_alignment": "row",
         "enable_payment_icons": true,
