@@ -151,12 +151,43 @@
             "max_products": 8,
             "show_unavailable_products": false
           }
+        },
+        "slide_7MJTN3": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme_text": "text-colors-inverse",
+            "color_scheme_background": "background-colors-accent-2",
+            "header_menu_text_color": "#ffffff",
+            "image": "shopify://shop_images/02-07-25_STOR199218.jpg",
+            "video_external": "",
+            "enable_media_overlay_desktop": true,
+            "image_mobile": "shopify://shop_images/02-07-25_STOR199218.jpg",
+            "video_external_mobile": "",
+            "enable_media_overlay_mobile": true,
+            "content_position_horizontal": "align-center text-center",
+            "content_position_vertical": "justify-end",
+            "subtitle": "Highlight your promotion",
+            "subtitle_url": "",
+            "block_title": "Highlight an image banner",
+            "content": "",
+            "enable_vertical_line": true,
+            "button_style": "button--filled",
+            "button_text": "View more",
+            "button_url": "/",
+            "products": [],
+            "collection": "",
+            "title": "",
+            "max_products": 8,
+            "show_unavailable_products": false
+          }
         }
       },
       "block_order": [
         "slide_gFmbEP",
         "slide_TXKcY6",
-        "slide_TQr7GL"
+        "slide_TQr7GL",
+        "slide_7MJTN3"
       ],
       "name": "Hero Banner With Products",
       "settings": {
