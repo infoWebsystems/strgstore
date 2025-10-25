@@ -79,7 +79,7 @@
           "disabled": true,
           "settings": {
             "inventory_threshold": 15,
-            "notice_just_text": false
+            "notice_just_text": true
           }
         },
         "b2dabe12-2158-4ba6-bc54-9baae453acf5": {
