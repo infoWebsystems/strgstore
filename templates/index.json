@@ -67,7 +67,7 @@
             "video_external": "https://youtu.be/rJ9IKoy8W2s",
             "enable_media_overlay_desktop": false,
             "video_mobile": "shopify://files/videos/vertical_site.webm",
-            "video_external_mobile": "",
+            "video_external_mobile": "https://youtu.be/rJ9IKoy8W2s",
             "enable_media_overlay_mobile": false,
             "content_position_horizontal": "align-start text-left",
             "content_position_vertical": "justify-start",
