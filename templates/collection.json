@@ -13,7 +13,7 @@
       "type": "main-collection-banner",
       "custom_css": [],
       "settings": {
-        "enable_transparent_header": true,
+        "enable_transparent_header": false,
         "section_height": 40,
         "banner_layout": "banner--full",
         "color_scheme_text": "text-colors-default",
