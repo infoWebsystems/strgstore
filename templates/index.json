@@ -64,7 +64,7 @@
             "color_scheme_background": "background-colors-default",
             "header_menu_text_color": "#ffffff",
             "video": "shopify://files/videos/site_4.webm",
-            "video_external": "https://youtu.be/rJ9IKoy8W2s",
+            "video_external": "",
             "enable_media_overlay_desktop": false,
             "video_mobile": "shopify://files/videos/vertical_site.webm",
             "video_external_mobile": "https://youtu.be/rJ9IKoy8W2s",
