@@ -56,7 +56,7 @@
     "button_primary_style": "button--outlined",
     "button_secondary_style": "button--filled",
     "button_border_radius": "0",
-    "button_text_transform": "button--uppercase",
+    "button_text_transform": "button--normalcase",
     "input_border_radius": "0",
     "swatches_option": "Color",
     "swatches_hex_codes": "",

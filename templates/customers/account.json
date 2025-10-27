@@ -15,9 +15,64 @@
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default"
       }
+    },
+    "marquees_ej3rP7": {
+      "type": "marquees",
+      "blocks": {
+        "item_RYRXTz": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/logo_8_2.png",
+            "icon_svg_code": "",
+            "title": "Store Specification 1",
+            "link": "shopify://collections/1017-alyx-9sm"
+          }
+        },
+        "item_3mBDdn": {
+          "type": "item",
+          "settings": {
+            "icon_svg_code": "",
+            "title": "Store Specification 2",
+            "link": ""
+          }
+        },
+        "item_pf7x8D": {
+          "type": "item",
+          "settings": {
+            "icon_svg_code": "",
+            "title": "Store Specification 3",
+            "link": ""
+          }
+        },
+        "item_fiwqUf": {
+          "type": "item",
+          "settings": {
+            "icon_svg_code": "",
+            "title": "Store Specification 4",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_RYRXTz",
+        "item_3mBDdn",
+        "item_pf7x8D",
+        "item_fiwqUf"
+      ],
+      "name": "t:sections.marquees.name",
+      "settings": {
+        "enable_animation": true,
+        "marquee_duration_rate": 5,
+        "marquee_font_size": 1,
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-accent-2",
+        "padding_vertical_desktop": "mt-1-desktop mb-1-desktop",
+        "padding_vertical_mobile": "mt-1-mobile mb-1-mobile"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "marquees_ej3rP7"
   ]
 }
