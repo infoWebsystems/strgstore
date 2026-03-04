@@ -13,7 +13,8 @@
       "type": "main-login",
       "settings": {
         "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-default"
+        "color_scheme_background": "background-colors-default",
+        "enable_shop_login_button": false
       }
     }
   },
