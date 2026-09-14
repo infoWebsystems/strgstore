@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
                               <a href="{{- block.settings.url -}}">
                                 {% if block.settings.image %}
                                   <div class="media media--overlay media--portrait card__media">
-                                    {%- render 'image', image: block.settings.image, image_per_view: section.settings.menu_column_count, alt: block.settings.image.alt | escape -%}
+                                    {%- render 'image', image: block.settings.image, image_per_view: section.settings.menu_column_count, alt: block.settings.image.alt -%}
                                   </div>
                                 {% endif %}
 
@@ -958,3 +958,15 @@ document.addEventListener('DOMContentLoaded', function () {
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'image', image: block.settings.image, image_per_view: section.settings.menu_column_count,
+    alt: block.settings.image.alt | escape -%}"
+  to: "{%- render 'image', image: block.settings.image, image_per_view: section.settings.menu_column_count,
+    alt: block.settings.image.alt -%}"
+  position: 5374..5508
+{% endcomment %}

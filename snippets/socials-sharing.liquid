@@ -56,7 +56,7 @@
         {%- if social_link_url != '' -%}
           <li class="social-sharing__item">
             <a target="_blank" href="{{- social_link_url -}}" class="social-sharing__link" aria-label="{{- anchor_tag_label -}}">
-              {%- render 'icon-socials' with social_name: social_link_downcase -%}
+              {%- render 'icon-socials' with social_name, social_name: social_link_downcase -%}
             </a>
           </li>
         {%- endif -%}
@@ -64,3 +64,14 @@
     </ul>
   </div>
 {%- endif -%}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'icon-socials' with social_name: social_link_downcase -%}"
+  to: "{%- render 'icon-socials' with social_name, social_name: social_link_downcase
+    -%}"
+  position: 2406..2487
+{% endcomment %}

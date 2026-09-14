@@ -104,7 +104,7 @@
         {%- elsif block.settings.image_desktop != blank-%}
           <!-- <div class="media media--overlay section-dual-tiles__media{% if has_mobile_media %} small-hide{% endif %}"> -->
           <div class="media section-dual-tiles__media{% if has_mobile_media %} small-hide{% endif %}">
-            {%- render 'image', image: block.settings.image_desktop, section_index: section.index, image_per_view: 2, alt: block.settings.image_desktop.alt | escape -%}
+            {%- render 'image', image: block.settings.image_desktop, section_index: section.index, image_per_view: 2, alt: block.settings.image_desktop.alt -%}
           </div>
         {%- elsif block.settings.placeholder_svg_code != blank -%}
           <div class="media section-dual-tiles__media{% if has_mobile_media %} small-hide{% endif %}">
@@ -124,7 +124,7 @@
           {%- elsif block.settings.image_mobile != blank -%}
             <!-- <div class="media media--overlay section-dual-tiles__media small-up-hide"> -->
             <div class="media section-dual-tiles__media small-up-hide">
-              {%- render 'image', image: block.settings.image_mobile, section_index: section.index, image_for_mobile: true, alt: block.settings.image_mobile.alt | escape -%}
+              {%- render 'image', image: block.settings.image_mobile, section_index: section.index, image_for_mobile: true, alt: block.settings.image_mobile.alt -%}
             </div>
           {%- endif -%}
         {%- endif -%}
@@ -720,3 +720,20 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'image', image: block.settings.image_desktop, section_index: section.index,
+    image_per_view: 2, alt: block.settings.image_desktop.alt | escape -%}"
+  to: "{%- render 'image', image: block.settings.image_desktop, section_index: section.index,
+    image_per_view: 2, alt: block.settings.image_desktop.alt -%}"
+  position: 5839..5986
+- from: "{%- render 'image', image: block.settings.image_mobile, section_index: section.index,
+    image_for_mobile: true, alt: block.settings.image_mobile.alt | escape -%}"
+  to: "{%- render 'image', image: block.settings.image_mobile, section_index: section.index,
+    image_for_mobile: true, alt: block.settings.image_mobile.alt -%}"
+  position: 7117..7267
+{% endcomment %}

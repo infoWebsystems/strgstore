@@ -61,11 +61,11 @@
             endif
           endif
 
-          render 'image', image: product_ref.featured_image, alt: product_ref.featured_image.alt | escape, class: class, image_per_view: image_per_view
+          render 'image', image: product_ref.featured_image, alt: product_ref.featured_image.alt, class: class, image_per_view: image_per_view
 
           if variants_media == blank
             if settings.card_product_image_hover and product_ref.media.size > 1 and hover_media != null
-              render 'image', image: hover_media, alt: hover_media.alt | default: product_ref.title | escape, class: ' hover-img', image_per_view: image_per_view
+              render 'image', image: hover_media, alt: hover_media.alt, default: product_ref.title, class: ' hover-img', image_per_view: image_per_view
             endif
           endif
 
@@ -91,7 +91,7 @@
               {{ product_swatches_html }}
             {%- endif -%}
           {%- endif -%}
-          {%- render 'product-tags' with product_ref: product_ref -%}
+          {%- render 'product-tags' with product_ref, product_ref: product_ref -%}
         </div>
         {{ quick_add_to_cart_button_html }}
       {%- endunless -%}
@@ -127,3 +127,23 @@
     {%- endif -%}
   {%- endunless -%}
 </card-product>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "          render 'image', image: product_ref.featured_image, alt: product_ref.featured_image.alt
+    | escape, class: class, image_per_view: image_per_view"
+  to: "          render 'image', image: product_ref.featured_image, alt: product_ref.featured_image.alt,
+    class: class, image_per_view: image_per_view"
+  position: 2294..2436
+- from: "              render 'image', image: hover_media, alt: hover_media.alt |
+    default: product_ref.title | escape, class: ' hover-img', image_per_view: image_per_view"
+  to: "              render 'image', image: hover_media, alt: hover_media.alt, default:
+    product_ref.title, class: ' hover-img', image_per_view: image_per_view"
+  position: 2579..2730
+- from: "{%- render 'product-tags' with product_ref: product_ref -%}"
+  to: "{%- render 'product-tags' with product_ref, product_ref: product_ref -%}"
+  position: 3551..3623
+{% endcomment %}

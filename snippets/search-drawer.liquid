@@ -31,7 +31,7 @@
       </button>
 
       <div class="drawer__row">
-        {%- render 'search', with input_id: 'desktop', input_class: ' js-drawer-focus-element' -%}
+        {%- render 'search', input_id: 'desktop', input_class: ' js-drawer-focus-element' -%}
       </div>
     </div>
   </details>
@@ -59,3 +59,15 @@
     observer.observe(searchInput);
   });
 </script>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'search', with input_id: 'desktop', input_class: ' js-drawer-focus-element'
+    -%}"
+  to: "{%- render 'search', input_id: 'desktop', input_class: ' js-drawer-focus-element'
+    -%}"
+  position: 1058..1143
+{% endcomment %}

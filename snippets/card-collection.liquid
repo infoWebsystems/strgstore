@@ -22,7 +22,7 @@
     assign media_class = ' media--overlay'
 
     capture card_image
-      render 'image', image: image, image_per_view: image_per_view, alt: image.alt | default: title | escape
+      render 'image', image: image, image_per_view: image_per_view, alt: image.alt, default: title
     endcapture
   elsif class_without_image
     assign class = class_without_image | append: ' card-collection--no-image'
@@ -60,3 +60,15 @@
     {% endif %}
   </a>
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "      render 'image', image: image, image_per_view: image_per_view, alt:
+    image.alt | default: title | escape"
+  to: "      render 'image', image: image, image_per_view: image_per_view, alt: image.alt,
+    default: title"
+  position: 779..877
+{% endcomment %}

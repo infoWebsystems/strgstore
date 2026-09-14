@@ -100,7 +100,7 @@
             <div class="media media--16-9 media--overlay hero__media svg-color-inherit{% if has_mobile_media %} small-hide{% endif %}">
               {%- liquid
                 if block.settings.image != blank
-                  render 'image', image: block.settings.image, section_index: section.index, media_index: forloop.index, image_url_width: 2160, alt: image.alt | default: block.settings.block_title | escape
+                  render 'image', image: block.settings.image, section_index: section.index, media_index: forloop.index, image_url_width: 2160, alt: image.alt, default: block.settings.block_title
                 else
                   echo 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg'
                 endif
@@ -122,7 +122,7 @@
               <div class="media media--16-9 media--overlay hero__media small-up-hide svg-color-inherit">
                 {%- liquid
                   if block.settings.image_mobile != blank
-                    render 'image', image: block.settings.image_mobile, section_index: section.index, media_index: forloop.index, image_for_mobile: true, alt: block.settings.image_mobile.alt | default: block.settings.block_title | escape
+                    render 'image', image: block.settings.image_mobile, section_index: section.index, media_index: forloop.index, image_for_mobile: true, alt: block.settings.image_mobile.alt, default: block.settings.block_title
                   else
                     echo 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg'
                   endif
@@ -944,4 +944,24 @@
     }
   ]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "                  render 'image', image: block.settings.image, section_index:
+    section.index, media_index: forloop.index, image_url_width: 2160, alt: image.alt
+    | default: block.settings.block_title | escape"
+  to: "                  render 'image', image: block.settings.image, section_index:
+    section.index, media_index: forloop.index, image_url_width: 2160, alt: image.alt,
+    default: block.settings.block_title"
+  position: 4558..4753
+- from: "                    render 'image', image: block.settings.image_mobile, section_index:
+    section.index, media_index: forloop.index, image_for_mobile: true, alt: block.settings.image_mobile.alt
+    | default: block.settings.block_title | escape"
+  to: "                    render 'image', image: block.settings.image_mobile, section_index:
+    section.index, media_index: forloop.index, image_for_mobile: true, alt: block.settings.image_mobile.alt,
+    default: block.settings.block_title"
+  position: 5857..6084
+{%- endcomment -%}

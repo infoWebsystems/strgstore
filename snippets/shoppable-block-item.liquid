@@ -61,9 +61,9 @@
       <div class='shoppable-block__social-account--avatar-image'>
         {%- liquid
           if section.settings.social_avatar != blank and block.social_avatar == blank
-            render 'image', image: section.settings.social_avatar, alt: section.settings.social_avatar.alt | escape
+            render 'image', image: section.settings.social_avatar, alt: section.settings.social_avatar.alt
           elsif block.social_avatar != blank
-            render 'image', image: block.social_avatar, alt: block.social_avatar.alt | escape
+            render 'image', image: block.social_avatar, alt: block.social_avatar.alt
           else
             echo 'product-6' | placeholder_svg_tag
           endif
@@ -111,7 +111,7 @@
   <div class='shoppable-block__media'>
     {%- liquid
       if block.social_post_image != blank
-        render 'image', image: block.social_post_image, alt: block.social_post_image.alt | escape
+        render 'image', image: block.social_post_image, alt: block.social_post_image.alt
       else
         echo 'collection-1' | placeholder_svg_tag: 'placeholder-svg'
       endif
@@ -179,3 +179,22 @@
     -%}
   </div>
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "            render 'image', image: section.settings.social_avatar, alt: section.settings.social_avatar.alt
+    | escape"
+  to: "            render 'image', image: section.settings.social_avatar, alt: section.settings.social_avatar.alt"
+  position: 2225..2331
+- from: "            render 'image', image: block.social_avatar, alt: block.social_avatar.alt
+    | escape"
+  to: "            render 'image', image: block.social_avatar, alt: block.social_avatar.alt"
+  position: 2377..2461
+- from: "        render 'image', image: block.social_post_image, alt: block.social_post_image.alt
+    | escape"
+  to: "        render 'image', image: block.social_post_image, alt: block.social_post_image.alt"
+  position: 3870..3958
+{% endcomment %}

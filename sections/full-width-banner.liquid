@@ -75,7 +75,7 @@
         <div class="media media--overlay section-full-width-banner__media{% if has_mobile_media %} small-hide{% endif %}">
           {%- liquid
             if section.settings.image_desktop != blank
-              render 'image', image: section.settings.image_desktop, alt: section.settings.image_desktop.alt | default: section.settings.title | append: '-desktop' | escape, sizes: 'auto'
+              render 'image', image: section.settings.image_desktop, alt: section.settings.image_desktop.alt, default: section.settings.title, append: '-desktop', sizes: 'auto'
             else
               echo 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg'
             endif
@@ -95,7 +95,7 @@
           </div>
         {%- elsif section.settings.image_mobile != blank -%}
           <div class="media media--overlay section-full-width-banner__media small-up-hide">
-            {%- render 'image', image: section.settings.image_mobile, image_for_mobile: true, alt: section.settings.image_mobile.alt | default: section.settings.title | escape, sizes: 'auto' -%}
+            {%- render 'image', image: section.settings.image_mobile, image_for_mobile: true, alt: section.settings.image_mobile.alt, default: section.settings.title, sizes: 'auto' -%}
           </div>
         {%- else -%}
           {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}
@@ -180,13 +180,7 @@
                               assign first_button_class = first_button_class | append: block.settings.first_button_color_scheme_background
                             endif
                           %}
-                          {%- render 'button',
-                            type: 'link',
-                            class: first_button_class,
-                            button_style: block.settings.first_button_style | default: 'default',
-                            value: block.settings.first_button_text,
-                            href: block.settings.first_button_url
-                          -%}
+                          {%- render 'button', type: 'link', class: first_button_class, button_style: block.settings.first_button_style, default: 'default', value: block.settings.first_button_text, href: block.settings.first_button_url -%}
                         </li>
                       {%- endif -%}
 
@@ -198,13 +192,7 @@
                               assign second_button_class = second_button_class | append: block.settings.second_button_color_scheme_background
                             endif
                           %}
-                          {%- render 'button',
-                            type: 'link',
-                            class: second_button_class,
-                            button_style: block.settings.second_button_style | default: 'default',
-                            value: block.settings.second_button_text,
-                            href: block.settings.second_button_url
-                          -%}
+                          {%- render 'button', type: 'link', class: second_button_class, button_style: block.settings.second_button_style, default: 'default', value: block.settings.second_button_text, href: block.settings.second_button_url -%}
                         </li>
                       {%- endif -%}
                     </ul>
@@ -702,3 +690,47 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "              render 'image', image: section.settings.image_desktop, alt:
+    section.settings.image_desktop.alt | default: section.settings.title | append:
+    '-desktop' | escape, sizes: 'auto'"
+  to: "              render 'image', image: section.settings.image_desktop, alt: section.settings.image_desktop.alt,
+    default: section.settings.title, append: '-desktop', sizes: 'auto'"
+  position: 4030..4206
+- from: "{%- render 'image', image: section.settings.image_mobile, image_for_mobile:
+    true, alt: section.settings.image_mobile.alt | default: section.settings.title
+    | escape, sizes: 'auto' -%}"
+  to: "{%- render 'image', image: section.settings.image_mobile, image_for_mobile:
+    true, alt: section.settings.image_mobile.alt, default: section.settings.title,
+    sizes: 'auto' -%}"
+  position: 5223..5395
+- from: |-
+    {%- render 'button',
+                                type: 'link',
+                                class: first_button_class,
+                                button_style: block.settings.first_button_style | default: 'default',
+                                value: block.settings.first_button_text,
+                                href: block.settings.first_button_url
+                              -%}
+  to: "{%- render 'button', type: 'link', class: first_button_class, button_style:
+    block.settings.first_button_style, default: 'default', value: block.settings.first_button_text,
+    href: block.settings.first_button_url -%}"
+  position: 9607..9820
+- from: |-
+    {%- render 'button',
+                                type: 'link',
+                                class: second_button_class,
+                                button_style: block.settings.second_button_style | default: 'default',
+                                value: block.settings.second_button_text,
+                                href: block.settings.second_button_url
+                              -%}
+  to: "{%- render 'button', type: 'link', class: second_button_class, button_style:
+    block.settings.second_button_style, default: 'default', value: block.settings.second_button_text,
+    href: block.settings.second_button_url -%}"
+  position: 10522..10739
+{% endcomment %}

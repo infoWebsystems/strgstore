@@ -48,7 +48,7 @@
             else
               assign img = product_ref.featured_image
               if product_ref.featured_image
-                render 'image', image: product_ref.featured_image, alt: product_ref.featured_image.alt | escape
+                render 'image', image: product_ref.featured_image, alt: product_ref.featured_image.alt
               else
                 echo 'product-1' | placeholder_svg_tag
               endif
@@ -99,3 +99,14 @@
     </div>
   </div>
 </shoppable-product-card>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "                render 'image', image: product_ref.featured_image, alt: product_ref.featured_image.alt
+    | escape"
+  to: "                render 'image', image: product_ref.featured_image, alt: product_ref.featured_image.alt"
+  position: 2105..2207
+{% endcomment %}
