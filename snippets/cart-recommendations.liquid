@@ -20,7 +20,7 @@
             {%- if recommendation.featured_image -%}
               <div class="cart-recommendations__item-media">
                 <div class="media">
-                  {%- render 'image', image: recommendation.featured_image, alt: recommendation.featured_image.alt | escape -%}
+                  {%- render 'image', image: recommendation.featured_image, alt: recommendation.featured_image.alt -%}
                 </div>
               </div>
             {%- endif -%}
@@ -60,3 +60,15 @@
     </div>
   </div>
 </cart-recommendations>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'image', image: recommendation.featured_image, alt: recommendation.featured_image.alt
+    | escape -%}"
+  to: "{%- render 'image', image: recommendation.featured_image, alt: recommendation.featured_image.alt
+    -%}"
+  position: 1212..1312
+{% endcomment %}

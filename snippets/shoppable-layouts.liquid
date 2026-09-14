@@ -41,7 +41,7 @@
         {%- liquid
           if section.settings.source_of_slide == 'metaobject'
             if block.social_post_image != blank
-              render 'image', image: block.social_post_image, alt: block.social_post_image.alt | escape
+              render 'image', image: block.social_post_image, alt: block.social_post_image.alt
             else
               assign random_number = 'now' | date: '%N' | modulo: 6 | plus: 1
               assign placeholder_name = 'collection-' | append: random_number
@@ -49,7 +49,7 @@
             endif
           else
             if block.settings.social_post_image != blank
-              render 'image', image: block.settings.social_post_image, alt: block.settings.social_post_image.alt | escape
+              render 'image', image: block.settings.social_post_image, alt: block.settings.social_post_image.alt
             else
               assign random_number = 'now' | date: '%N' | modulo: 6 | plus: 1
               assign placeholder_name = 'collection-' | append: random_number
@@ -149,7 +149,7 @@
                     <div class='shoppable__layout--tags--image-wrapper'>
                       {%- liquid
                         if block.social_post_image != blank
-                          render 'image', image: block.social_post_image , alt: block.social_post_image.alt | escape
+                          render 'image', image: block.social_post_image, alt: block.social_post_image.alt
                         else
                           echo 'product-6' | placeholder_svg_tag
                         endif
@@ -165,7 +165,7 @@
                   <div class='shoppable__layout--tags--image-wrapper'>
                     {%- liquid
                       if item.social_post_image != blank
-                        render 'image', image: item.social_post_image , alt: item.social_post_image.alt | escape
+                        render 'image', image: item.social_post_image, alt: item.social_post_image.alt
                       else
                         echo 'product-6' | placeholder_svg_tag
                       endif
@@ -219,7 +219,7 @@
                             <div class='shoppable__layout--tags--image-wrapper'>
                               {%- liquid
                                 if block.social_post_image != blank
-                                  render 'image', image: block.social_post_image , alt: block.social_post_image.alt | escape
+                                  render 'image', image: block.social_post_image, alt: block.social_post_image.alt
                                 else
                                   echo 'product-6' | placeholder_svg_tag
                                 endif
@@ -235,7 +235,7 @@
                           <div class='shoppable__layout--tags--image-wrapper'>
                             {%- liquid
                               if block.settings.social_post_image != blank
-                                render 'image', image: block.settings.social_post_image , alt: block.settings.social_post_image.alt | escape
+                                render 'image', image: block.settings.social_post_image, alt: block.settings.social_post_image.alt
                               else
                                 echo 'product-6' | placeholder_svg_tag
                               endif
@@ -297,7 +297,7 @@
                 {%- else -%}
                   {%- liquid
                     if social_post_image != blank
-                      render 'image', image: social_post_image, alt: social_post_image.alt | escape, loading="lazy"
+                      render 'image', image: social_post_image, alt: social_post_image.alt
                     else
                       assign random_number = 'now' | date: '%N' | modulo: 6 | plus: 1
                       assign placeholder_name = 'collection-' | append: random_number
@@ -343,3 +343,43 @@
   {%- when 'slider' -%}
     {{- layout_slider -}}
 {%- endcase -%}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "              render 'image', image: block.social_post_image, alt: block.social_post_image.alt
+    | escape"
+  to: "              render 'image', image: block.social_post_image, alt: block.social_post_image.alt"
+  position: 1584..1678
+- from: "              render 'image', image: block.settings.social_post_image, alt:
+    block.settings.social_post_image.alt | escape"
+  to: "              render 'image', image: block.settings.social_post_image, alt:
+    block.settings.social_post_image.alt"
+  position: 2019..2131
+- from: "                          render 'image', image: block.social_post_image
+    , alt: block.social_post_image.alt | escape"
+  to: "                          render 'image', image: block.social_post_image, alt:
+    block.social_post_image.alt"
+  position: 6012..6118
+- from: "                        render 'image', image: item.social_post_image , alt:
+    item.social_post_image.alt | escape"
+  to: "                        render 'image', image: item.social_post_image, alt:
+    item.social_post_image.alt"
+  position: 6774..6876
+- from: "                                  render 'image', image: block.social_post_image
+    , alt: block.social_post_image.alt | escape"
+  to: "                                  render 'image', image: block.social_post_image,
+    alt: block.social_post_image.alt"
+  position: 9309..9423
+- from: "                                render 'image', image: block.settings.social_post_image
+    , alt: block.settings.social_post_image.alt | escape"
+  to: "                                render 'image', image: block.settings.social_post_image,
+    alt: block.settings.social_post_image.alt"
+  position: 10219..10349
+- from: '                      render ''image'', image: social_post_image, alt: social_post_image.alt
+    | escape, loading="lazy"'
+  to: "                      render 'image', image: social_post_image, alt: social_post_image.alt"
+  position: 12674..12764
+{% endcomment %}

@@ -6,7 +6,7 @@
       <div class="faq-tile__content--media">
         {%- liquid
           if section.settings.image != blank
-            render 'image', image: section.settings.image, alt: section.settings.image.alt | escape
+            render 'image', image: section.settings.image, alt: section.settings.image.alt
           else
             echo 'image' | placeholder_svg_tag: 'placeholder-svg'
           endif
@@ -141,3 +141,14 @@
   }
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "            render 'image', image: section.settings.image, alt: section.settings.image.alt
+    | escape"
+  to: "            render 'image', image: section.settings.image, alt: section.settings.image.alt"
+  position: 504..594
+{% endcomment %}

@@ -60,13 +60,7 @@
 
   {%- if section.settings.button_text != blank and section.settings.button_url != blank -%}
     {%- capture section_button -%}
-      {%- render 'button',
-        type: 'link',
-        class: 'button button--auto custom_class',
-        button_style: section_button_style | default: 'default',
-        value: section.settings.button_text,
-        href: section.settings.button_url
-      -%}
+      {%- render 'button', type: 'link', class: 'button button--auto custom_class', button_style: section_button_style, default: 'default', value: section.settings.button_text, href: section.settings.button_url -%}
     {%- endcapture -%}
   {%- endif -%}
 
@@ -227,3 +221,22 @@
     </div>
   </section>
 {%- endif -%}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%- render 'button',
+            type: 'link',
+            class: 'button button--auto custom_class',
+            button_style: section_button_style | default: 'default',
+            value: section.settings.button_text,
+            href: section.settings.button_url
+          -%}
+  to: "{%- render 'button', type: 'link', class: 'button button--auto custom_class',
+    button_style: section_button_style, default: 'default', value: section.settings.button_text,
+    href: section.settings.button_url -%}"
+  position: 2717..2925
+{% endcomment %}

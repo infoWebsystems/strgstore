@@ -90,7 +90,7 @@
                             {%- assign clear_text = 'collection.facets.clear_all' | t -%}
 
                             <facet-remove>
-                              {%- render 'button', type: 'link', class: 'button button--full facets__clear-button', button_style: 'button--outlined', value: clear_text | escape, href: results_sort_url -%}
+                              {%- render 'button', type: 'link', class: 'button button--full facets__clear-button', button_style: 'button--outlined', value: clear_text, href: results_sort_url -%}
                             </facet-remove>
 
                             {% comment %} {%- assign show_results_button_value = 'collection.facets.filters_submit' | t -%} {% endcomment %}
@@ -205,3 +205,16 @@
     </div>
   </div>
 </facet-filters-form>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'button', type: 'link', class: 'button button--full facets__clear-button',
+    button_style: 'button--outlined', value: clear_text | escape, href: results_sort_url
+    -%}"
+  to: "{%- render 'button', type: 'link', class: 'button button--full facets__clear-button',
+    button_style: 'button--outlined', value: clear_text, href: results_sort_url -%}"
+  position: 4526..4691
+{% endcomment %}

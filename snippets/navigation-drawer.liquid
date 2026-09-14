@@ -30,7 +30,7 @@
       </button>
 
       <div class="drawer__row large-up-hide">
-        {%- render 'search' with input_id: 'mobile' -%}
+        {%- render 'search' with input_id, input_id: 'mobile' -%}
       </div>
 
       <div class="drawer__row drawer__row--gutter-lg">
@@ -63,7 +63,7 @@
                           <a href="{{- block.settings.url -}}">
                             {% if block.settings.image %}
                               <div class="media media--overlay media--portrait card__media">
-                                {%- render 'image', image: block.settings.image, image_url_width: 550, alt: block.settings.image.alt | escape -%}
+                                {%- render 'image', image: block.settings.image, image_url_width: 550, alt: block.settings.image.alt -%}
                               </div>
                             {% endif %}
 
@@ -218,11 +218,7 @@
             {%- if section.settings.country_drawer_navigation_menu -%}
               <li class="drawer__utils-item">
                 <menu-drawer class="drawer">
-                  {%- render 'country-drawer' with
-                    button_class: ' drawer__utils-link h6',
-                    section: section,
-                    append_id: 'header-drawer'
-                  -%}
+                  {%- render 'country-drawer' with button_class, button_class: ' drawer__utils-link h6', section: section, append_id: 'header-drawer' -%}
                 </menu-drawer>
               </li>
             {%- endif -%}
@@ -232,3 +228,27 @@
     </div>
   </details>
 </header-drawer>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'search' with input_id: 'mobile' -%}"
+  to: "{%- render 'search' with input_id, input_id: 'mobile' -%}"
+  position: 1161..1218
+- from: "{%- render 'image', image: block.settings.image, image_url_width: 550, alt:
+    block.settings.image.alt | escape -%}"
+  to: "{%- render 'image', image: block.settings.image, image_url_width: 550, alt:
+    block.settings.image.alt -%}"
+  position: 3071..3175
+- from: |-
+    {%- render 'country-drawer' with
+                        button_class: ' drawer__utils-link h6',
+                        section: section,
+                        append_id: 'header-drawer'
+                      -%}
+  to: "{%- render 'country-drawer' with button_class, button_class: ' drawer__utils-link
+    h6', section: section, append_id: 'header-drawer' -%}"
+  position: 11601..11736
+{% endcomment %}

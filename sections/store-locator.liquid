@@ -77,8 +77,7 @@
           %}
 
           <div class="store-locator-cards__tile  store-locator-cards__aside-filtered {{ block.settings.color_scheme_text }} {{ block.settings.color_scheme_background }} {% if section.blocks.size <= 1 %}store-locator-cards__single-tile{% endif %}" data-image-number={{ forloop.index }}>
-            {% render 'store-locator-pin', storeName: block.settings.title, storeAddress: block.settings.store_address | newline_to_br, storeOpeningHours: block.settings.store_opening_hours, storePin: block.settings.store_pin, storeLink: store_link, storeTel: block.settings.store_tel, buttonStyle: block.settings.button_style, coordinateTitle: block.settings.coordinate_title,
-            storeLongitude: block.settings.store_longitude, storeLatitude: block.settings.store_latitude %}
+            {% render 'store-locator-pin', storeName: block.settings.title, storeAddress: block.settings.store_address, storeOpeningHours: block.settings.store_opening_hours, storePin: block.settings.store_pin, storeLink: store_link, storeTel: block.settings.store_tel, buttonStyle: block.settings.button_style, coordinateTitle: block.settings.coordinate_title, storeLongitude: block.settings.store_longitude, storeLatitude: block.settings.store_latitude %}
           </div>
         {% endfor %}
       </div>
@@ -96,7 +95,7 @@
                     {% for block in section.blocks %}
                       <div class="swiper-slide store-locator-cards__swiper-slide store-locator-cards__filtered {{ block.settings.color_scheme_text }} {{ block.settings.color_scheme_background }}" data-image-number={{ forloop.index }}>
                         <div class="store-locator-cards__tile js-animation-fade-in {{ block.settings.color_scheme_text }} {{ block.settings.color_scheme_background }}">
-                          {% render 'store-locator-pin', storeName: block.settings.title, storeAddress: block.settings.store_address | newline_to_br, storeOpeningHours: block.settings.store_opening_hours, storePin: block.settings.store_pin, storeLink: directions_link, storeTel: block.settings.store_tel, buttonStyle: block.settings.button_style %}
+                          {% render 'store-locator-pin', storeName: block.settings.title, storeAddress: block.settings.store_address, storeOpeningHours: block.settings.store_opening_hours, storePin: block.settings.store_pin, storeLink: directions_link, storeTel: block.settings.store_tel, buttonStyle: block.settings.button_style %}
                         </div>
                       </div>
                     {% endfor %}
@@ -126,7 +125,7 @@
             <span data-image-number={{ forloop.index }} class="store-locator__image-selector">
               {%- liquid
                 if block.settings.store_image != blank
-                  render 'image', image: block.settings.store_image, alt: block.settings.store_image.alt | escape, class: 'store-locator__image-container__image'
+                  render 'image', image: block.settings.store_image, alt: block.settings.store_image.alt, class: 'store-locator__image-container__image'
                 else
                   echo 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg store-locator__image-container__image'
                 endif
@@ -556,3 +555,34 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% render 'store-locator-pin', storeName: block.settings.title, storeAddress: block.settings.store_address | newline_to_br, storeOpeningHours: block.settings.store_opening_hours, storePin: block.settings.store_pin, storeLink: store_link, storeTel: block.settings.store_tel, buttonStyle: block.settings.button_style, coordinateTitle: block.settings.coordinate_title,
+                storeLongitude: block.settings.store_longitude, storeLatitude: block.settings.store_latitude %}
+  to: "{% render 'store-locator-pin', storeName: block.settings.title, storeAddress:
+    block.settings.store_address, storeOpeningHours: block.settings.store_opening_hours,
+    storePin: block.settings.store_pin, storeLink: store_link, storeTel: block.settings.store_tel,
+    buttonStyle: block.settings.button_style, coordinateTitle: block.settings.coordinate_title,
+    storeLongitude: block.settings.store_longitude, storeLatitude: block.settings.store_latitude
+    %}"
+  position: 4465..4910
+- from: "{% render 'store-locator-pin', storeName: block.settings.title, storeAddress:
+    block.settings.store_address | newline_to_br, storeOpeningHours: block.settings.store_opening_hours,
+    storePin: block.settings.store_pin, storeLink: directions_link, storeTel: block.settings.store_tel,
+    buttonStyle: block.settings.button_style %}"
+  to: "{% render 'store-locator-pin', storeName: block.settings.title, storeAddress:
+    block.settings.store_address, storeOpeningHours: block.settings.store_opening_hours,
+    storePin: block.settings.store_pin, storeLink: directions_link, storeTel: block.settings.store_tel,
+    buttonStyle: block.settings.button_style %}"
+  position: 6003..6309
+- from: "                  render 'image', image: block.settings.store_image, alt:
+    block.settings.store_image.alt | escape, class: 'store-locator__image-container__image'"
+  to: "                  render 'image', image: block.settings.store_image, alt: block.settings.store_image.alt,
+    class: 'store-locator__image-container__image'"
+  position: 7485..7637
+{% endcomment %}

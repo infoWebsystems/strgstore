@@ -60,7 +60,7 @@
                     assign checkbox_additional_classes = 'checkbox--color '
 
                     capture swatch_html
-                      render 'product-swatch' with input_type: 'checkbox', name: value.param_name, id: id, option_value: value.label, visually_hidden: 'false', value: value.value, attr: checkbox_attr, class: 'swatch--sm swatch--hide-line'
+                      render 'product-swatch' with input_type, input_type: 'checkbox', name: value.param_name, id: id, option_value: value.label, visually_hidden: 'false', value: value.value, attr: checkbox_attr, class: 'swatch--sm swatch--hide-line'
                     endcapture
                   endif
 
@@ -162,3 +162,17 @@
     </div>
   </div>
 </details>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "                      render 'product-swatch' with input_type: 'checkbox',
+    name: value.param_name, id: id, option_value: value.label, visually_hidden: 'false',
+    value: value.value, attr: checkbox_attr, class: 'swatch--sm swatch--hide-line'"
+  to: "                      render 'product-swatch' with input_type, input_type:
+    'checkbox', name: value.param_name, id: id, option_value: value.label, visually_hidden:
+    'false', value: value.value, attr: checkbox_attr, class: 'swatch--sm swatch--hide-line'"
+  position: 2452..2702
+{% endcomment %}

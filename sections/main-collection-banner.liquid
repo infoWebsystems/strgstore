@@ -64,13 +64,13 @@
 <section class="collection-hero section-{{ section.id }} {{ banner_layout }} color-body-background {{ section_additional_classes }}{% if enable_transparent_header %} header-is-transparent{% endif %}">
   {%- if collection.image != blank -%}
     <div class="media media--overlay media--overlay-horizontal collection-hero__media{% if image_mobile != blank %} small-hide{% endif %}">
-      {%- render 'image', image: collection.image, section_index: section.index, media_index: 1, image_url_width: 2160, alt: collection.image.alt | escape -%}
+      {%- render 'image', image: collection.image, section_index: section.index, media_index: 1, image_url_width: 2160, alt: collection.image.alt -%}
     </div>
   {%- endif -%}
 
   {%- if image_mobile != blank -%}
     <div class="media media--overlay media--overlay-horizontal collection-hero__media small-up-hide">
-      {%- render 'image', image: image_mobile, section_index: section.index, media_index: 1, image_for_mobile: true, alt: image_mobile.alt | escape -%}
+      {%- render 'image', image: image_mobile, section_index: section.index, media_index: 1, image_for_mobile: true, alt: image_mobile.alt -%}
     </div>
   {%- endif -%}
 
@@ -194,3 +194,20 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'image', image: collection.image, section_index: section.index,
+    media_index: 1, image_url_width: 2160, alt: collection.image.alt | escape -%}"
+  to: "{%- render 'image', image: collection.image, section_index: section.index,
+    media_index: 1, image_url_width: 2160, alt: collection.image.alt -%}"
+  position: 2539..2682
+- from: "{%- render 'image', image: image_mobile, section_index: section.index, media_index:
+    1, image_for_mobile: true, alt: image_mobile.alt | escape -%}"
+  to: "{%- render 'image', image: image_mobile, section_index: section.index, media_index:
+    1, image_for_mobile: true, alt: image_mobile.alt -%}"
+  position: 2854..2990
+{% endcomment %}
